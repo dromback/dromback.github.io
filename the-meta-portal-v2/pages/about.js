@@ -2,21 +2,28 @@ import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
 import { Head } from "next/head";
 import Header from "../components/Header";
 import { useMoralis } from "react-moralis";
+import react from "react";
 
 
 
-export default function about(){
+
+const About = () => {
     
 
     return (
-        <>
-          <Head>
-              <title>Dashboard</title>
-          </Head>
-          <Flex direction="column" width="100vw" height="100vh">
-            <Header />
-            
-          </Flex>
+        <><>
+            <Flex direction="column" width="100vw" height="100vh">
+                <Header />
+            </Flex>
         </>
-    )
+        
+        <div>
+            
+                <Text>About</Text>
+                <p>Test Text</p>
+        </div></>
+    );
 }
+
+export default About;
+

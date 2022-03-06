@@ -1,11 +1,11 @@
 import { Box, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
-import Head from "next/head";
 import { useMoralis } from "react-moralis"
 //import Balance from "../components/Balance";
 import Header from "../components/Header";
 //import NFTs from "../components/NFTs";
 //import Profile from "../components/Profile";
 //import Transactions from "../components/Transactions";
+
 
 
 
@@ -16,9 +16,6 @@ export default function Home() {
  
     return (
       <>
-        <Head>
-            <title>Dashboard</title>
-        </Head>
         <Flex direction="column" width="100vw" height="100vh">
           <Header />
           <Box flex="1" bg="#242323" px="44" py="20" >
