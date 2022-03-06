@@ -5,18 +5,18 @@ import { useMoralis } from "react-moralis";
 
 
 
-export default function About(){
+export default function about(){
     
 
-    return(
-        <Container>
-            <Box>
-                <Text align="center">
-                    Testing
-                </Text>
-            </Box>
-        </Container>
-
-        
+    return (
+        <>
+          <Head>
+              <title>Dashboard</title>
+          </Head>
+          <Flex direction="column" width="100vw" height="100vh">
+            <Header />
+            
+          </Flex>
+        </>
     )
 }
