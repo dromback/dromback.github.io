@@ -5,8 +5,9 @@ import CustomContainer from "./CustomContainer";
 import { useState } from "react";
 import Moralis from "moralis";
 
-export default function Balance({user}){
+export default function Balance(){
 
+    const {user} = useMoralis()
     const Web3Api = useMoralisWeb3Api()
     const {fetchERC20Balances, data} = useERC20Balances()
 
