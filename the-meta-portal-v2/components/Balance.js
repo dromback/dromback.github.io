@@ -6,7 +6,7 @@ import { useState } from "react";
 import Moralis from "moralis";
 
 export default function Balance(){
-
+  
     const {user} = useMoralis()
     const Web3Api = useMoralisWeb3Api()
     const {fetchERC20Balances, data} = useERC20Balances()
@@ -34,7 +34,8 @@ export default function Balance(){
     }, [])
 
     
-    return(
+    
+        return(
         <CustomContainer>
             <Text mb="6" fontSize="xl" fontWeight="bold">ERC20 Balances: </Text>
             {ethBalance && <Text>{ethBalance} <b>ETH</b></Text>}
@@ -47,4 +48,6 @@ export default function Balance(){
             ))}
         </CustomContainer>
     )
+
+    
 }

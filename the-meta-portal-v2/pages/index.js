@@ -16,10 +16,9 @@ export default function Home() {
             
             {/* Search Bar */}
             <InputGroup maxW="500px" mx="auto" boxShadow='2px 2px 2px white' rounded='full'   >
-              <InputLeftElement
-                pointerEvents='none'
-                children={<SearchIcon color='white' />}
-              />
+              <InputLeftElement pointerEvents='none'>
+                <SearchIcon color='white' />
+              </InputLeftElement>
               <Input  variant='outline' rounded='full' bg="#121212"
                 _hover={{bg: 'gray.900', boxShadow: '3px 3px 3px white'}} _focus={{bg: '#121212'}} color="white"  
                 _placeholder={{color: 'white', position: "relative", top: "-3px", left: "-3px"}} 
@@ -28,7 +27,7 @@ export default function Home() {
             </InputGroup>
             
             {/* Dice Icon in Search Bar */}
-            <Container position="absolute" right="670px" top="185px" maxW="100px" mx="auto" boxSize='100px'>
+            <Container position="relative" h="25px" w="50px" left="220px" top="-33px" >
               <Box as="a" href="/"  >
                   <FaDice size="25" color="white"/>    
               </Box>

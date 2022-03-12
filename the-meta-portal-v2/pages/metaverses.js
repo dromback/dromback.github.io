@@ -81,7 +81,7 @@ const Metaverses = () => {
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called "Axies". 
+                                <Text fontSize="19">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called &#34;Axies&#34;. 
                                     Axies can be battled, collected, and used to earn cryptocurrency. It uses the native token $AXS.
                                 </Text>
                             </Box>    
@@ -114,7 +114,7 @@ const Metaverses = () => {
                             <Box position="relative" top="50px" color="white"  >
                                 <Text fontSize="19">Fortnite started as a Battle Royale game-type but has since become much more. 
                                     The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, 
-                                    Ariana Grande, and Travis Scott perform concerts in front of more than 78 million in-game spectators (in Ariana's case).
+                                    Ariana Grande, and Travis Scott perform concerts in front of more than 78 million in-game spectators (in Ariana&#39;s case).
                                 </Text>
                             </Box>    
                         </Box>      
@@ -177,8 +177,8 @@ const Metaverses = () => {
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="75px" color="white"  >
-                                <Text fontSize="19">Created by former Riot Games developers, Singularity 6 is a metaverse that's meant to provide 
-                                immersive experiences that are more than "just simple entertainment".
+                                <Text fontSize="19">Created by former Riot Games developers, Singularity 6 is a metaverse that&#39;s meant to provide 
+                                immersive experiences that are more than &#34;just simple entertainment&#34;.
                                 </Text>
                             </Box>    
                         </Box>      
@@ -209,7 +209,7 @@ const Metaverses = () => {
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Upland is a play-to-earn metaverse that's mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
+                                <Text fontSize="19">Upland is a play-to-earn metaverse that&#39;s mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
                                 properties that are mapped to real addressed. Users can earn both $UPX and U.S. dollars on the Upland platform.
                                 </Text>
                             </Box>    
@@ -321,7 +321,7 @@ const Metaverses = () => {
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="75px" color="white"  >
-                                <Text fontSize="19">CEEK is meant to be the creator's metaverse. It was made to connect music artists, 
+                                <Text fontSize="19">CEEK is meant to be the creator&#39;s metaverse. It was made to connect music artists, 
                                 athletes, and other content creators directly to their fans. Its native token is $CEEK.
                                 </Text>
                             </Box>    
@@ -354,7 +354,7 @@ const Metaverses = () => {
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="48px" color="white"  >
                                 <Text fontSize="19">SomniumSpace is a cross-platform based metaverse that runs on the Ethereum blockchain using the Matic layer 2 solution. SomniumSpace 
-                                represents that a user can "Live Forever" by automatically recording yourself on your own property for future AI analysis. Its native token is $CUBE.
+                                represents that a user can &#34;Live Forever&#34; by automatically recording yourself on your own property for future AI analysis. Its native token is $CUBE.
                                 </Text>
                             </Box>    
                         </Box>      
