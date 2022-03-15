@@ -8,13 +8,10 @@ import Search from "../components/Search";
 
 export default function Home() {
 
-  
-
-  
  
     return(
       <>
-        <Flex direction="column" width="100vw" height="100vh">
+        <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" >
           <Header />
           <Box flex="1" bg="#242323" px="44" py="20" >
             

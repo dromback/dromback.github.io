@@ -42,26 +42,28 @@ const Search = () => {
             </Container>
 
             {/* Search Results */}
-            <Container  w="1000px" maxW="1000px" py="4"  align="center" rounded="lg"  >
-                <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
-                
-                    {dataSearch.map((item, index) => {
-                        return(
-                            <Box mx="0" mb="1" px="1" h="400px" >
-                                <Box p="0" overflow="hidden" h="400px" bg="#121212" rounded="lg" >
-                                    <Box h="180px" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                                        <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
-                                    </Box>    
-                                    <Box>
-                                        <Text color="white" mt="2" mb="7" fontSize="20px">{item.title} </Text>
-                                        <Text color="white" ml="5" mr="5" align="left">{item.desc}</Text>
+            
+               <Container  w="1000px" maxW="1000px" py="4"  align="center" rounded="lg"  >
+                    <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
+                    
+                        {filter && dataSearch.map((item, index) => {
+                            return(
+                                <Box mx="0" mb="1" px="1" h="400px" >
+                                    <Box p="0" overflow="hidden" h="400px" bg="#121212" rounded="lg" >
+                                        <Box h="180px" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                            <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
+                                        </Box>    
+                                        <Box>
+                                            <Text color="white" mt="2" mb="7" fontSize="20px">{item.title} </Text>
+                                            <Text color="white" ml="5" mr="5" align="left">{item.desc}</Text>
+                                        </Box>
                                     </Box>
                                 </Box>
-                            </Box>
-                        )
-                    })}
-                </SimpleGrid>
-            </Container>
+                            )
+                        })}
+                    </SimpleGrid>
+                </Container>
+
         </>
     )
 }
