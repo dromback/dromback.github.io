@@ -31,7 +31,7 @@ export default function Header() {
                         </Box>
                     </Center>
                     <Center position="relative" left="1140px">
-                        <Link mr="5" href="/"  _hover={{color: "orange.400"}}>Home</Link>                    
+                        <Link mr="5" href="/"  _focus={{border: "orange.400"}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _hover={{color: "orange.400"}}>Marketplaces</Link>
                         <Link mr="5" href="/about" _hover={{color: "orange.400"}}>About</Link>
@@ -89,10 +89,10 @@ export default function Header() {
                         </Box>
                     </Center>
                     <Center position="relative" right="-1060px">
-                        <Link mr="5" href="/" _hover={{color: "orange.400"}}>Home</Link>                    
-                        <Link mr="5" href="/metaverses" _hover={{color: "orange.400"}}>Metaverses</Link>
-                        <Link mr="5" href="/marketplaces" _hover={{color: "orange.400"}}>Marketplaces</Link>
-                        <Link mr="5" href="/about" _hover={{color: "orange.400"}}>About</Link>
+                        <Link mr="5" href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
+                        <Link mr="5" href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
+                        <Link mr="5" href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
+                        <Link mr="5" href="/about" _focus={{}} _hover={{color: "orange.400"}}>About</Link>
                         <Menu>
                             <MenuButton ml="5"  >
                                 <AvatarGroup spacing='1rem' >
