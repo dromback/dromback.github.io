@@ -14,8 +14,6 @@
       "@emotion/react": "^11.8.1",
       "@emotion/styled": "^11.8.1",
       "@web3auth/web3auth": "^0.3.3",
-      "class-transformer": "^0.5.1",
-      "class-validator": "^0.13.2",
       "express": "^4.17.3",
       "framer-motion": "^6.2.8",
       "magic-sdk": "^8.0.1",

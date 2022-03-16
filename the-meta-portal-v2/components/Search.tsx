@@ -54,7 +54,7 @@ const Search = () => {
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
                                         <Box>
-                                            <Text color="white" mt="2" mb="7" fontSize="20px">{item.title} </Text>
+                                            <Text color="white" mt="2" mb="7" fontSize="20px" align="center">{item.title} </Text>
                                             <Text color="white" ml="5" mr="5" align="left">{item.desc}</Text>
                                         </Box>
                                     </Box>
