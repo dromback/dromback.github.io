@@ -43,7 +43,7 @@ const Search = () => {
 
             {/* Search Results */}
             
-               <Container  w="1000px" maxW="1000px" py="4"  align="center" rounded="lg"  >
+               <Container  w="1000px" maxW="1000px" py="4" rounded="lg"  >
                     <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
                     
                         {filter && dataSearch.map((item, index) => {
