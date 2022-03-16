@@ -26,7 +26,7 @@ const Metaverses = () => {
     const staratlas = "https://i.ibb.co/znMXKqD/staratlas.png"
     const ufo = "https://i.ibb.co/QKNqrsM/UFO.png"
     const ygg = "https://i.ibb.co/Sy5WbXr/ygg.jpg"
-    const metamon = "https://i.ibb.co/GsyF4SY/metamon.png"
+    const metamon = "https://i.ibb.co/f2XgVPX/metamon.png"
     const rfox = "https://i.ibb.co/yXGW64z/rfox.png"
     const solice = "https://i.ibb.co/8NyvpgJ/Solice.png"
     const wilder = "https://i.ibb.co/tqYJFpv/wilderworld.png"
@@ -42,9 +42,9 @@ const Metaverses = () => {
                 <SimpleGrid columns={2} spacingX='1px' spacingY='20px'>
                     
                     {/* Decentraland */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/decentraland'>
-                            <Image ml="6" position="relative" top="60px" left="59px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -57,9 +57,9 @@ const Metaverses = () => {
                     </Box>
                     
                     {/* The Sandbox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/the-sandbox'>
-                            <Image ml="6" position="relative" top="60px" left="48px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={sandbox} alt="The Sandbox"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={sandbox} alt="The Sandbox"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -74,9 +74,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Axie Infinity */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/axie-infinity'>
-                            <Image ml="6" position="relative" top="75px" left="72px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={axie} alt="Axie Infinity"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={axie} alt="Axie Infinity"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -90,9 +90,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Roblox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/roblox'>
-                            <Image ml="6" position="relative" top="90px" left="70px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -105,9 +105,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Fortnite */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/fortnite'>
-                            <Image ml="6" position="relative" top="55px" left="45px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={fortnite} alt="Fortnite"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={fortnite} alt="Fortnite"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -122,9 +122,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Minecraft */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/minecraft'>
-                            <Image ml="6" position="relative" top="50px" left="59px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -138,9 +138,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Bloktopia */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/bloktopia'>
-                            <Image ml="6" position="relative" top="100px" left="50px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={bloktopia} alt="Bloktopia"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={bloktopia} alt="Bloktopia"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -154,9 +154,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Highstreet */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/highstreet'>
-                            <Image ml="6" position="relative" top="60px" left="64px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
+                            <Image boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -170,9 +170,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Singularity6 */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/singularity6'>
-                            <Image ml="6" position="relative" top="95px" left="59px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={singularity6} alt="Singularity6"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={singularity6} alt="Singularity6"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -186,9 +186,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Portals */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/portals'>
-                            <Image ml="6" position="relative" top="100px" left="90px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={portals} alt="portals"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={portals} alt="portals"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -202,9 +202,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Upland */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/upland'>
-                            <Image ml="6" position="relative" top="95px" left="72px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={upland} alt="Upland"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={upland} alt="Upland"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -218,9 +218,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Metahero */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/metahero'>
-                            <Image ml="6" position="relative" top="90px" left="65px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={metahero} alt="Metahero"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metahero} alt="Metahero"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -234,9 +234,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Cryptovoxels */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/cryptovoxels'>
-                            <Image ml="6" position="relative" top="75px" left="46px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={cryptovoxels} alt="Cryptovoxels"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={cryptovoxels} alt="Cryptovoxels"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -250,9 +250,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* MOBOX */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/mobox'>
-                            <Image ml="6" position="relative" top="100px" left="90px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={mobox} alt="Mobox"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={mobox} alt="Mobox"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -266,9 +266,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Nakamoto */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/nakamoto-games'>
-                            <Image ml="6" position="relative" top="85px" left="53px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={nakamoto} alt="Nakamoto"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={nakamoto} alt="Nakamoto"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -282,9 +282,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Vulcan Forged */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/vulcan-forged'>
-                            <Image ml="6" position="relative" top="100px" left="70px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={vulcan} alt="Vulcan Forged"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={vulcan} alt="Vulcan Forged"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -298,9 +298,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Dvision Network */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/dvision-network'>
-                            <Image ml="6" position="relative" top="95px" left="100px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={dvision} alt="Dvision Network"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={dvision} alt="Dvision Network"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -314,9 +314,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* CEEK */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/ceek'>
-                            <Image ml="6" position="relative" top="87px" left="135px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={ceek} alt="CEEK"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ceek} alt="CEEK"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -330,9 +330,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* My Neighbor Alice */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/my-neighbor-alice'>
-                            <Image ml="6" position="relative" top="57px" left="85px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={alice} alt="My Neighbor Alice"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={alice} alt="My Neighbor Alice"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -346,9 +346,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Somnium Space */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/somnium-space'>
-                            <Image ml="6" position="relative" top="97px" left="90px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={somnium} alt="Somnium Space"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={somnium} alt="Somnium Space"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -362,9 +362,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Star Atlas */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/star-atlas'>
-                            <Image ml="6" position="relative" top="105px" left="60px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={staratlas} alt="Star Atlas"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={staratlas} alt="Star Atlas"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -378,9 +378,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* UFO Gaming */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/ufo-gaming'>
-                            <Image ml="6" position="relative" top="95px" left="130px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={ufo} alt="UFO Gaming"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ufo} alt="UFO Gaming"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -394,9 +394,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Yield Guild Games */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/ygg'>
-                            <Image ml="6" position="relative" top="74px" left="121px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={ygg} alt="Yield Guild Games"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ygg} alt="Yield Guild Games"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -410,9 +410,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Metamon */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/metamon'>
-                            <Image ml="6" position="relative" top="85px" left="25px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={metamon} alt="Metamon"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metamon} alt="Metamon"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -426,9 +426,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* RFox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/rfox'>
-                            <Image ml="6" position="relative" top="98px" left="95px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={rfox} alt="RFox"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={rfox} alt="RFox"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -442,9 +442,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Solice */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/solice'>
-                            <Image ml="6" position="relative" top="81px" left="77px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={solice} alt="Solice"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={solice} alt="Solice"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
@@ -458,9 +458,9 @@ const Metaverses = () => {
                     </Box>
 
                     {/* Wilder World */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                         <Box as="a" href='/metaverses/wilder-world'>
-                            <Image ml="6" position="relative" top="92px" left="145px" borderRadius="lg" boxShadow="2px 2px 2px black" src={wilder} alt="Wilder World"/>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={wilder} alt="Wilder World"/>
                         </Box>
                     </Box>
                     <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">

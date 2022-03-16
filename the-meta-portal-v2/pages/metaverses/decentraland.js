@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 
 const Decentraland = () => {
 
-    const decentraland = "https://static.wixstatic.com/media/3e1ac7_362d404f10954cbbb6124671c65152f4~mv2.png/v1/fill/w_235,h_131,al_c,usm_0.66_1.00_0.01,enc_auto/Decentraland.png"
+    const decentraland = "https://i.ibb.co/mzy4srq/Decentraland.png"
     
 
     return (

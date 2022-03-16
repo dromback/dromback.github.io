@@ -23,7 +23,7 @@
     const staratlas = "https://i.ibb.co/znMXKqD/staratlas.png"
     const ufo = "https://i.ibb.co/QKNqrsM/UFO.png"
     const ygg = "https://i.ibb.co/Sy5WbXr/ygg.jpg"
-    const metamon = "https://i.ibb.co/GsyF4SY/metamon.png"
+    const metamon = "https://i.ibb.co/f2XgVPX/metamon.png"
     const rfox = "https://i.ibb.co/yXGW64z/rfox.png"
     const solice = "https://i.ibb.co/8NyvpgJ/Solice.png"
     const wilder = "https://i.ibb.co/tqYJFpv/wilderworld.png"
