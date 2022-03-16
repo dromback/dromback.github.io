@@ -2,13 +2,13 @@ import { Box, Container, Image, Text } from "@chakra-ui/react";
 
 export default function CustomContainer(){
     
-    const decentraland = "https://static.wixstatic.com/media/3e1ac7_362d404f10954cbbb6124671c65152f4~mv2.png/v1/fill/w_235,h_131,al_c,usm_0.66_1.00_0.01,enc_auto/Decentraland.png"
-    const sandbox = "https://static.wixstatic.com/media/3e1ac7_a31d65c51cc74ccfb78665351a5ba3ec~mv2.png/v1/fill/w_264,h_131,al_c,usm_0.66_1.00_0.01,enc_auto/The%20Sandbox.png"
-    const roblox = "https://static.wixstatic.com/media/3e1ac7_62d601dd5d5a4fad950bcca1d3696645~mv2.png/v1/fill/w_219,h_67,al_c,usm_0.66_1.00_0.01,enc_auto/roblox.png"
-    const axie = "https://static.wixstatic.com/media/3e1ac7_0ef20537ccaa4aa1a135bbee471f6cab~mv2.png/v1/fill/w_200,h_99,al_c,lg_1,enc_auto/axie.png"
-    const fortnite = "https://static.wixstatic.com/media/3e1ac7_ce9c6d577eda44bf9007b6a983c244dd~mv2.jpg/v1/fill/w_264,h_149,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Fortnite-Logo_edited.jpg"
-    const minecraft = "https://static.wixstatic.com/media/3e1ac7_fe7378c976d4491487829be16f0582b7~mv2.jpg/v1/crop/x_0,y_0,w_183,h_129/fill/w_213,h_149,al_c,lg_1,q_80,enc_auto/minecraft_jfif.jpg"
 
+    const decentraland = "https://i.ibb.co/VQh7h3V/Decentraland-thumb.png"
+    const sandbox = "https://i.ibb.co/Thtqp22/The-Sandbox-thumb.png"
+    const roblox = "https://i.ibb.co/8DFhXG4/roblox-thumb.png"
+    const axie = "https://i.ibb.co/hB0QXQz/axie-thumb.png"
+    const fortnite = "https://i.ibb.co/ZNhqXF4/Fortnite-Logo-thumb.png"
+    const minecraft = "https://i.ibb.co/9gjYx15/minecraft-thumb.png"
 
     return(
 
@@ -42,7 +42,7 @@ export default function CustomContainer(){
                 {/* Column 2 */}
                 <Box w="175px" h="120px" mt="1" ml="1" position="relative" top="-372px" left="175px" _hover={{bg: '#121212'}}>
                     <Box as="a" href="/metaverses/minecraft" >
-                        <Image ml="6" position="relative" w="auto" h="80px" top="10px" left="5px" maxW="70%" borderRadius="lg" 
+                        <Image ml="6" position="relative" objectFit="cover" w="auto" h="80px" top="10px" left="5px" maxW="70%" borderRadius="lg" 
                             boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
                         <Text position="relative" top="10px" left="55px" color="white">Minecraft</Text>
                     </Box>

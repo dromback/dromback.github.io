@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Box, Center, CloseButton, Container, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Box, Center, CloseButton, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import Moralis from "moralis";
 import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
@@ -9,7 +9,7 @@ import { useMoralis } from "react-moralis";
 export default function Header() {
     const {user, isAuthenticated, authenticate, isAuthenticating, logout, authError, isLoggingOut } = useMoralis();
     
-    const Logo = 'https://static.wixstatic.com/media/3e1ac7_eb373f0c866f45a3bbdd48188ef4c8b6~mv2.png/v1/crop/x_0,y_1381,w_5000,h_2190/fill/w_210,h_92,al_c,q_85,usm_0.66_1.00_0.01/Original.webp'
+    const Logo = 'https://i.ibb.co/NK4D5QS/Logo-header.png'
 
     const [username, setUsername] = useState(user && user.attributes.username);
     const [email, setEmail] = useState(user && user.attributes.email);
