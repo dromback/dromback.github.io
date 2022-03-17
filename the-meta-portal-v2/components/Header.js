@@ -83,12 +83,11 @@ export default function Header() {
         return(
             <header>
                 <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" bg="#121212" color="white">
-                    <Box display="flex" flexDirection="column" position="absolute" left="0" px="4" >
+                    <Box display="flex" flexDirection="column" position="relative" left="0" px="4" justifyContent="center" >
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
-                    </Box>
-                    <Box position="absolute" right="0" px="10" >
+                        <Box position="absolute" right="0" px="10"  >
                         <Link mr="5" href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
@@ -110,6 +109,8 @@ export default function Header() {
                             </MenuList>
                         </Menu>
                     </Box>
+                    </Box>
+                    
                 </Flex>
             </header>
         )
