@@ -24,13 +24,13 @@ export default function Header() {
     if(!isAuthenticated){
         return(
             <header>
-                <Flex direction="column" width="100vw" height="100vh" overflowX="hidden"  bg="#121212" color="white">
-                    <Center>
+                <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" bg="#121212" color="white">
+                    <Box display="flex" flexDirection="column" position="absolute" left="0" px="4" >
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
-                    </Center>
-                    <Center position="relative" left="1140px">
+                    </Box>
+                    <Box position="absolute" right="0" px="10" >
                         <Link mr="5" href="/"  _focus={{border: "orange.400"}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _hover={{color: "orange.400"}}>Marketplaces</Link>
@@ -59,7 +59,7 @@ export default function Header() {
                                 </MenuList>
                             </Menu>
 
-                    </Center>
+                    </Box>
                     
                     
                     {authError && <Alert status='error' w="300px" position="relative" top="100px" left="830px">
@@ -82,13 +82,13 @@ export default function Header() {
 
         return(
             <header>
-                <Flex px="15" py="1" bg="#121212" color="white">
-                    <Center>
+                <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" bg="#121212" color="white">
+                    <Box display="flex" flexDirection="column" position="absolute" left="0" px="4" >
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
-                    </Center>
-                    <Center position="relative" right="-1060px">
+                    </Box>
+                    <Box position="absolute" right="0" px="10" >
                         <Link mr="5" href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
@@ -109,7 +109,7 @@ export default function Header() {
                                  onClick={logout} disabled={isLoggingOut}>Logout</MenuItem>
                             </MenuList>
                         </Menu>
-                    </Center>
+                    </Box>
                 </Flex>
             </header>
         )

@@ -21,7 +21,7 @@ const Search = () => {
     return (
         <>
             {/* Search Bar */}
-            <InputGroup maxW="26vw" mx="auto" boxShadow='2px 2px 2px white' rounded='full' >
+            <InputGroup maxW="26vw" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" flexDirection="column" alignItems="center" >
               <InputLeftElement pointerEvents='none'>
                 <SearchIcon color='white' />
               </InputLeftElement>
@@ -43,7 +43,7 @@ const Search = () => {
 
             {/* Search Results */}
             
-               <Container  w="52vw" maxW="52vw" py="4" rounded="lg"  >
+               <Container  w="52vw" maxW="52vw" py="4" rounded="lg" display="flex" flexDirection="column" alignItems="center" >
                     <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
                     
                         {filter && dataSearch.map((item, index) => {
