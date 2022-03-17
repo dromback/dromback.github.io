@@ -24,7 +24,7 @@ export default function Header() {
     if(!isAuthenticated){
         return(
             <header>
-                <Flex px="15" py="1"  bg="#121212" color="white">
+                <Flex direction="column" width="100vw" height="100vh" overflowX="hidden"  bg="#121212" color="white">
                     <Center>
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>

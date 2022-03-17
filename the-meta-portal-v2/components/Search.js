@@ -21,7 +21,7 @@ const Search = () => {
     return (
         <>
             {/* Search Bar */}
-            <InputGroup maxW="500px" mx="auto" boxShadow='2px 2px 2px white' rounded='full' >
+            <InputGroup maxW="26vw" mx="auto" boxShadow='2px 2px 2px white' rounded='full' >
               <InputLeftElement pointerEvents='none'>
                 <SearchIcon color='white' />
               </InputLeftElement>
@@ -30,7 +30,7 @@ const Search = () => {
                  variant='outline' rounded='full' bg="#121212"
                 _hover={{bg: 'gray.900', boxShadow: '3px 3px 3px white'}} _focus={{bg: '#121212'}} color="white"  
                 _placeholder={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} 
-                textAlign="center" placeholder="Search the metaverse" fontSize="1.2em" 
+                textAlign="center" placeholder="Search the metaverse" fontSize="1vw" 
               />
             </InputGroup>
             
@@ -43,7 +43,7 @@ const Search = () => {
 
             {/* Search Results */}
             
-               <Container  w="1000px" maxW="1000px" py="4" rounded="lg"  >
+               <Container  w="52vw" maxW="52vw" py="4" rounded="lg"  >
                     <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
                     
                         {filter && dataSearch.map((item, index) => {
