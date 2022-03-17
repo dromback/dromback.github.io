@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Image, Text } from "@chakra-ui/react";
 import Header from "../../components/Header";
 
 
@@ -10,6 +10,7 @@ const Decentraland = () => {
 
     return (
         <><>
+            <title>The Meta Portal | Metaverses | Decentraland</title>
             <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
                 <Header />
                 <Box flex="1"  bg="#242323"  px="44" py="20" >

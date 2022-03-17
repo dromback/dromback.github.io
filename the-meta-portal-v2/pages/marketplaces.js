@@ -10,6 +10,7 @@ const Marketplaces = () => {
 
     return (
         <><>
+            <title>The Meta Portal | Marketplaces</title>
             <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
                 <Header />
                 <Box flex="1" bg="#242323"  px="44" py="20" >

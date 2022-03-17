@@ -19,6 +19,7 @@ const Login = () => {
     if(!isAuthenticated ){
         return (
         <><>
+            <title>The Meta Portal | Login</title>
             <Flex direction="column" width="100vw" height="100vh">
                 <Header />
                 <Box flex="1" bg="#242323" px="44" py="20" >
