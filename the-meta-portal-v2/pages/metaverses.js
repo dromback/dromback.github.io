@@ -39,6 +39,7 @@ const Metaverses = () => {
             <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
                 <Header />
                 <Box flex="1"  bg="#242323"  px="44" py="20" >
+                <h1>The Meta Portal - Metaverses</h1>
                     <Text fontSize="60" color="white" mb="10">Popular Metaverses</Text>
                 <SimpleGrid columns={2} spacingX='1px' spacingY='20px'>
                     
