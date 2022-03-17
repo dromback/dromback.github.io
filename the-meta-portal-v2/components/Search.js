@@ -29,8 +29,8 @@ const Search = () => {
                  value={filter} onChange={searchText.bind(this)}
                  variant='outline' rounded='full' bg="#121212"
                 _hover={{bg: 'gray.900', boxShadow: '3px 3px 3px white'}} _focus={{bg: '#121212'}} color="white"  
-                _placeholder={{color: 'white', position: "relative", top: "-3px", left: "-3px"}} 
-                textAlign="center" placeholder="Search the metaverse" fontSize="20" 
+                _placeholder={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} 
+                textAlign="center" placeholder="Search the metaverse" fontSize="1.2em" 
               />
             </InputGroup>
             

@@ -13,14 +13,14 @@ export default function CustomContainer(){
     return(
 
         <Box>
-                <Container  px="20" py="0" mt="5" maxH="450px" position="relative" top="20px">
+                <Container  px="20" py="0" mt="5" maxH="50vh" position="relative" top="20%">
                 {/* Title */}
                 <Box mb="5">
-                  <Text textAlign="center" fontSize="40" color="white">Trending</Text>
+                  <Text textAlign="center" fontSize="2vw" color="white">Trending</Text>
                 </Box>
 
                 {/* Column 1 */}
-                <Box w="175px" h="120px" mt="1" _hover={{bg: '#121212'}}>
+                <Box w="175px" h="120px" mt="1" _hover={{bg: '#121212'}} >
                     <Box as="a" href="/metaverses/decentraland" >
                         <Image ml="6" position="relative" top="12px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
                         <Text position="relative" top="15px" left="43px" color="white">Decentraland</Text>
