@@ -51,7 +51,7 @@ const Search = () => {
                                 // eslint-disable-next-line react/jsx-key
                                 <Box mx="0" mb="1" px="1" h="400px" >
                                     <Box p="0" overflow="hidden" h="400px" bg="#121212" rounded="lg" >
-                                        <Box h="180px" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                        <Box as="a" href={item.link} h="180px" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
                                         <Box>
