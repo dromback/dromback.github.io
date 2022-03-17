@@ -11,6 +11,7 @@ export default function Home() {
  
     return(
       <>
+        <title>The Meta Portal</title>
         <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" >
           <Header />
           <Box flex="1" bg="#242323" px="44" py="20" >
