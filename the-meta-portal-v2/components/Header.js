@@ -29,7 +29,8 @@ export default function Header() {
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
-                        <Box position="absolute" right="0" px="10"  >
+                    </Box>
+                    <Box position="absolute" right="0" px="10"  >
                         <Link mr="5" href="/"  _focus={{border: "orange.400"}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _hover={{color: "orange.400"}}>Marketplaces</Link>
@@ -59,7 +60,6 @@ export default function Header() {
                             </Menu>
 
                         </Box>
-                    </Box>
                     
                     
                     
@@ -88,12 +88,13 @@ export default function Header() {
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
-                        <Box position="absolute" right="0" px="10"  >
+                    </Box>
+                    <Box position="absolute" right="0" px="10"  >
                         <Link mr="5" href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link mr="5" href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link mr="5" href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
                         <Link mr="5" href="/about" _focus={{}} _hover={{color: "orange.400"}}>About</Link>
-                        <Menu>
+                    <Menu>
                             <MenuButton ml="5"  >
                                 <AvatarGroup spacing='1rem' >
                                     <Avatar name={Moralis.User.current().attributes.username} borderColor='orange.400' bg="orange.400" />                                
@@ -109,7 +110,6 @@ export default function Header() {
                                  onClick={logout} disabled={isLoggingOut}>Logout</MenuItem>
                             </MenuList>
                         </Menu>
-                    </Box>
                     </Box>
                     
                 </Flex>
