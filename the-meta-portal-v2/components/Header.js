@@ -24,8 +24,8 @@ export default function Header() {
     if(!isAuthenticated){
         return(
             <header>
-                <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" bg="#121212" color="white">
-                    <Box display="flex" flexDirection="column" position="relative" left="0" px="4" justifyContent="center" >
+                <Flex display="flex" flexDirection="column" w="100vw" h="11vh" justifyContent="center" overflowX="hidden" overflowY="hidden" bg="#121212" color="white">
+                    <Box display="flex" flexDirection="column" position="relative" left="0" px="4" justifyContent="center"  >
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                         </Box>
@@ -83,7 +83,7 @@ export default function Header() {
 
         return(
             <header>
-                <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" bg="#121212" color="white">
+                <Flex display="flex" flexDirection="column" width="100vw" h="11vh" justifyContent="center" overflowX="hidden" overflowY="hidden" bg="#121212" color="white">
                     <Box display="flex" flexDirection="column" position="relative" left="0" px="4" justifyContent="center" >
                         <Box as="a" href="/">
                             <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
