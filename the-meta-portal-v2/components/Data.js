@@ -37,7 +37,7 @@ const data = {
             link: '/metaverses/decentraland',
             title: 'Decentraland',
             desc: 'Decentraland is a metaverse platform built on the Ethereum network. It allows its users to create, explore, and trade in their self-proclaimed "first-ever virtual world owned by its users." Decentraland operates under its native token $MANA.',
-            tags: ''
+            tags: 'game'
         },
         {
             id:2,
@@ -45,7 +45,7 @@ const data = {
             link: '/metaverses/the-sandbox',
             title: 'The Sandbox',
             desc: 'The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Metakovan (of Beeple NFT notoriety), Deadmau5 , and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.',
-            tags: ''
+            tags: 'game'
         },
         {
             id:3,
@@ -53,7 +53,7 @@ const data = {
             link: '/metaverses/roblox',
             title: 'Roblox',
             desc: 'Roblox is a metaverse of millions of open source, community created immersive 3D experiences. It too has had superstar concerts with Lil Nas X drawing in more than 33 million viewers. It is accessible through any device.',
-            tags: ''
+            tags: 'game'
         },
         {
             id:4,
@@ -61,7 +61,7 @@ const data = {
             link: '/metaverses/axie-infinity',
             title: 'Axie Infinity',
             desc: 'Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called "Axies". Axies can be battled, collected, and used to earn cryptocurrency. It uses the native token $AXS.',
-            tags: ''
+            tags: 'game'
         },
         {
             id:5,
@@ -69,7 +69,7 @@ const data = {
             link: '/metaverses/fortnite',
             title: 'Fortnite',
             desc: 'Fortnite started as a Battle Royale game-type but has since become much more. The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, Ariana Grande, and Travis Scott perform concerts in front of more than 78 million concurrent in-game spectators.',
-            tags: ''
+            tags: 'game'
         }, 
         {
             id:6,
@@ -77,7 +77,7 @@ const data = {
             link: '/metaverses/minecraft',
             title: 'Minecraft',
             desc: 'Minecraft is a creative sandbox game that allows its users to create virtually limitless pixelated worlds. It is one of the most popular metaverses of all time.',
-            tags: ''
+            tags: 'game'
         }, 
         {
             id:7,
@@ -117,7 +117,7 @@ const data = {
             link: '/metaverses/upland',
             title: 'Upland',
             desc: 'Upland is a play-to-earn metaverse mapped to the real world. Upland allows its users to buy, sell, and trade virtual properties that are mapped to real addressed. Users can earn both $UPX and U.S. dollars on the Upland platform.',
-            tags: ''
+            tags: 'game'
         }, 
         {
             id:12,
@@ -157,7 +157,7 @@ const data = {
             link: '/metaverses/vulcan-forged',
             title: 'Vulcan Forged',
             desc: 'The Vulcan Forged metaverse is built upon a play-to-earn ecosystem and NFT marketplace. Vulcan Forged runs on the Ethereum blockchain. $PYR is its native token.',
-            tags: ''
+            tags: 'game'
         }, 
         {
             id:17,
@@ -173,7 +173,7 @@ const data = {
             link: '/metaverses/ceek',
             title: 'CEEK',
             desc: 'CEEK is meant to be the creators metaverse. It was made to connect music artists, athletes, and other content creators directly to their fans. Its native token is $CEEK.',
-            tags: 'concerts'
+            tags: 'concerts sports'
         }, 
         {
             id:19,
