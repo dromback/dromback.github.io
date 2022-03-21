@@ -36,7 +36,6 @@ export default function Home() {
         <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" >
           <Header />
           <Box flex="1" bg="#242323" px="44" py="20" >
-          <h1>The Meta Portal - Your portal to the metaverse</h1>
             {/* Search Bar */}
             <Search />
             

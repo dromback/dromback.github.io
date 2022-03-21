@@ -14,7 +14,6 @@ const Decentraland = () => {
             <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
                 <Header />
                 <Box flex="1"  bg="#242323"  px="44" py="20" >
-                <h1>The Meta Portal | Metaverses | Decentraland</h1>
                     <Container>
                             <Box bg='#121212' position="relative" right="400px" rounded="lg" width='400px' height='250px' borderWidth="thin" borderColor="gray.700">
                                 <Image ml="6" position="relative" top="60px" left="59px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
