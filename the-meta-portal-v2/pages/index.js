@@ -33,7 +33,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
-        <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" >
+        <Flex direction="column" maxW="100vw" height="100vh" overflowX="hidden" >
           <Header />
           <Box flex="1" bg="#242323" px="44" py="20" >
             {/* Search Bar */}

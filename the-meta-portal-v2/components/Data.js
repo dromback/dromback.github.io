@@ -27,6 +27,8 @@
     const rfox = "https://i.ibb.co/yXGW64z/rfox.png"
     const solice = "https://i.ibb.co/8NyvpgJ/Solice.png"
     const wilder = "https://i.ibb.co/tqYJFpv/wilderworld.png"
+    const illuvium = "https://i.ibb.co/kGhMG1s/illuvium.png"
+    const godsunchained = "https://i.ibb.co/fMDT1Yn/Gods-Unchained.png"
 
 
 const data = {
@@ -245,8 +247,24 @@ const data = {
             link: '/metaverses/wilder-world',
             title: 'Wilder World',
             desc: 'Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land . $WILD is its native token.',
-            tags: ''
-        } 
+            tags: 'game cars'
+        },
+        {
+            id:28,
+            img: illuvium,
+            link: '/metaverses/illuvium',
+            title: 'Illuvium',
+            desc: 'An open-world RPG adventure game built on the Ethereum Blockchain. Users draft teams to start with and then collect even more to develop and battle with. $ILV is its native token.',
+            tags: 'game'
+        }, 
+        {
+            id:29,
+            img: godsunchained,
+            link: '/metaverses/gods-unchained',
+            title: 'Gods Unchained',
+            desc: 'Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game that gives the ownership to the players. $GODS is its native ERC-20 token.',
+            tags: 'game Ethereum'
+        }
     ]
 }
 export default data;

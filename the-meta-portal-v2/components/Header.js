@@ -24,12 +24,12 @@ export default function Header() {
     if(!isAuthenticated){
         return(
             <header>
-                <Flex h={24} alignItems={"center"} justifyContent={"space-between"} overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
-                    <HStack ml="5" spacing={1170} alignItems={"center"} >
+                <Flex h="24" alignItems="center" justifyContent="space-between" overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
+                    <HStack ml="5" spacing="1170" alignItems="center" >
                             <Box as="a" href="/">
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
-                    <HStack as={"nav"} spacing={5} display={{ base: "none", md: "flex" }}  >
+                    <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }}  >
                         <Link href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
@@ -82,12 +82,12 @@ export default function Header() {
 
         return(
             <header>
-                <Flex h={24} alignItems={"center"} justifyContent={"space-between"} overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
-                    <HStack ml="5" spacing={1170} alignItems={"center"} >
+                <Flex h="24" alignItems="center" justifyContent="space-between" overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
+                    <HStack ml="5" spacing="1170" alignItems="center">
                             <Box as="a" href="/">
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
-                    <HStack as={"nav"} spacing={5} display={{ base: "none", md: "flex" }}  >
+                    <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }}  >
                         <Link href="/" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>                    
                         <Link href="/metaverses" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                         <Link href="/marketplaces" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>

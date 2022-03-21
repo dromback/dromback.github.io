@@ -30,6 +30,8 @@ const Metaverses = () => {
     const rfox = "https://i.ibb.co/yXGW64z/rfox.png"
     const solice = "https://i.ibb.co/8NyvpgJ/Solice.png"
     const wilder = "https://i.ibb.co/tqYJFpv/wilderworld.png"
+    const illuvium = "https://i.ibb.co/kGhMG1s/illuvium.png"
+    const godsunchained = "https://i.ibb.co/fMDT1Yn/Gods-Unchained.png"
     
 
 
@@ -468,7 +470,39 @@ const Metaverses = () => {
                         <Box w="700px" h="200px"  >
                             <Box position="relative" top="60px" color="white"  >
                                 <Text fontSize="19">Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. 
-                                Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land . $WILD is its native token.
+                                Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land. $WILD is its native token.
+                                </Text>
+                            </Box>    
+                        </Box>      
+                    </Box>
+
+                    {/* Illuvium */}
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                        <Box as="a" href='/metaverses/illuvium'>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={illuvium} alt="Illuvium"/>
+                        </Box>
+                    </Box>
+                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
+                        <Box w="700px" h="200px"  >
+                            <Box position="relative" top="60px" color="white"  >
+                                <Text fontSize="19">An open-world RPG adventure game built on the Ethereum Blockchain. 
+                                Users draft teams to start with and then collect even more to develop and battle with. $ILV is its native token.
+                                </Text>
+                            </Box>    
+                        </Box>      
+                    </Box>
+
+                    {/* Gods Unchained */}
+                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                        <Box as="a" href='/metaverses/gods-unchained'>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={godsunchained} alt="Gods Unchained"/>
+                        </Box>
+                    </Box>
+                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
+                        <Box w="700px" h="200px"  >
+                            <Box position="relative" top="60px" color="white"  >
+                                <Text fontSize="19">Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game 
+                                    that gives the ownership to the players. $GODS is its native ERC-20 token.
                                 </Text>
                             </Box>    
                         </Box>      
