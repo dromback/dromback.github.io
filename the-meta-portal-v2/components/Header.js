@@ -25,7 +25,7 @@ export default function Header() {
         return(
             <header>
                 <Flex h="24" alignItems="center" justifyContent="space-between" overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
-                    <HStack ml="5" spacing="1170" alignItems="center" >
+                    <HStack ml="5" spacing="73em" alignItems="center" >
                             <Box as="a" href="/">
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
@@ -83,7 +83,7 @@ export default function Header() {
         return(
             <header>
                 <Flex h="24" alignItems="center" justifyContent="space-between" overflowX="hidden" overflowY="hidden" bg="#121212" color="white" >
-                    <HStack ml="5" spacing="1170" alignItems="center">
+                    <HStack ml="5" spacing="73em" alignItems="center">
                             <Box as="a" href="/">
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
