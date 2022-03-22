@@ -1,6 +1,6 @@
 import { Box, Container, Grid, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
-export default function CustomContainer(){
+export default function Trending(){
     
 
     const decentraland = "https://i.ibb.co/VQh7h3V/Decentraland-thumb.png"
@@ -12,7 +12,7 @@ export default function CustomContainer(){
 
     return(
 
-        <Box maxW="100em" minH="30em" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >   
+        <Box mx="auto" maxW="50em" minH="30em" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >   
                     {/* Title */}
                     <Box mb="5"  >
                     <Text textAlign="center" fontSize="2.5em" color="white">Trending</Text>

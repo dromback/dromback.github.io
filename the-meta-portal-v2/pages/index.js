@@ -1,5 +1,5 @@
 
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Center, Flex } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Trending from "../components/Trending";
 import Search from "../components/Search";
@@ -35,7 +35,7 @@ export default function Home() {
         </Head>
         <Flex direction="column" maxW="100vw" minH="100vh"  >
           <Header />
-          <Box flex="1" bg="#242323" px="44" py="20">
+          <Box flex="1" bg="#242323" px="0" py="5em"  >
             {/* Search Bar */}
             <Search />
             
