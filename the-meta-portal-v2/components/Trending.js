@@ -1,4 +1,4 @@
-import { Box, Container, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Grid, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
 export default function CustomContainer(){
     
@@ -12,58 +12,80 @@ export default function CustomContainer(){
 
     return(
 
-        <Box>
-                <Container  px="20" py="0" mt="5" maxH="50vh" position="relative" top="20%">
-                {/* Title */}
-                <Box mb="5">
-                  <Text textAlign="center" fontSize="2vw" color="white">Trending</Text>
-                </Box>
+        <Box maxW="100em" minH="30em" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >   
+                    {/* Title */}
+                    <Box mb="5"  >
+                    <Text textAlign="center" fontSize="2.5em" color="white">Trending</Text>
+                    </Box>
 
-                {/* Column 1 */}
-                <Box w="175px" h="120px" mt="1" _hover={{bg: '#121212'}} >
-                    <Box as="a" href="/metaverses/decentraland" >
-                        <Image ml="6" position="relative" top="12px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
-                        <Text position="relative" top="15px" left="43px" color="white">Decentraland</Text>
-                    </Box>
-                </Box>
-                <Box w="175px" h="120px" mt="1" _hover={{bg: '#121212'}}>
-                    <Box as="a" href="/metaverses/the-sandbox" >
-                        <Image ml="6" position="relative" top="15px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={sandbox} alt="The Sandbox"/>
-                        <Text position="relative" top="20px" left="44px" color="white">The Sandbox</Text>
-                    </Box>
-                </Box>
-                <Box w="175px" h="120px" mt="1" _hover={{bg: '#121212'}}>
-                    <Box as="a" href="/metaverses/roblox" >
-                        <Image ml="6" position="relative" top="30px" maxW="75%" borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
-                        <Text position="relative" top="35px" left="65px" color="white">Roblox</Text>
-                    </Box>
-                </Box>
-                                
-                {/* Column 2 */}
-                <Box w="175px" h="120px" mt="1" ml="1" position="relative" top="-372px" left="175px" _hover={{bg: '#121212'}}>
-                    <Box as="a" href="/metaverses/minecraft" >
-                        <Image ml="6" position="relative" objectFit="cover" w="auto" h="80px" top="10px" left="5px" maxW="70%" borderRadius="lg" 
-                            boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
-                        <Text position="relative" top="10px" left="55px" color="white">Minecraft</Text>
-                    </Box>
-                </Box>
-                <Box w="175px" h="120px" mt="1" ml="1" position="relative"  top="-372px" left="175px" _hover={{bg: '#121212'}}>
-                    <Box as="a" href="/metaverses/fortnite" >
-                        <Image ml="6" position="relative" top="12px" left="3px" w="auto" h="68px" maxW="75%" borderRadius="lg" 
-                            boxShadow="2px 2px 2px black" src={fortnite} alt="Fortnite"/>
-                        <Text position="relative" top="15px" left="60px" color="white">Fortnite</Text>
-                    </Box>
-                </Box>
-                 
-                <Box w="175px" h="120px" mt="1" ml="1" position="relative" top="-372px" left="175px" _hover={{bg: '#121212'}}>
-                    <Box as="a" href="/metaverses/axie-infinity" >
-                        <Image ml="6" position="relative" top="15px" left="2px" w="auto" h="62px" maxW="75%" borderRadius="lg" 
-                            boxShadow="2px 2px 2px black" src={axie} alt="Axie Infinity"/>
-                        <Text position="relative" top="21px" left="46px" color="white">Axie Infinity</Text>
-                    </Box>
-                </Box>
-
-              </Container>
+                    <SimpleGrid columns={2} spacingX='2' spacingY='2' >
+                        {/* Column 1 */}
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/decentraland"  >
+                                <Box  h="20" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
+                                </Box>
+                                <Box mt="2" >
+                                    <Text color="white" textAlign="center" >Decentraland</Text>
+                                </Box>
+                            </Box>
+                            
+                        </Box>
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/roblox" >
+                                <Box h="20"  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
+                                </Box>
+                                <Box mt="2">
+                                    <Text color="white" textAlign="center">Roblox</Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/the-sandbox" >
+                                <Box h="20"  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={sandbox} alt="The Sandbox"/>
+                                </Box >
+                                <Box mt="2">
+                                    <Text color="white" textAlign="center" >The Sandbox</Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                        
+                                        
+                        {/* Column 2 */}
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/minecraft" maxW="90%" >
+                                <Box h="20"  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
+                                </Box>  
+                                <Box mt="2">
+                                    <Text color="white" textAlign="center">Minecraft</Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/fortnite" >
+                                <Box h="20" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={fortnite} alt="Fortnite"/>
+                                </Box>
+                                <Box mt="2">
+                                    <Text color="white" textAlign="center">Fortnite</Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                        
+                        <Box w="10em"  py="3" _hover={{bg: '#121212'}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                            <Box as="a" href="/metaverses/axie-infinity" >
+                                <Box h="20" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={axie} alt="Axie Infinity"/>
+                                </Box>
+                                <Box mt="2">
+                                    <Text color="white" textAlign="center">Axie Infinity</Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                    </SimpleGrid>
         </Box>
         
     )

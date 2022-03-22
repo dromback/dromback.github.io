@@ -32,13 +32,14 @@ const Search = () => {
                 _placeholder={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} 
                 textAlign="center" placeholder="Search the metaverse" fontSize="1vw" 
               />
+              
             </InputGroup>
             
             {/* Dice Icon in Search Bar */}
-            <Container position="relative" h="25px" w="50px" left="220px" top="-33px" >
-              <Box as="a" href="/"  >
-                  <FaDice size="25" color="white"/>    
-              </Box>
+            <Container position="relative" left="450" top="-8" >
+                <Box as="a" href="/"  >
+                  {/* <FaDice size="25" color="white"/>     */}
+                </Box>
             </Container>
 
             {/* Search Results */}
@@ -50,8 +51,8 @@ const Search = () => {
                             return(
                                 // eslint-disable-next-line react/jsx-key
                                 <Box mx="0" mb="1" px="1" h="400px" >
-                                    <Box p="0" overflow="hidden" h="400px" bg="#121212" rounded="lg" >
-                                        <Box as="a" href={item.link} h="180px" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                                    <Box p="0" overflow="hidden" h="400" bg="#121212" rounded="lg" >
+                                        <Box as="a" href={item.link} h="180" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
                                         <Box>
