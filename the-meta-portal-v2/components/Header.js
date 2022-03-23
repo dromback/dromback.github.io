@@ -64,7 +64,7 @@ export default function Header() {
                         </Flex>
 
                         {/* Mobile */}
-                        <IconButton aria-label="Open Menu" size="lg" mr={2}
+                        <IconButton aria-label="Open Menu" size="lg" mr={2} variant="outline" borderColor='orange.400' color="orange.400"
                             icon={ <HamburgerIcon /> } onClick={() => changeDisplay('flex')} display={['flex', 'flex', 'none', 'none']}
                         />
                         
@@ -171,8 +171,8 @@ export default function Header() {
                         </Flex>
 
                         {/* Mobile */}
-                        <IconButton aria-label="Open Menu" size="lg" mr={2}
-                            icon={ <HamburgerIcon /> } onClick={() => changeDisplay('flex')} display={['flex', 'flex', 'none', 'none']}
+                        <IconButton aria-label="Open Menu" size="lg" mr={2} bg="#121212" variant="outline" borderColor='orange.400' color="orange.400"
+                            icon={ <HamburgerIcon  /> } onClick={() => changeDisplay('flex')} display={['flex', 'flex', 'none', 'none']}
                         />
                         
                     </Flex>
