@@ -21,7 +21,7 @@ const Search = () => {
     return (
         <>
             {/* Search Bar */}
-            <InputGroup maxW="26vw" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" flexDirection="column" alignItems="center" >
+            <InputGroup maxW="27%" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" justifyContent="space-between" alignItems="center" >
               <InputLeftElement pointerEvents='none'>
                 <SearchIcon color='white' />
               </InputLeftElement>
@@ -45,7 +45,7 @@ const Search = () => {
             {/* Search Results */}
             
                <Container  w="52vw" maxW="52vw" py="4" rounded="lg" display="flex" flexDirection="column" alignItems="center" >
-                    <SimpleGrid columns={2} spacingX='1px' spacingY='5px' >
+                    <SimpleGrid columns={2} spacingX='1' spacingY='2' >
                     
                         {filter && dataSearch.map((item, index) => {
                             return(
@@ -56,7 +56,7 @@ const Search = () => {
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
                                         <Box>
-                                            <Text color="white" mt="2" mb="7" fontSize="20px" align="center">{item.title} </Text>
+                                            <Text color="white" mt="2" mb="7" fontSize="1.2rem" align="center">{item.title} </Text>
                                             <Text color="white" ml="5" mr="5" align="left">{item.desc}</Text>
                                         </Box>
                                     </Box>
