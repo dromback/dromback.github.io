@@ -1,5 +1,8 @@
 import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import Header from "../components/Header";
+import Mvcol1 from "../components/mvBoxes/Mvcol1";
+import Mvcol2 from "../components/mvBoxes/Mvcol2";
+
 
 const Metaverses = () => {
 
@@ -38,478 +41,421 @@ const Metaverses = () => {
     return (
         <><>
             <title>The Meta Portal | Metaverses</title>
-            <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
+            <Flex direction="column" maxW="100vw" minH="100vh"  >
                 <Header />
-                <Box flex="1"  bg="#242323"  px="44" py="20" >
-                    <Text fontSize="60" color="white" mb="10">Popular Metaverses</Text>
-                <SimpleGrid columns={2} spacingX='1px' spacingY='20px'>
+                <Box flex="1" bg="#242323" px="40" py="5em">
+                    <Text fontSize="3vw" color="white" mb="10">Popular Metaverses</Text>
+                
+                
                     
                     {/* Decentraland */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/decentraland'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                            <Text fontSize="19">Decentraland is a metaverse platform built on the Ethereum network. It allows its users to create, explore, and trade 
-                                in their self-proclaimed first-ever virtual world owned by its users. Decentraland operates under its native token $MANA.</Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/decentraland'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Decentraland is a metaverse platform built on the Ethereum network. It allows its users to create, explore, and trade 
+                                in their self-proclaimed first-ever virtual world owned by its users. Decentraland operates under its native token $MANA.
+                            </Text>
+                        </Mvcol2>
+                    </Flex>
                     
                     {/* The Sandbox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                    <Flex mb="5">
+                    <Mvcol1>
                         <Box as="a" href='/metaverses/the-sandbox'>
                             <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={sandbox} alt="The Sandbox"/>
                         </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="30px" color="white"  >
-                                <Text fontSize="19">The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming 
-                                    experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Metakovan (of Beeple NFT notoriety), 
-                                    Deadmau5 , and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    </Mvcol1>
+                    <Mvcol2>
+                        <Text fontSize="1vw">The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming 
+                            experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Metakovan (of Beeple NFT notoriety), 
+                            Deadmau5 , and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.
+                        </Text>        
+                    </Mvcol2>
+                    </Flex>
 
                     {/* Axie Infinity */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                    <Flex mb="5">
+                    <Mvcol1>
                         <Box as="a" href='/metaverses/axie-infinity'>
                             <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={axie} alt="Axie Infinity"/>
                         </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called &#34;Axies&#34;. 
+                    </Mvcol1>
+                    <Mvcol2>
+                                <Text fontSize="1vw">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called &#34;Axies&#34;. 
                                     Axies can be battled, collected, and used to earn cryptocurrency. It uses the native token $AXS.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                                </Text>    
+                    </Mvcol2>
+                    </Flex>
 
                     {/* Roblox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                    <Flex mb="5">
+                    <Mvcol1>
                         <Box as="a" href='/metaverses/roblox'>
                             <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
                         </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Roblox is a metaverse of millions of open source, community created immersive 3D experiences. 
-                                It too has had superstar concerts with Lil Nas X drawing in more than 33 million viewers. It is accessible through any device.</Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    </Mvcol1>
+                    <Mvcol2>
+                        <Text fontSize="1vw">Roblox is a metaverse of millions of open source, community created immersive 3D experiences. 
+                        It too has had superstar concerts with Lil Nas X drawing in more than 33 million viewers. It is accessible through any device.</Text>    
+                    </Mvcol2>
+                    </Flex>
 
                     {/* Fortnite */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                    <Flex mb="5">
+                    <Mvcol1>
                         <Box as="a" href='/metaverses/fortnite'>
                             <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={fortnite} alt="Fortnite"/>
                         </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="50px" color="white"  >
-                                <Text fontSize="19">Fortnite started as a Battle Royale game-type but has since become much more. 
-                                    The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, 
-                                    Ariana Grande, and Travis Scott perform concerts in front of more than 78 million in-game spectators (in Ariana&#39;s case).
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    </Mvcol1>
+                    <Mvcol2>
+                        <Text fontSize="1vw">Fortnite started as a Battle Royale game-type but has since become much more. 
+                            The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, 
+                            Ariana Grande, and Travis Scott perform concerts in front of more than 78 million in-game spectators (in Ariana&#39;s case).
+                        </Text> 
+                    </Mvcol2>
+                    </Flex>
 
                     {/* Minecraft */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                    <Flex mb="5">
+                    <Mvcol1>
                         <Box as="a" href='/metaverses/minecraft'>
                             <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={minecraft} alt="Minecraft"/>
                         </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="70px" color="white"  >
-                                <Text fontSize="19">Minecraft is a creative sandbox game that allows its users to create virtually limitless pixelated worlds. 
-                                    It is one of the most popular metaverses of all time.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    </Mvcol1>
+                    <Mvcol2>
+                        <Text fontSize="1vw">Minecraft is a creative sandbox game that allows its users to create virtually limitless pixelated worlds. 
+                            It is one of the most popular metaverses of all time.
+                        </Text>  
+                    </Mvcol2>
+                    </Flex>
 
                     {/* Bloktopia */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/bloktopia'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={bloktopia} alt="Bloktopia"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Bloktopia is a metaverse made of 21 floors (paying homage to the 21 million bitcoins).  
-                                It is built on Unity and backed by the Polygon blockchain. Its native token is $BLOK.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/bloktopia'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={bloktopia} alt="Bloktopia"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Bloktopia is a metaverse made of 21 floors (paying homage to the 21 million bitcoins).  
+                            It is built on Unity and backed by the Polygon blockchain. Its native token is $BLOK.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Highstreet */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/highstreet'>
-                            <Image boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products 
-                                exist both in physical and virtual form. The native Highstreet currency is $HIGH.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/highstreet'>
+                                <Image boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products 
+                            exist both in physical and virtual form. The native Highstreet currency is $HIGH.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Singularity6 */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/singularity6'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={singularity6} alt="Singularity6"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="75px" color="white"  >
-                                <Text fontSize="19">Created by former Riot Games developers, Singularity 6 is a metaverse that&#39;s meant to provide 
-                                immersive experiences that are more than &#34;just simple entertainment&#34;.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/singularity6'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={singularity6} alt="Singularity6"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Created by former Riot Games developers, Singularity 6 is a metaverse that&#39;s meant to provide 
+                            immersive experiences that are more than &#34;just simple entertainment&#34;.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Portals */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/portals'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={portals} alt="portals"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="70px" color="white"  >
-                                <Text fontSize="19">Portals is built on the Solana blockchain. It is a web-based virtual world that allows you to 
-                                    design your own room with NFTs. Their native token is $Portal.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/portals'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={portals} alt="portals"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Portals is built on the Solana blockchain. It is a web-based virtual world that allows you to 
+                                design your own room with NFTs. Their native token is $Portal.
+                            </Text>    
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Upland */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/upland'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={upland} alt="Upland"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Upland is a play-to-earn metaverse that&#39;s mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
-                                properties that are mapped to real addressed. Users can earn both $UPX and U.S. dollars on the Upland platform.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/upland'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={upland} alt="Upland"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Upland is a play-to-earn metaverse that&#39;s mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
+                            properties that are mapped to real addressed. Users can earn both $UPX and U.S. dollars on the Upland platform.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Metahero */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/metahero'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metahero} alt="Metahero"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Metahero is a metaverse that strives to bring the real world into the virtual world. Through a special scanning 
-                                technology users can create their own 3D avatars and NFTs. It uses the $HERO token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/metahero'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metahero} alt="Metahero"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Metahero is a metaverse that strives to bring the real world into the virtual world. Through a special scanning 
+                            technology users can create their own 3D avatars and NFTs. It uses the $HERO token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Cryptovoxels */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/cryptovoxels'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={cryptovoxels} alt="Cryptovoxels"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Cryptovoxels is a browser-based metaverse where users can buy land and build stores and art galleries in 
-                                Origin City. It runs on the Ethereum blockchain. It has built-in tools, avatars, and chat.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/cryptovoxels'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={cryptovoxels} alt="Cryptovoxels"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Cryptovoxels is a browser-based metaverse where users can buy land and build stores and art galleries in 
+                            Origin City. It runs on the Ethereum blockchain. It has built-in tools, avatars, and chat.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* MOBOX */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/mobox'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={mobox} alt="Mobox"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">MOBOX runs in the MOMOverse. It is a play-to-earn game where users get rewarded for participating by 
-                                creating NFTs and playing the game. Its native token is $MBOX.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/mobox'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={mobox} alt="Mobox"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">MOBOX runs in the MOMOverse. It is a play-to-earn game where users get rewarded for participating by 
+                            creating NFTs and playing the game. Its native token is $MBOX.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Nakamoto */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/nakamoto-games'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={nakamoto} alt="Nakamoto"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="45px" color="white"  >
-                                <Text fontSize="19">Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn. It advertises weekly 
-                                prize pools and rewards. It also allows developers to monetize their own games in its metaverse. Its native token is $NAKA, which runs on the Polygon blockchain.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/nakamoto-games'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={nakamoto} alt="Nakamoto"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn. It advertises weekly 
+                            prize pools and rewards. It also allows developers to monetize their own games in its metaverse. Its native token is $NAKA, which runs on the Polygon blockchain.
+                            </Text> 
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Vulcan Forged */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/vulcan-forged'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={vulcan} alt="Vulcan Forged"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="65px" color="white"  >
-                                <Text fontSize="19">The Vulcan Forged metaverse is built upon a play-to-earn ecosystem and NFT marketplace. 
-                                Vulcan Forged runs on the Ethereum blockchain. $PYR is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/vulcan-forged'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={vulcan} alt="Vulcan Forged"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">The Vulcan Forged metaverse is built upon a play-to-earn ecosystem and NFT marketplace. 
+                            Vulcan Forged runs on the Ethereum blockchain. $PYR is its native token.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Dvision Network */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/dvision-network'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={dvision} alt="Dvision Network"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">The Dvision Network is a blockchain-based NFT metaverse owned by players. Players can buy land, avatars, and other 
-                                accessories to use throughout the metaverse. It seems to support the BSC, ETH, and soon Enjin tokens.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/dvision-network'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={dvision} alt="Dvision Network"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">The Dvision Network is a blockchain-based NFT metaverse owned by players. Players can buy land, avatars, and other 
+                            accessories to use throughout the metaverse. It seems to support the BSC, ETH, and soon Enjin tokens.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* CEEK */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/ceek'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ceek} alt="CEEK"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="75px" color="white"  >
-                                <Text fontSize="19">CEEK is meant to be the creator&#39;s metaverse. It was made to connect music artists, 
-                                athletes, and other content creators directly to their fans. Its native token is $CEEK.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/ceek'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ceek} alt="CEEK"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">CEEK is meant to be the creator&#39;s metaverse. It was made to connect music artists, 
+                            athletes, and other content creators directly to their fans. Its native token is $CEEK.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* My Neighbor Alice */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/my-neighbor-alice'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={alice} alt="My Neighbor Alice"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">My Neighbor Alice is an Ethereum blockchain-based metaverse. It is a multiplayer builder game where players can buy and 
-                                own virtual islands and collect in-game items. Its native token is $ALICE.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/my-neighbor-alice'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={alice} alt="My Neighbor Alice"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">My Neighbor Alice is an Ethereum blockchain-based metaverse. It is a multiplayer builder game where players can buy and 
+                            own virtual islands and collect in-game items. Its native token is $ALICE.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Somnium Space */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/somnium-space'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={somnium} alt="Somnium Space"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="48px" color="white"  >
-                                <Text fontSize="19">SomniumSpace is a cross-platform based metaverse that runs on the Ethereum blockchain using the Matic layer 2 solution. SomniumSpace 
-                                represents that a user can &#34;Live Forever&#34; by automatically recording yourself on your own property for future AI analysis. Its native token is $CUBE.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/somnium-space'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={somnium} alt="Somnium Space"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">SomniumSpace is a cross-platform based metaverse that runs on the Ethereum blockchain using the Matic layer 2 solution. SomniumSpace 
+                            represents that a user can &#34;Live Forever&#34; by automatically recording yourself on your own property for future AI analysis. Its native token is $CUBE.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Star Atlas */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/star-atlas'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={staratlas} alt="Star Atlas"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="65px" color="white"  >
-                                <Text fontSize="19">StarAtlas is a futuristic metaverse built on the Solana blockchain that allows players to fly spaceships, battle other factions, and 
-                                conquer new worlds. The game is built on the Unreal Engine. $ATLAS is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/star-atlas'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={staratlas} alt="Star Atlas"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">StarAtlas is a futuristic metaverse built on the Solana blockchain that allows players to fly spaceships, battle other factions, and 
+                            conquer new worlds. The game is built on the Unreal Engine. $ATLAS is its native token.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* UFO Gaming */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/ufo-gaming'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ufo} alt="UFO Gaming"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">UFO Gaming is a futuristic play-to-earn metaverse based on multiple blockchains. Each of their games is meant to have 
-                                its own governing planet. Its native token is $UFO.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/ufo-gaming'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ufo} alt="UFO Gaming"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">UFO Gaming is a futuristic play-to-earn metaverse based on multiple blockchains. Each of their games is meant to have 
+                            its own governing planet. Its native token is $UFO.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Yield Guild Games */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/ygg'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ygg} alt="Yield Guild Games"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="75px" color="white"  >
-                                <Text fontSize="19">From the creators of Axie Infinity, Yield Guild Games (or YGG) is a play-to-earn gaming metaverse built on the 
-                                Ethereum blockchain. $YGG is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/ygg'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={ygg} alt="Yield Guild Games"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">From the creators of Axie Infinity, Yield Guild Games (or YGG) is a play-to-earn gaming metaverse built on the 
+                            Ethereum blockchain. $YGG is its native token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Metamon */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/metamon'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metamon} alt="Metamon"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="64px" color="white"  >
-                                <Text fontSize="19">Metamon is a BSC blockchain-based play-to-earn game. Players get to control and collect Metamon. 
-                                Almost all in-game items, including Metamon, are NFTs. Its native token is $RACA
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/metamon'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metamon} alt="Metamon"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Metamon is a BSC blockchain-based play-to-earn game. Players get to control and collect Metamon. 
+                            Almost all in-game items, including Metamon, are NFTs. Its native token is $RACA
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* RFox */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/rfox'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={rfox} alt="RFox"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="63px" color="white"  >
-                                <Text fontSize="19">RFox is a multichain metaverse based on the Ethereum, BSC and WAX blockchains. RFOX focuses on immersive metaverse 
-                                experiences focused on retail, media, gaming, and rewards. $RFOX is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/rfox'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={rfox} alt="RFox"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">RFox is a multichain metaverse based on the Ethereum, BSC and WAX blockchains. RFOX focuses on immersive metaverse 
+                            experiences focused on retail, media, gaming, and rewards. $RFOX is its native token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Solice */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/solice'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={solice} alt="Solice"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="62px" color="white"  >
-                                <Text fontSize="19">Solice is a metaverse run on the Solana blockchain. It allows users to create, collect, build, play, and monetize their experiences. 
-                                They can earn tokens and other assets by completing in-game content. $SLC is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/solice'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={solice} alt="Solice"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Solice is a metaverse run on the Solana blockchain. It allows users to create, collect, build, play, and monetize their experiences. 
+                            They can earn tokens and other assets by completing in-game content. $SLC is its native token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Wilder World */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/wilder-world'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={wilder} alt="Wilder World"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. 
-                                Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land. $WILD is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/wilder-world'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={wilder} alt="Wilder World"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. 
+                            Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land. $WILD is its native token.
+                            </Text>  
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Illuvium */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/illuvium'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={illuvium} alt="Illuvium"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">An open-world RPG adventure game built on the Ethereum Blockchain. 
-                                Users draft teams to start with and then collect even more to develop and battle with. $ILV is its native token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/illuvium'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={illuvium} alt="Illuvium"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">An open-world RPG adventure game built on the Ethereum Blockchain. 
+                            Users draft teams to start with and then collect even more to develop and battle with. $ILV is its native token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Gods Unchained */}
-                    <Box bg='#121212' width='400px' height='250px' borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                        <Box as="a" href='/metaverses/gods-unchained'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={godsunchained} alt="Gods Unchained"/>
-                        </Box>
-                    </Box>
-                    <Box position="relative" left="-386px" bg='#121212' width='1175px' height='250px' borderWidth="thin" borderColor="gray.700" px="5" py="5">
-                        <Box w="700px" h="200px"  >
-                            <Box position="relative" top="60px" color="white"  >
-                                <Text fontSize="19">Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game 
-                                    that gives the ownership to the players. $GODS is its native ERC-20 token.
-                                </Text>
-                            </Box>    
-                        </Box>      
-                    </Box>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/gods-unchained'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={godsunchained} alt="Gods Unchained"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1vw">Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game 
+                                that gives the ownership to the players. $GODS is its native ERC-20 token.
+                            </Text>   
+                        </Mvcol2>
+                    </Flex>
 
-
-                </SimpleGrid>
+                
                 </Box>
                 
             </Flex>

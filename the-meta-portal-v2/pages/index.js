@@ -35,7 +35,7 @@ export default function Home() {
         </Head>
         <Flex direction="column" maxW="100vw" minH="100vh"  >
           <Header />
-          <Box flex="1" bg="#242323" px="0" py="5em"  >
+          <Box flex="1" bg="#242323" px="0" py="5em">
             {/* Search Bar */}
             <Search />
             

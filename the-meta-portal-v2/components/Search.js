@@ -1,5 +1,5 @@
 import { CloseIcon, SearchIcon } from "@chakra-ui/icons"
-import { Box, Container, Flex, IconButton, Image, Input, InputGroup, InputLeftElement, InputRightElement, SimpleGrid, Text } from "@chakra-ui/react"
+import { Box, Container, IconButton, Image, Input, InputGroup, InputLeftElement, InputRightElement, SimpleGrid, Text } from "@chakra-ui/react"
 import { useState } from "react"
 import { FaDice } from "react-icons/fa"
 import data from "./Data"
@@ -43,11 +43,13 @@ const Search = () => {
                 
             
             {/* Dice Icon in Search Bar */}
-            <Container position="relative" left="450" top="-8" >
+            {/* Change this to a button outside of the Search Bar and have it be separate */}
+
+            {/* <Container position="relative" left="450" top="-8" >
                 <Box as="a" href="/"  >
-                  {/* <FaDice size="25" color="white"/>     */}
+                  <FaDice size="25" color="white"/>    
                 </Box>
-            </Container>
+            </Container> */}
 
             {/* Search Results */}
             
