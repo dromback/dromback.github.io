@@ -1,5 +1,5 @@
-import { SearchIcon } from "@chakra-ui/icons"
-import { Box, Container, Image, Input, InputGroup, InputLeftElement, SimpleGrid, Text } from "@chakra-ui/react"
+import { CloseIcon, SearchIcon } from "@chakra-ui/icons"
+import { Box, Container, Flex, IconButton, Image, Input, InputGroup, InputLeftElement, InputRightElement, SimpleGrid, Text } from "@chakra-ui/react"
 import { useState } from "react"
 import { FaDice } from "react-icons/fa"
 import data from "./Data"
@@ -21,6 +21,7 @@ const Search = () => {
     return (
         <>
             {/* Search Bar */}
+            
             <InputGroup maxW="27%" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" justifyContent="space-between" alignItems="center" >
               <InputLeftElement pointerEvents='none'>
                 <SearchIcon color='white' />
@@ -32,8 +33,14 @@ const Search = () => {
                 _placeholder={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} 
                 textAlign="center" placeholder="Search the metaverse" fontSize="1vw" 
               />
-              
+              {filter && <InputRightElement mx="1">
+                <IconButton aria-label="Clear Search" size="xs" color="white" bg=""
+                        icon={ <CloseIcon /> } onClick={() => setFilter('')}
+                        _hover={{bg: 'white', color: '#121212'}}
+                        />
+              </InputRightElement>}
             </InputGroup>
+                
             
             {/* Dice Icon in Search Bar */}
             <Container position="relative" left="450" top="-8" >
