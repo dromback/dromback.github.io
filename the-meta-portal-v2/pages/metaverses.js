@@ -43,7 +43,7 @@ const Metaverses = () => {
             <title>The Meta Portal | Metaverses</title>
             <Flex direction="column" maxW="100vw" minH="100vh"  >
                 <Header />
-                <Box flex="1" bg="#242323" px="40" py="5em">
+                <Box flex="1" bg="#242323" px="7vw" py="5em">
                     <Text fontSize="3vw" color="white" mb="10">Popular Metaverses</Text>
                 
                 
