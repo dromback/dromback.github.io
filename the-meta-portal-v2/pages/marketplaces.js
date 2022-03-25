@@ -17,49 +17,54 @@ const Marketplaces = () => {
                 <Header />
                 <Box flex="1" bg="#242323"  px="40" py="5em" >
                     <Text fontSize="3vw" color="white" mb="10">Popular Metaverse Marketplaces</Text>
-                <SimpleGrid columns={2} spacingX='0' spacingY='5'>
+                
                     
                     {/* Highstreet */}
-                    <Mvcol1>
-                        <Box as="a" href='/metaverses/highstreet'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
-                        </Box>
-                    </Mvcol1>
-                    <Mvcol2>
-                        <Text fontSize="19">Highstreet is an NFT-based gamified shopping experience supported by the Ethereum and Polygon Networks. 
-                            Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products exist both in physical and 
-                            virtual form. The native Highstreet currency is $HIGH.
-                        </Text>
-                    </Mvcol2>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/highstreet'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={highstreet} alt="Highstreet"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1em">Highstreet is an NFT-based gamified shopping experience supported by the Ethereum and Polygon Networks. 
+                                Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products exist both in physical and 
+                                virtual form. The native Highstreet currency is $HIGH.
+                            </Text>
+                        </Mvcol2>
+                    </Flex>
                     
                     {/* GalaxE */}
-                    <Mvcol1>
-                        <Box as="a" href='/metaverses/galaxe'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={galaxe} alt="GalaxE"/>
-                        </Box>
-                    </Mvcol1>
-                    <Mvcol2>
-                        <Text fontSize="19">GalaxE is the first cross-blockchain social media NFT metaverse. It was designed to help users buy, 
-                            sell, and socialize the global marketplace. Its native token is $HODL.
-                        </Text>
-                    </Mvcol2>
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/galaxe'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={galaxe} alt="GalaxE"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1em">GalaxE is the first cross-blockchain social media NFT metaverse. It was designed to help users buy, 
+                                sell, and socialize the global marketplace. Its native token is $HODL.
+                            </Text>
+                        </Mvcol2>
+                    </Flex>
 
                     {/* Metamall */}
-                    <Mvcol1>
-                        <Box as="a" href='/metaverses/metamall'>
-                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metamall} alt="Metamall"/>
-                        </Box>
-                    </Mvcol1>
-                    <Mvcol2>
-                        <Text fontSize="19">The mall enters the metaverse. Metamall is the first of its kind mall located in the metaverse. It will allow users 
-                            to build, explore, and trade in their own virtual mall. $MALL is its native token.
-                        </Text>
-                    </Mvcol2>
-
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/metamall'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={metamall} alt="Metamall"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1em">The mall enters the metaverse. Metamall is the first of its kind mall located in the metaverse. It will allow users 
+                                to build, explore, and trade in their own virtual mall. $MALL is its native token.
+                            </Text>
+                        </Mvcol2>
+                    </Flex>
                     
 
 
-                </SimpleGrid>
+                
                 </Box>
                 
             </Flex>

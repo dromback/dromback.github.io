@@ -22,7 +22,7 @@ const Search = () => {
         <>
             {/* Search Bar */}
             
-            <InputGroup maxW="27%" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" justifyContent="space-between" alignItems="center" >
+            <InputGroup maxW="30%" mx="auto" boxShadow='2px 2px 2px white' rounded='full' display="flex" justifyContent="space-between" alignItems="center" >
               <InputLeftElement pointerEvents='none'>
                 <SearchIcon color='white' />
               </InputLeftElement>
@@ -31,7 +31,7 @@ const Search = () => {
                  variant='outline' rounded='full' bg="#121212"
                 _hover={{bg: 'gray.900', boxShadow: '3px 3px 3px white'}} _focus={{bg: '#121212'}} color="white"  
                 _placeholder={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} 
-                textAlign="center" placeholder="Search the metaverse" fontSize="1vw" 
+                textAlign="center" placeholder="Search the metaverse" fontSize="1em" 
               />
               {filter && <InputRightElement mx="1">
                 <IconButton aria-label="Clear Search" size="xs" color="white" bg=""
@@ -59,13 +59,13 @@ const Search = () => {
                         {filter && dataSearch.map((item, index) => {
                             return(
                                 // eslint-disable-next-line react/jsx-key
-                                <Box mx="0" mb="1" px="1" h="400px" >
-                                    <Box p="0" overflow="hidden" h="400" bg="#121212" rounded="lg" >
+                                <Box mx="0" mb="1" px="1" w="100%" maxh="40vh" >
+                                    <Box p="0" overflow="hidden"  h="400" bg="#121212" rounded="lg" >
                                         <Box as="a" href={item.link} h="180" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
                                         <Box>
-                                            <Text color="white" mt="2" mb="7" fontSize="1.2rem" align="center">{item.title} </Text>
+                                            <Text color="white" mt="2" mb="7" fontSize="1em" align="center">{item.title} </Text>
                                             <Text color="white" ml="5" mr="5" align="left">{item.desc}</Text>
                                         </Box>
                                     </Box>

@@ -44,10 +44,8 @@ const Metaverses = () => {
             <Flex direction="column" maxW="100vw" minH="100vh"  >
                 <Header />
                 <Box flex="1" bg="#242323" px="7vw" py="5em">
-                    <Text fontSize="3vw" color="white" mb="10">Popular Metaverses</Text>
+                    <Text fontSize="2.5em" color="white" mb="10">Popular Metaverses</Text>
                 
-                
-                    
                     {/* Decentraland */}
                     <Flex mb="5">
                         <Mvcol1>
@@ -56,7 +54,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Decentraland is a metaverse platform built on the Ethereum network. It allows its users to create, explore, and trade 
+                            <Text fontSize="1em">Decentraland is a metaverse platform built on the Ethereum network. It allows its users to create, explore, and trade 
                                 in their self-proclaimed first-ever virtual world owned by its users. Decentraland operates under its native token $MANA.
                             </Text>
                         </Mvcol2>
@@ -70,9 +68,9 @@ const Metaverses = () => {
                         </Box>
                     </Mvcol1>
                     <Mvcol2>
-                        <Text fontSize="1vw">The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming 
-                            experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Metakovan (of Beeple NFT notoriety), 
-                            Deadmau5 , and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.
+                        <Text fontSize="1em">The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming 
+                            experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg,  
+                            Deadmau5, and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.
                         </Text>        
                     </Mvcol2>
                     </Flex>
@@ -85,7 +83,7 @@ const Metaverses = () => {
                         </Box>
                     </Mvcol1>
                     <Mvcol2>
-                                <Text fontSize="1vw">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called &#34;Axies&#34;. 
+                                <Text fontSize="1em">Axie Infinity is a play-to-earn game that runs on the Ethereum blockchain. It is filled with pets called &#34;Axies&#34;. 
                                     Axies can be battled, collected, and used to earn cryptocurrency. It uses the native token $AXS.
                                 </Text>    
                     </Mvcol2>
@@ -99,7 +97,7 @@ const Metaverses = () => {
                         </Box>
                     </Mvcol1>
                     <Mvcol2>
-                        <Text fontSize="1vw">Roblox is a metaverse of millions of open source, community created immersive 3D experiences. 
+                        <Text fontSize="1em">Roblox is a metaverse of millions of open source, community created immersive 3D experiences. 
                         It too has had superstar concerts with Lil Nas X drawing in more than 33 million viewers. It is accessible through any device.</Text>    
                     </Mvcol2>
                     </Flex>
@@ -112,7 +110,7 @@ const Metaverses = () => {
                         </Box>
                     </Mvcol1>
                     <Mvcol2>
-                        <Text fontSize="1vw">Fortnite started as a Battle Royale game-type but has since become much more. 
+                        <Text fontSize="1em">Fortnite started as a Battle Royale game-type but has since become much more. 
                             The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, 
                             Ariana Grande, and Travis Scott perform concerts in front of more than 78 million in-game spectators (in Ariana&#39;s case).
                         </Text> 
@@ -127,7 +125,7 @@ const Metaverses = () => {
                         </Box>
                     </Mvcol1>
                     <Mvcol2>
-                        <Text fontSize="1vw">Minecraft is a creative sandbox game that allows its users to create virtually limitless pixelated worlds. 
+                        <Text fontSize="1em">Minecraft is a creative sandbox game that allows its users to create virtually limitless pixelated worlds. 
                             It is one of the most popular metaverses of all time.
                         </Text>  
                     </Mvcol2>
@@ -141,7 +139,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Bloktopia is a metaverse made of 21 floors (paying homage to the 21 million bitcoins).  
+                            <Text fontSize="1em">Bloktopia is a metaverse made of 21 floors (paying homage to the 21 million bitcoins).  
                             It is built on Unity and backed by the Polygon blockchain. Its native token is $BLOK.
                             </Text>  
                         </Mvcol2>
@@ -155,7 +153,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products 
+                            <Text fontSize="1em">Both a metaverse and marketplace, Highstreet touts their Phygital concept where their products 
                             exist both in physical and virtual form. The native Highstreet currency is $HIGH.
                             </Text>   
                         </Mvcol2>
@@ -169,7 +167,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Created by former Riot Games developers, Singularity 6 is a metaverse that&#39;s meant to provide 
+                            <Text fontSize="1em">Created by former Riot Games developers, Singularity 6 is a metaverse that&#39;s meant to provide 
                             immersive experiences that are more than &#34;just simple entertainment&#34;.
                             </Text>   
                         </Mvcol2>
@@ -183,7 +181,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Portals is built on the Solana blockchain. It is a web-based virtual world that allows you to 
+                            <Text fontSize="1em">Portals is built on the Solana blockchain. It is a web-based virtual world that allows you to 
                                 design your own room with NFTs. Their native token is $Portal.
                             </Text>    
                         </Mvcol2>
@@ -197,7 +195,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Upland is a play-to-earn metaverse that&#39;s mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
+                            <Text fontSize="1em">Upland is a play-to-earn metaverse that&#39;s mapped to the real world. Upland allows its users to buy, sell, and trade virtual 
                             properties that are mapped to real addressed. Users can earn both $UPX and U.S. dollars on the Upland platform.
                             </Text>   
                         </Mvcol2>
@@ -211,7 +209,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Metahero is a metaverse that strives to bring the real world into the virtual world. Through a special scanning 
+                            <Text fontSize="1em">Metahero is a metaverse that strives to bring the real world into the virtual world. Through a special scanning 
                             technology users can create their own 3D avatars and NFTs. It uses the $HERO token.
                             </Text>   
                         </Mvcol2>
@@ -225,7 +223,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Cryptovoxels is a browser-based metaverse where users can buy land and build stores and art galleries in 
+                            <Text fontSize="1em">Cryptovoxels is a browser-based metaverse where users can buy land and build stores and art galleries in 
                             Origin City. It runs on the Ethereum blockchain. It has built-in tools, avatars, and chat.
                             </Text>   
                         </Mvcol2>
@@ -239,7 +237,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">MOBOX runs in the MOMOverse. It is a play-to-earn game where users get rewarded for participating by 
+                            <Text fontSize="1em">MOBOX runs in the MOMOverse. It is a play-to-earn game where users get rewarded for participating by 
                             creating NFTs and playing the game. Its native token is $MBOX.
                             </Text>  
                         </Mvcol2>
@@ -253,7 +251,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn. It advertises weekly 
+                            <Text fontSize="1em">Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn. It advertises weekly 
                             prize pools and rewards. It also allows developers to monetize their own games in its metaverse. Its native token is $NAKA, which runs on the Polygon blockchain.
                             </Text> 
                         </Mvcol2>
@@ -267,7 +265,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">The Vulcan Forged metaverse is built upon a play-to-earn ecosystem and NFT marketplace. 
+                            <Text fontSize="1em">The Vulcan Forged metaverse is built upon a play-to-earn ecosystem and NFT marketplace. 
                             Vulcan Forged runs on the Ethereum blockchain. $PYR is its native token.
                             </Text>  
                         </Mvcol2>
@@ -281,7 +279,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">The Dvision Network is a blockchain-based NFT metaverse owned by players. Players can buy land, avatars, and other 
+                            <Text fontSize="1em">The Dvision Network is a blockchain-based NFT metaverse owned by players. Players can buy land, avatars, and other 
                             accessories to use throughout the metaverse. It seems to support the BSC, ETH, and soon Enjin tokens.
                             </Text>  
                         </Mvcol2>
@@ -295,7 +293,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">CEEK is meant to be the creator&#39;s metaverse. It was made to connect music artists, 
+                            <Text fontSize="1em">CEEK is meant to be the creator&#39;s metaverse. It was made to connect music artists, 
                             athletes, and other content creators directly to their fans. Its native token is $CEEK.
                             </Text>   
                         </Mvcol2>
@@ -309,7 +307,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">My Neighbor Alice is an Ethereum blockchain-based metaverse. It is a multiplayer builder game where players can buy and 
+                            <Text fontSize="1em">My Neighbor Alice is an Ethereum blockchain-based metaverse. It is a multiplayer builder game where players can buy and 
                             own virtual islands and collect in-game items. Its native token is $ALICE.
                             </Text>   
                         </Mvcol2>
@@ -323,7 +321,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">SomniumSpace is a cross-platform based metaverse that runs on the Ethereum blockchain using the Matic layer 2 solution. SomniumSpace 
+                            <Text fontSize="1em">SomniumSpace is a cross-platform based metaverse that runs on the Ethereum blockchain using the Matic layer 2 solution. SomniumSpace 
                             represents that a user can &#34;Live Forever&#34; by automatically recording yourself on your own property for future AI analysis. Its native token is $CUBE.
                             </Text>  
                         </Mvcol2>
@@ -337,7 +335,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">StarAtlas is a futuristic metaverse built on the Solana blockchain that allows players to fly spaceships, battle other factions, and 
+                            <Text fontSize="1em">StarAtlas is a futuristic metaverse built on the Solana blockchain that allows players to fly spaceships, battle other factions, and 
                             conquer new worlds. The game is built on the Unreal Engine. $ATLAS is its native token.
                             </Text>  
                         </Mvcol2>
@@ -351,7 +349,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">UFO Gaming is a futuristic play-to-earn metaverse based on multiple blockchains. Each of their games is meant to have 
+                            <Text fontSize="1em">UFO Gaming is a futuristic play-to-earn metaverse based on multiple blockchains. Each of their games is meant to have 
                             its own governing planet. Its native token is $UFO.
                             </Text>  
                         </Mvcol2>
@@ -365,7 +363,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">From the creators of Axie Infinity, Yield Guild Games (or YGG) is a play-to-earn gaming metaverse built on the 
+                            <Text fontSize="1em">From the creators of Axie Infinity, Yield Guild Games (or YGG) is a play-to-earn gaming metaverse built on the 
                             Ethereum blockchain. $YGG is its native token.
                             </Text>   
                         </Mvcol2>
@@ -379,7 +377,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Metamon is a BSC blockchain-based play-to-earn game. Players get to control and collect Metamon. 
+                            <Text fontSize="1em">Metamon is a BSC blockchain-based play-to-earn game. Players get to control and collect Metamon. 
                             Almost all in-game items, including Metamon, are NFTs. Its native token is $RACA
                             </Text>   
                         </Mvcol2>
@@ -393,7 +391,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">RFox is a multichain metaverse based on the Ethereum, BSC and WAX blockchains. RFOX focuses on immersive metaverse 
+                            <Text fontSize="1em">RFox is a multichain metaverse based on the Ethereum, BSC and WAX blockchains. RFOX focuses on immersive metaverse 
                             experiences focused on retail, media, gaming, and rewards. $RFOX is its native token.
                             </Text>   
                         </Mvcol2>
@@ -407,7 +405,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Solice is a metaverse run on the Solana blockchain. It allows users to create, collect, build, play, and monetize their experiences. 
+                            <Text fontSize="1em">Solice is a metaverse run on the Solana blockchain. It allows users to create, collect, build, play, and monetize their experiences. 
                             They can earn tokens and other assets by completing in-game content. $SLC is its native token.
                             </Text>   
                         </Mvcol2>
@@ -421,7 +419,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. 
+                            <Text fontSize="1em">Wilder World is an immersive 5D metaverse built on the Ethereum blockchain using the Unreal Engine 5. 
                             Some of its NFT categories include Wheels (for racing), Kicks, Cribs, and Land. $WILD is its native token.
                             </Text>  
                         </Mvcol2>
@@ -435,7 +433,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">An open-world RPG adventure game built on the Ethereum Blockchain. 
+                            <Text fontSize="1em">An open-world RPG adventure game built on the Ethereum Blockchain. 
                             Users draft teams to start with and then collect even more to develop and battle with. $ILV is its native token.
                             </Text>   
                         </Mvcol2>
@@ -449,7 +447,7 @@ const Metaverses = () => {
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1vw">Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game 
+                            <Text fontSize="1em">Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game 
                                 that gives the ownership to the players. $GODS is its native ERC-20 token.
                             </Text>   
                         </Mvcol2>
