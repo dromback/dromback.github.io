@@ -29,11 +29,11 @@ export default function Header() {
     if(!isAuthenticated){
         return(
             <header>
-                <Flex bg="#121212">
-                            <Box as="a" href="/" ml="5">
+                <Flex position="fixed" bg="#121212" w="100%" >
+                            <Box as="a" href="/" ml="5" >
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
-                    <Flex position="fixed" top="1rem" right="2rem" align="center" >
+                    <Flex position="fixed" top="1rem" right="1rem" align="center" >
                         {/* Desktop */}
                         <Flex display={['none', 'none', 'flex','flex']} >
                             <Link href="/" color="white" aria-label="Home" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>
@@ -139,34 +139,36 @@ export default function Header() {
     }
 
         return(
-            <header>
-                <Flex bg="#121212" >
-                            <Box as="a" href="/" ml="5">
+            <header >
+                
+                <Flex position="fixed" bg="#121212" w="100%" >
+                            <Box as="a" href="/" ml="5" >
                                 <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
                             </Box>
                     <Flex position="fixed" top="1rem" right="1rem" align="center" >
+                        
                         {/* Desktop */}
                         <Flex display={['none', 'none', 'flex','flex']} >
-                        <Link href="/" color="white" aria-label="Home" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>
-                        <Link href="/metaverses" color="white" aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
-                        <Link href="/marketplaces" color="white" aria-label="marketplaces" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
-                        <Link href="/about" color="white" aria-label="about" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>About</Link>
-                        <Menu >
-                            <MenuButton ml="5" mx="5" >
-                                <AvatarGroup spacing='1rem' >
-                                    <Avatar name={Moralis.User.current().attributes.username} borderColor='orange.400' bg="orange.400"  />                                
-                                        <Text color="orange.400"  >
-                                            {Moralis.User.current().attributes.username} <ChevronDownIcon />
-                                        </Text>
-                                </AvatarGroup>
-                            </MenuButton>
-                            <MenuList bg="#121212" >
-                                <MenuItem as="a" href="/profile" color="white" _hover={{bg: 'orange.400'}} _focus={{bg: 'orange.400'}}
-                                >Profile</MenuItem>
-                                <MenuItem color="white" _hover={{bg: 'orange.400'}} _focus={{bg: 'orange.400'}}
-                                    onClick={logout} disabled={isLoggingOut}>Logout</MenuItem>
-                                </MenuList>
-                        </Menu>
+                            <Link href="/" color="white" aria-label="Home" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Home</Link>
+                            <Link href="/metaverses" color="white" aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
+                            <Link href="/marketplaces" color="white" aria-label="marketplaces" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
+                            <Link href="/about" color="white" aria-label="about" my="5" mx="3" _focus={{}} _hover={{color: "orange.400"}}>About</Link>
+                            <Menu >
+                                <MenuButton ml="5" mx="5" >
+                                    <AvatarGroup spacing='1rem' >
+                                        <Avatar name={Moralis.User.current().attributes.username} borderColor='orange.400' bg="orange.400"  />                                
+                                            <Text color="orange.400"  >
+                                                {Moralis.User.current().attributes.username} <ChevronDownIcon />
+                                            </Text>
+                                    </AvatarGroup>
+                                </MenuButton>
+                                <MenuList bg="#121212" >
+                                    <MenuItem as="a" href="/profile" color="white" _hover={{bg: 'orange.400'}} _focus={{bg: 'orange.400'}}
+                                    >Profile</MenuItem>
+                                    <MenuItem color="white" _hover={{bg: 'orange.400'}} _focus={{bg: 'orange.400'}}
+                                        onClick={logout} disabled={isLoggingOut}>Logout</MenuItem>
+                                    </MenuList>
+                            </Menu>
                         
                         </Flex>
 
@@ -223,6 +225,7 @@ export default function Header() {
                         </Flex>
                     </Flex>
                 </Flex>
+                
             </header>
         )
     

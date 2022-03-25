@@ -13,10 +13,10 @@ const Marketplaces = () => {
     return (
         <><>
             <title>The Meta Portal | Marketplaces</title>
-            <Flex direction="column" width="100vw" height="100vh" overflowX="hidden" overflowY="scroll">
+            <Flex direction="column" maxW="100vw" minH="100vh">
                 <Header />
-                <Box flex="1" bg="#242323"  px="40" py="5em" >
-                    <Text fontSize="3vw" color="white" mb="10">Popular Metaverse Marketplaces</Text>
+                <Box flex="1" bg="#242323" px="7vw" py="11em">
+                    <Text fontSize="2.5em" color="white" mb="10">Popular Marketplaces</Text>
                 
                     
                     {/* Highstreet */}

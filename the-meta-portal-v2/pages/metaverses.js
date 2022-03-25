@@ -41,9 +41,9 @@ const Metaverses = () => {
     return (
         <><>
             <title>The Meta Portal | Metaverses</title>
-            <Flex direction="column" maxW="100vw" minH="100vh"  >
+            <Flex direction="column" maxW="100vw" minH="100vh">
                 <Header />
-                <Box flex="1" bg="#242323" px="7vw" py="5em">
+                <Box flex="1" bg="#242323" px="7vw" py="11em">
                     <Text fontSize="2.5em" color="white" mb="10">Popular Metaverses</Text>
                 
                     {/* Decentraland */}

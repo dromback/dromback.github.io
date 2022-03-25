@@ -33,9 +33,9 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
-        <Flex direction="column" maxW="100vw" minH="100vh"  >
+        <Flex direction="column" maxW="100vw" minH="100vh" >
           <Header />
-          <Box flex="1" bg="#242323" px="0" py="5em">
+          <Box flex="1" bg="#242323" px="0" py="11em" >
             {/* Search Bar */}
             <Search />
             

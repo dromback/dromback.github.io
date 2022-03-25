@@ -10,9 +10,9 @@ const About = () => {
     return (
         <><>
             <title>The Meta Portal | About</title>
-            <Flex direction="column" width="100vw" height="100vh">
-                <Header />
-                <Box flex="1" bg="#242323" px="44" py="20" >
+            <Flex direction="column" maxW="100vw" minH="100vh" >
+          <Header />
+          <Box flex="1" bg="#242323" px="0" py="11em" >
                   <Container h="600px" w="800px" bg="#121212" maxW="800px" maxH="700px" rounded="lg">
                     <Box position="relative" top="80px" >
                       <Text align="center" color="white">
