@@ -1,4 +1,4 @@
-import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, SimpleGrid, Text, useColorModeValue } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
@@ -9,14 +9,16 @@ const Marketplaces = () => {
     const galaxe = "https://static.wixstatic.com/media/3e1ac7_d6f1e179af9b46c3a7212f25019b9c89~mv2.png/v1/fill/w_225,h_162,al_c,enc_auto/HODL.png"
     const metamall = "https://static.wixstatic.com/media/3e1ac7_c645ab721192475a86c24aed5be35cb3~mv2.png/v1/fill/w_240,h_33,al_c,usm_0.66_1.00_0.01,enc_auto/Metamall.png"
     
+    const bg = useColorModeValue('gray.200', '#242323')
+    const color = useColorModeValue('black', 'white')
 
     return (
         <><>
             <title>The Meta Portal | Marketplaces</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
                 <Header />
-                <Box flex="1" bg="#242323" px="7vw" py="11em">
-                    <Text fontSize="2.5em" color="white" mb="10">Popular Marketplaces</Text>
+                <Box flex="1" bg={bg} px="7vw" py="11em">
+                    <Text fontSize="2.5em" color={color} mb="10">Popular Marketplaces</Text>
                 
                     
                     {/* Highstreet */}

@@ -23,9 +23,9 @@ const Signup = () => {
             return (
             <><>
                 <title>The Meta Portal | Signup</title>
-                <Flex direction="column" width="100vw" height="100vh">
+                <Flex direction="column" maxW="100vw" minH="100vh" >
                     <Header />
-                    <Box flex="1" bg="#242323" px="44" py="20" >
+                    <Box flex="1"  px="0" py="11em" >
                         <Stack maxW="425px" spacing="3" position="relative" left="600px">
                             <Input minlength="3" maxlength="20" color="white" placeholder="Email" _placeholder={{color: "white"}} _focus={{border: "1px"}} 
                                 value={email} onChange={event => setEmail(event.currentTarget.value)} w="400px"
@@ -45,9 +45,9 @@ const Signup = () => {
     
     if(user && isAuthenticated){
         return(
-        <Flex direction="column" width="100vw" height="100vh">
-            <Header />
-                <Box flex="1" bg="#242323" px="44" py="20" >
+            <Flex direction="column" maxW="100vw" minH="100vh" >
+                <Header />
+                <Box flex="1"  px="0" py="11em" >
                     <Container bg="#121212" rounded="lg" fontSize="24px" position="relative" align="center" top="100px">
                         <Box >
                             <meta httpEquiv="refresh" content="1; url='/'"/>
@@ -60,9 +60,9 @@ const Signup = () => {
         )
         }
         return(
-            <Flex direction="column" width="100vw" height="100vh">
-            <Header />
-                <Box flex="1" bg="#242323" px="44" py="20" >
+            <Flex direction="column" maxW="100vw" minH="100vh" >
+                <Header />
+                <Box flex="1"  px="0" py="11em" >
                     <Container bg="#121212" rounded="lg" fontSize="24px" position="relative" align="center" top="100px">
                         <Box >
                             <meta httpEquiv="refresh" content="1; url='/'"/>

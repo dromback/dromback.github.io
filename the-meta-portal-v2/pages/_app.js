@@ -1,9 +1,9 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { MoralisProvider } from 'react-moralis'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-
+import customTheme from '../styles/theme'
 
 
 function MyApp({ Component, pageProps }) {
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
     
-    <ChakraProvider>
+    <ChakraProvider theme={customTheme}>
       <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
           <Component {...pageProps} />
       </MoralisProvider>

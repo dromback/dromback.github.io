@@ -1,4 +1,4 @@
-import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, SimpleGrid, Text, useColorModeValue } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
@@ -36,15 +36,16 @@ const Metaverses = () => {
     const illuvium = "https://i.ibb.co/kGhMG1s/illuvium.png"
     const godsunchained = "https://i.ibb.co/fMDT1Yn/Gods-Unchained.png"
     
-
+    const bg = useColorModeValue('gray.200', '#242323')
+    const color = useColorModeValue('black', 'white')
 
     return (
         <><>
             <title>The Meta Portal | Metaverses</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
                 <Header />
-                <Box flex="1" bg="#242323" px="7vw" py="11em">
-                    <Text fontSize="2.5em" color="white" mb="10">Popular Metaverses</Text>
+                <Box flex="1" bg={bg} px="7vw" py="11em">
+                    <Text fontSize="2.5em" color={color} mb="10">Popular Metaverses</Text>
                 
                     {/* Decentraland */}
                     <Flex mb="5">

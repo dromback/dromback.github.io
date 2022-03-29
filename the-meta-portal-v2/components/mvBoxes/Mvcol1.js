@@ -1,9 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 
 export default function Mvcol1({children}){
+
+    const bg = useColorModeValue('#FFFFFF', '#121212')
+    const color = useColorModeValue('black', 'white')
+
     return(
-        <Box bg='#121212' w="50%" minh="26vh" maxh="32vh" borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+        <Box bg={bg} w="50%" minh="26vh" maxh="32vh" borderWidth="thin" borderColor="gray.700" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                 {children}         
         </Box>
     )
