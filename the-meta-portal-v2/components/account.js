@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, FormLabel, Input, Text } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Input, Text, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import Moralis from "moralis";
@@ -17,6 +17,8 @@ export default function Account(){
       setUsername(user.getUsername())
       setEmail(user.getEmail())
     }, [user])
+
+    const color = useColorModeValue('black', 'white')
 
     return(
         <Box >
@@ -38,15 +40,15 @@ export default function Account(){
                     }}>
                         <FormControl mt="6" mb="6">
                             <FormLabel htmlFor="username">Set a new username:</FormLabel>
-                              <Input minLength="3" maxlength="30" id="username" type="text" placeholder="New Username" _placeholder={{color: "white"}} _focus={{border: "1px"}}
-                              value={input} onChange={e => setInput(e.target.value)} />
+                              <Input minLength="3" maxlength="30" id="username" type="text" placeholder="New Username" _placeholder={{color: color}} _focus={{border: "1px"}}
+                              value={input} onChange={e => setInput(e.target.value)} borderColor={color} />
                             <FormLabel mt="6" htmlFor="email">Set your email:</FormLabel >
                               <Input id="email" value={email} minlength="3" maxlength="30" 
-                              type="text" placeholder="New Email" _placeholder={{color: "white"}} _focus={{border: "1px"}}
-                              onChange={(event) => setEmail(event.currentTarget.value)}  />
+                              type="text" placeholder="New Email" _placeholder={{color: color}} _focus={{border: "1px"}}
+                              onChange={(event) => setEmail(event.currentTarget.value)} borderColor={color} />
                             <FormLabel htmlFor="password" mt="6" >Set your password:</FormLabel>
-                              <Input id="password" type="password" placeholder="New Password" _placeholder={{color: "white"}} _focus={{border: "1px"}}
-                              value={password} onChange={(event) => setPassword(event.currentTarget.value)}/>
+                              <Input id="password" type="password" placeholder="New Password" _placeholder={{color: color}} _focus={{border: "1px"}}
+                              value={password} onChange={(event) => setPassword(event.currentTarget.value)} borderColor={color}/>
                         </FormControl>
                         
                         <Button type="submit" colorScheme="orange" disabled={isUserUpdating} mt="3" >Save Settings</Button>
