@@ -1,4 +1,4 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { MoralisProvider } from 'react-moralis'
 import Script from 'next/script'
 import { useEffect } from 'react'

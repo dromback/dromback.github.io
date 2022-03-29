@@ -1,11 +1,12 @@
 import { ChevronDownIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Box, Button, CloseButton, 
             Flex, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList, Text, useColorMode, 
-            ColorModeScript, extendTheme, LightMode, DarkMode, useColorModeValue } from "@chakra-ui/react";
+            ColorModeScript, useColorModeValue, ChakraProvider } from "@chakra-ui/react";
 import Moralis from "moralis";
 import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import DarkModeSwitch from "./DarkModeSwitch";  
+
 
 
 export default function Header() {
@@ -31,6 +32,7 @@ export default function Header() {
   
     if(!isAuthenticated){
         return(
+            
             <header>
                 <Flex position="fixed" bg={bg} w="100%"  >
                             <Box as="a" href="/" ml="5" >
@@ -137,11 +139,12 @@ export default function Header() {
 
                 </Flex>
             </header>
- 
+            
         )
     }
 
         return(
+            
             <header >
                 
                 <Flex position="fixed" bg={bg} w="100%" >
@@ -234,6 +237,7 @@ export default function Header() {
                 </Flex>
                 
             </header>
+            
         )
     
 }

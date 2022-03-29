@@ -1,5 +1,4 @@
-import { Box, Container, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Box, Container, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useColorModeValue } from "@chakra-ui/react";
 import { useMoralis } from "react-moralis";
 import Account from "../components/account";
 import Balance from "../components/Balance";
@@ -11,7 +10,8 @@ export default function Profile() {
     
     const {user, isAuthenticated} = useMoralis();
 
-
+    const bg = useColorModeValue('gray.200', '#242323')
+    const color = useColorModeValue('black', 'white')
       
     
     if(!isAuthenticated ){
@@ -19,7 +19,7 @@ export default function Profile() {
         <Flex direction="column" maxW="100vw" minH="100vh" >
           <Header />
           <Box flex="1"  px="0" py="11em" >
-                    <Container bg="#121212" rounded="lg" fontSize="24px" position="relative" align="center" top="100px">
+                    <Container bg={bg} rounded="lg" fontSize="24px" position="relative" align="center" top="100px">
                         <Box>
                             {/* <meta httpEquiv="refresh" content="1; url='/'"/> */}
                             <Text color="white" py="5" >Error: You are already logged in.</Text>
@@ -36,10 +36,10 @@ export default function Profile() {
     return(
       <>
         <title>The Meta Portal | Profile</title>
-        <Flex direction="column" maxW="100vw" minH="100vh" >
+        <Flex direction="column" maxW="100vw" minH="100vh" bg={bg} >
           <Header />
           <Box flex="1"  px="0" py="11em" >
-            <Tabs size="lg" mx="auto" colorScheme="orange" color="white" w="50vw" >
+            <Tabs size="lg" mx="auto" colorScheme="orange" color={color} w="50vw" >
               <TabList>
                 <Tab fontWeight="bold">Account</Tab>
                 <Tab fontWeight="bold">Favorites</Tab>
