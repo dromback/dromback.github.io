@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import customTheme from '../styles/theme'
 
 
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 

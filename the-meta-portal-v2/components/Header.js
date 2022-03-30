@@ -5,7 +5,8 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Bo
 import Moralis from "moralis";
 import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
-import DarkModeSwitch from "./DarkModeSwitch";  
+import DarkModeSwitch from "./DarkModeSwitch"; 
+import customTheme from "../styles/theme";
 
 
 
@@ -34,9 +35,9 @@ export default function Header() {
         return(
             
             <header>
-                <Flex position="fixed" bg={bg} w="100%"  >
-                            <Box as="a" href="/" ml="5" >
-                                <Image src={Logo} href='/' objectFit="cover" alt="logo"/>
+                <Flex position="fixed" bg={bg} w="100%" zIndex={2} >
+                            <Box as="a" href="/" ml="10" >
+                                <Image src={Logo} href='/'  alt="logo"/>
                             </Box>
                     <Flex position="fixed" top="1rem" right="1rem" align="center"   >
                         {/* Desktop */}
@@ -45,6 +46,7 @@ export default function Header() {
                             <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3"  _focus={{}} _hover={{color: "orange.400"}}>Metaverses</Link>
                             <Link href="/marketplaces" color={color} aria-label="marketplaces" my="5" mx="3"  _focus={{}} _hover={{color: "orange.400"}}>Marketplaces</Link>
                             <Link href="/about" color={color} aria-label="about" my="5" mx="3"  _focus={{}} _hover={{color: "orange.400"}}>About</Link>
+                            <DarkModeSwitch />
                             {/* Login / Signup */}
                             <Menu>
                                     <MenuButton  ml="1"  >
@@ -147,7 +149,7 @@ export default function Header() {
             
             <header >
                 
-                <Flex position="fixed" bg={bg} w="100%" >
+                <Flex position="fixed" bg={bg} w="100%" zIndex={2} >
                             <Box as="a" href="/" ml="10" >
                                 <Image src={Logo} href='/'  alt="logo"/>
                             </Box>

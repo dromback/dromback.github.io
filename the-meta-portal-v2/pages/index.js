@@ -7,6 +7,7 @@ import Head from "next/head";
 
 
 
+
 export const pageview = (url) => {
   window.gtag('config', process.env.NEXT_PUBLIC_MEASUREMENT_ID, {
       path_url: url,
@@ -15,7 +16,7 @@ export const pageview = (url) => {
 
 export default function Home() {
 
-    const bg = useColorModeValue('gray.200', '#242323')
+    const pageBg = useColorModeValue('gray.200', '#242323')
 
     return(
       <>
@@ -36,7 +37,7 @@ export default function Home() {
           />
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
-        <Flex direction="column" maxW="100vw%" minH="100vh" bg={bg} >
+        <Flex direction="column" maxW="100vw%" minH="100vh" bg={pageBg} >
             <Header />
             
               <Box flex="1" px="0" py="11em" >

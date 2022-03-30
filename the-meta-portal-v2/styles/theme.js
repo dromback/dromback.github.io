@@ -1,10 +1,21 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const color = {
-    dark: "black",
-    light: "white"
+
+
+
+const overrides = {
+    color: {
+        light: "white",
+        dark: "black"
+    },
+    pageBg: {
+        light: 'gray.200',
+        dark: '#242323'
+    }
+
 }
 
-const customTheme = extendTheme({color})
+
+const customTheme = extendTheme(overrides)
 
 export default customTheme
