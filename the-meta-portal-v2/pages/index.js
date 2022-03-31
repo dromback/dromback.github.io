@@ -37,7 +37,7 @@ export default function Home() {
           />
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
-        <Flex direction="column" maxW="100vw%" minH="100vh" bg={pageBg} >
+        <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
             <Header />
             
               <Box flex="1" px="0" py="11em" >
