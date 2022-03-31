@@ -88,24 +88,20 @@ export default function Header() {
                         </Flex>
 
                         <Flex flexDir="column" align="center"  >
-                            <Link href="/">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Home" my={5} w="100%">
-                                    Home</Button>
+                            <Link href="/" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Home" my={5} w="100%">
+                                Home
                             </Link>
-                            <Link href="/metaverses">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="metaverses" my={5} w="100%">
-                                    Metaverses</Button>
+                            <Link href="/metaverses" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Metaverses" my={5} w="100%">
+                                Metaverses
                             </Link>
-                            <Link href="/marketplaces">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="marketplaces" my={5} w="100%">
-                                    Marketplaces</Button>
+                            <Link href="/marketplaces" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Marketplaces" my={5} w="100%">
+                                Marketplaces
                             </Link>
-                            <Link href="/about">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="about" my={5} w="100%">
-                                    About</Button>
+                            <Link href="/about" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="About" my={5} mb={10} w="100%">
+                                About
                             </Link>
                             {/* Login / Signup */}
-                            <Menu>
+                            <Menu mt="5">
                                 <MenuButton >
                                     <Text color="orange.400" >
                                         Login / Signup <ChevronDownIcon />
@@ -199,26 +195,22 @@ export default function Header() {
                         </Flex>
 
                         <Flex flexDir="column" align="center"  >
-                            <Link href="/">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Home" my={5} w="100%">
-                                    Home</Button>
+                            <Link href="/" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Home" my={5} w="100%">
+                                Home
                             </Link>
-                            <Link href="/metaverses">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="metaverses" my={5} w="100%">
-                                    Metaverses</Button>
+                            <Link href="/metaverses" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Metaverses" my={5} w="100%">
+                                Metaverses
                             </Link>
-                            <Link href="/marketplaces">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="marketplaces" my={5} w="100%">
-                                    Marketplaces</Button>
+                            <Link href="/marketplaces" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="Marketplaces" my={5} w="100%">
+                                Marketplaces
                             </Link>
-                            <Link href="/about">
-                                <Button as="a" bg={bg} color={color} _focus={{}} _hover={{color: "orange.400"}} variant="ghost" aria-label="about" my={5} w="100%">
-                                    About</Button>
+                            <Link href="/about" bg={bg} color={color} align="center" _focus={{}} _hover={{color: "orange.400", bg: bg}} aria-label="About" my={5} mb={10} w="100%">
+                                About
                             </Link>
-                            <Menu>
-                                <MenuButton ml="5" mr="5" >
+                            <Menu >
+                                <MenuButton >
                                     <AvatarGroup spacing='1rem' >
-                                        <Avatar name={Moralis.User.current().attributes.username} borderColor={buttonBg} bg={bg}  />                                
+                                        <Avatar name={Moralis.User.current().attributes.username} borderColor={buttonBg} bg={buttonBg}  />                                
                                             <Text color={color} w="20">
                                                 {Moralis.User.current().attributes.username} <ChevronDownIcon />
                                             </Text>

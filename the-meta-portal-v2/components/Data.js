@@ -46,7 +46,7 @@ const data = {
             img: sandbox,
             link: '/metaverses/the-sandbox',
             title: 'The Sandbox',
-            desc: 'The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Metakovan (of Beeple NFT notoriety), Deadmau5 , and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.',
+            desc: 'The Sandbox allows creators to monetize voxel assets and gaming experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg, Deadmau5, and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.',
             tags: 'game'
         },
         {
@@ -70,7 +70,7 @@ const data = {
             img: fortnite,
             link: '/metaverses/fortnite',
             title: 'Fortnite',
-            desc: 'Fortnite started as a Battle Royale game-type but has since become much more. The Party Worlds game-type acts as a metaverse and has even seen popular artists Marshmellow, Ariana Grande, and Travis Scott perform concerts in front of more than 78 million concurrent in-game spectators.',
+            desc: 'Fortnite started as a Battle Royale game-type but has since become much more. The Party Worlds game-type acts as a metaverse with popular artists Marshmellow, Ariana Grande, and Travis Scott perform.',
             tags: 'game'
         }, 
         {
@@ -150,7 +150,7 @@ const data = {
             img: nakamoto,
             link: '/metaverses/nakamoto-games',
             title: 'Nakamoto Games',
-            desc: 'Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn. It advertises weekly prize pools and rewards. It also allows developers to monetize their own games in its metaverse. Its native token is $NAKA, which runs on the Polygon blockchain.',
+            desc: 'Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn with weekly prize pools and rewards. It allows developers to monetize their own games in its metaverse. Its native token, $NAKA, runs on the Polygon blockchain.',
             tags: ''
         }, 
         {

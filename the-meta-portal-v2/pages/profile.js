@@ -2,6 +2,7 @@ import { Box, Container, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text, us
 import { useMoralis } from "react-moralis";
 import Account from "../components/account";
 import Balance from "../components/Balance";
+import Favorites from "../components/favorites";
 import Header from "../components/Header";
 
 
@@ -10,21 +11,19 @@ export default function Profile() {
     
     const {user, isAuthenticated} = useMoralis();
 
-    const bg = useColorModeValue('gray.200', '#242323')
+    const pageBg = useColorModeValue('gray.200', '#242323')
     const color = useColorModeValue('black', 'white')
-      
+    const bg = useColorModeValue('#FFFFFF', '#121212')  
     
     if(!isAuthenticated ){
       return(
-        <Flex direction="column" maxW="100vw" minH="100vh" >
+        <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
           <Header />
           <Box flex="1"  px="0" py="11em" >
-                    <Container bg={bg} rounded="lg" fontSize="24px" position="relative" align="center" top="100px">
+                    <Container bg={bg} rounded="lg" fontSize="1.5em"  align="center" >
                         <Box>
-                            {/* <meta httpEquiv="refresh" content="1; url='/'"/> */}
-                            <Text color="white" py="5" >Error: You are already logged in.</Text>
-                            <Text color="white" py="5">You will be redirected shortly.</Text>
-                            <Text color="white" py="5">Please go back... before it&#39;s too late!</Text>
+                            <Text color={color} py="5" >Error: You must login to view this page.</Text>
+                            <Text color={color} py="5">Please go back... before it&#39;s too late!</Text>
                         </Box>
                     </Container>
                 </Box>
@@ -36,7 +35,7 @@ export default function Profile() {
     return(
       <>
         <title>The Meta Portal | Profile</title>
-        <Flex direction="column" maxW="100vw" minH="100vh" bg={bg} >
+        <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
           <Header />
           <Box flex="1"  px="0" py="11em" >
             <Tabs size="lg" mx="auto" colorScheme="orange" color={color} w="50vw" >
@@ -52,7 +51,7 @@ export default function Profile() {
                   <Account />
                 </TabPanel>
                 <TabPanel>
-                  {/* <Favorites /> */}
+                  <Favorites />
                 </TabPanel>
                 <TabPanel>
                   {user.get('ethAddress') ? <Balance /> : ''}

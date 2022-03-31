@@ -26,7 +26,7 @@ const Search = () => {
             )
     });
 
-    
+    const [display, changeDisplay] = useState('none')
     
     return (
         <>
@@ -67,27 +67,59 @@ const Search = () => {
 
             {/* Search Results */}
             
-               <Container  w="52vw" maxW="52vw" py="4" rounded="lg" display="flex" flexDirection="column" alignItems="center" >
+            {/* Desktop */}
+            <Flex display={['none', 'none', 'none','flex']} >
+               <Container  w="60%" maxW="90vw" py="4" rounded="lg" display="flex" flexDirection="column" alignItems="center" >
                     <SimpleGrid columns={2} spacingX='1' spacingY='2' >
                     
                         {filter && dataSearch.map((item) => {
                             return(
                                 // eslint-disable-next-line react/jsx-key
-                                <Box mx="0" mb="1" px="1" w="100%" maxh="40vh" >
-                                    <Box p="0" overflow="hidden"  h="400" bg={bg} color={color} rounded="lg" >
-                                        <Box as="a" href={item.link} h="180" display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
+                                <Flex mx="0"  mb="1" px="1" w="100%" minh="40vh"  >
+                                    <Box p="0" display="flex" flexDirection="column" overflow="hidden"  h="400" bg={bg} color={color} rounded="lg" >
+                                        <Box as="a" href={item.link} h="200" display="flex" flexDirection="column" alignItems="center" justifyContent="center"  >
                                             <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
                                         </Box>    
-                                        <Box>
-                                            <Text mt="2" mb="7" fontSize="1em" align="center">{item.title} </Text>
-                                            <Text ml="5" mr="5" align="left">{item.desc}</Text>
+                                        <Box display="flex" h="25" flexDirection="column" justifyContent="center" >
+                                            <Text fontSize="1em" align="center">{item.title} </Text>
+                                        </Box>
+                                        <Box display="flex" h="300" flexDirection="column" justifyContent="center" >
+                                            <Text fontSize="1.8vh" ml="5" mr="5" align="left">{item.desc}</Text>
                                         </Box>
                                     </Box>
-                                </Box>
+                                </Flex>
                             )
                         })}
                     </SimpleGrid>
                 </Container>
+            </Flex>
+
+            {/* Mobile Display */}
+            <Flex display={['flex', 'flex', 'flex','none']} >
+               <Container  w="100%" maxW="90vw" py="4" rounded="lg" display="flex" flexDirection="column" alignItems="center" >
+                    <SimpleGrid columns={2} spacingX='1' spacingY='2' >
+                    
+                        {filter && dataSearch.map((item) => {
+                            return(
+                                // eslint-disable-next-line react/jsx-key
+                                <Flex mx="0"  mb="1" px="1" w="100%" minh="40vh"  >
+                                    <Box p="0" display="flex" flexDirection="column" overflow="hidden"  h="600" bg={bg} color={color} rounded="lg" >
+                                        <Box as="a" href={item.link} h="200" display="flex" flexDirection="column" alignItems="center" justifyContent="center"  >
+                                            <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
+                                        </Box>    
+                                        <Box display="flex" h="25" flexDirection="column" justifyContent="center" >
+                                            <Text fontSize="1em" align="center">{item.title} </Text>
+                                        </Box>
+                                        <Box display="flex" h="400" flexDirection="column" justifyContent="center" >
+                                            <Text fontSize="1.8vh" ml="5" mr="5" align="left">{item.desc}</Text>
+                                        </Box>
+                                    </Box>
+                                </Flex>
+                            )
+                        })}
+                    </SimpleGrid>
+                </Container>
+            </Flex>
 
         </>
     )
