@@ -150,7 +150,7 @@ const data = {
             img: nakamoto,
             link: '/metaverses/nakamoto-games',
             title: 'Nakamoto Games',
-            desc: 'Nakamoto games was designed with the intention to help its users earn in the ecosystem. Its games are play-to-earn with weekly prize pools and rewards. It allows developers to monetize their own games in its metaverse. Its native token, $NAKA, runs on the Polygon blockchain.',
+            desc: 'Nakamoto games was designed as play-to-earn with weekly prize pools and rewards. It allows developers to monetize their own games in its metaverse. Its native token, $NAKA, runs on the Polygon blockchain.',
             tags: ''
         }, 
         {

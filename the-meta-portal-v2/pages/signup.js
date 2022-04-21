@@ -31,10 +31,10 @@ const Signup = () => {
                     <Header />
                     <Box flex="1" py="11em" mx="auto" >
                         <Stack maxW="425px" spacing="3" >
-                            <Input minlength="3" maxlength="30" color={color} borderColor={color} placeholder="Email" _placeholder={{color: color}} _focus={{border: "1px"}} 
+                            <Input minLength="3" maxLength="30" color={color} borderColor={color} placeholder="Email" _placeholder={{color: color}} _focus={{border: "1px"}} 
                                 value={email} onChange={event => setEmail(event.currentTarget.value)} w="25em"
                             />
-                            <Input minlength="8" maxlength="30" color={color} borderColor={color} placeholder="Password" type="password" _placeholder={{color: color}} 
+                            <Input minLength="8" maxLength="30" color={color} borderColor={color} placeholder="Password" type="password" _placeholder={{color: color}} 
                             _focus={{border: "1px"}} value={password} onChange={event => setPassword(event.currentTarget.value)} w="25em"
                             />
                             <Button bg="orange.400" w="25em" _hover={{bg: "orange.500"}} onClick={() => signup(email, password, email)}>Sign Up</Button>

@@ -1,15 +1,20 @@
 import { Box, Container, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useColorModeValue } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import Account from "../components/account";
 import Balance from "../components/Balance";
 import Favorites from "../components/favorites";
 import Header from "../components/Header";
+import FavoriteData from "../components/FavoriteData";
 
 
 
 export default function Profile() {
     
-    const {user, isAuthenticated} = useMoralis();
+    const {user, isAuthenticated, Moralis, account} = useMoralis();
+    
+    
+    
 
     const pageBg = useColorModeValue('gray.200', '#242323')
     const color = useColorModeValue('black', 'white')
@@ -51,7 +56,7 @@ export default function Profile() {
                   <Account />
                 </TabPanel>
                 <TabPanel>
-                  <Favorites />
+                      {/* <Favorites /> */}
                 </TabPanel>
                 <TabPanel>
                   {user.get('ethAddress') ? <Balance /> : ''}

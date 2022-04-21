@@ -1,17 +1,18 @@
 import { ChevronDownIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Box, Button, CloseButton, 
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Avatar, AvatarGroup, Box, CloseButton, 
             Flex, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList, Text, useColorMode, 
-            ColorModeScript, useColorModeValue, ChakraProvider } from "@chakra-ui/react";
+            ColorModeScript, useColorModeValue } from "@chakra-ui/react";
 import Moralis from "moralis";
 import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import DarkModeSwitch from "./DarkModeSwitch"; 
-import customTheme from "../styles/theme";
+
+
 
 
 
 export default function Header() {
-    const {user, isAuthenticated, authenticate, isAuthenticating, logout, authError, isLoggingOut } = useMoralis();
+    const {user, isAuthenticated, authenticate, isAuthenticating, logout, authError, isLoggingOut, Moralis, account } = useMoralis();
 
     const [username, setUsername] = useState(user && user.attributes.username);
     const [email, setEmail] = useState(user && user.attributes.email);
