@@ -6,7 +6,7 @@ export default function Trending(){
 
     const decentraland = "https://i.ibb.co/VQh7h3V/Decentraland-thumb.png"
     const sandbox = "https://i.ibb.co/Thtqp22/The-Sandbox-thumb.png"
-    const roblox = "https://i.ibb.co/8DFhXG4/roblox-thumb.png"
+    const otherside = "https://i.ibb.co/5Mhvwgf/otherside-thumb.png"
     const axie = "https://i.ibb.co/hB0QXQz/axie-thumb.png"
     const fortnite = "https://i.ibb.co/ZNhqXF4/Fortnite-Logo-thumb.png"
     const minecraft = "https://i.ibb.co/9gjYx15/minecraft-thumb.png"
@@ -33,12 +33,12 @@ export default function Trending(){
                             
                         </Box>
                         <Box w="10em"  py="3" _hover={{bg: bg}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                            <Box as="a" href="/metaverses/roblox" >
+                            <Box as="a" href="/metaverses/otherside" >
                                 <Box h="20"  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={roblox} alt="Roblox"/>
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={otherside} alt="otherside"/>
                                 </Box>
                                 <Box mt="2">
-                                    <Text textAlign="center">Roblox</Text>
+                                    <Text textAlign="center">Otherside</Text>
                                 </Box>
                             </Box>
                         </Box>

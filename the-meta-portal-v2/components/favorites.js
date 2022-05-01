@@ -60,7 +60,7 @@ export default function Favorites(){
                             // eslint-disable-next-line react/jsx-key
                             <Button onClick={() => {async () => {await Moralis.Cloud.run("updateFavorites", {
                                 addrs: account,
-                                newFav: selectedFavorite.category,
+                                newFav: selectedFavorite.category
                             })
 
                             }}} bg={buttonBg}> {e.category} </Button>

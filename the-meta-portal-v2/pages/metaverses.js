@@ -8,6 +8,7 @@ const Metaverses = () => {
 
     const decentraland = "https://i.ibb.co/mzy4srq/Decentraland.png"
     const sandbox = "https://i.ibb.co/mB2PwYS/The-Sandbox.png"
+    const otherside = "https://i.ibb.co/6Rb0NrM/otherside.png"
     const roblox = "https://i.ibb.co/6Nb7fCB/roblox.png"
     const axie = "https://i.ibb.co/RYYrnPL/axie.png"
     const fortnite = "https://i.ibb.co/S3jt7M7/Fortnite-Logo-edited.png"
@@ -72,6 +73,21 @@ const Metaverses = () => {
                         <Text fontSize="1em">The Sandbox is described as a platform that allows creators to monetize voxel assets and gaming 
                             experiences on the Ethereum blockchain. It calls notable celebrities such as Snoop Dogg,  
                             Deadmau5, and brands like Nike, Adidas, and Atari its residents. The Sandbox native token is $SAND.
+                        </Text>        
+                    </Mvcol2>
+                    </Flex>
+
+                    {/* Otherside */}
+                    <Flex mb="5">
+                    <Mvcol1>
+                        <Box as="a" href='/metaverses/otherside'>
+                            <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={otherside} alt="Otherside"/>
+                        </Box>
+                    </Mvcol1>
+                    <Mvcol2>
+                        <Text fontSize="1em">From the creators of Bored Ape Yacht Club, Otherside is one of the newest trending metaverses. 
+                        The Otherside is a virtual world with 5 land types that are purchasable as Otherdeeds. These lands have powerful artifacts
+                        and even rare creatures called Kodas. $APE is its native token.
                         </Text>        
                     </Mvcol2>
                     </Flex>
