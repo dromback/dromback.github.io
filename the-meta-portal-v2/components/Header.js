@@ -143,9 +143,7 @@ export default function Header() {
     }
 
         return(
-            
             <header >
-                
                 <Flex position="fixed" bg={bg} w="100%" zIndex={2} >
                             <Box as="a" href="/" ml="10" >
                                 <Image src={Logo} href='/'  alt="logo"/>
@@ -230,9 +228,7 @@ export default function Header() {
                         </Flex>
                     </Flex>
                 </Flex>
-                
             </header>
-            
         )
     
 }

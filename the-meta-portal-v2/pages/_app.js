@@ -4,6 +4,8 @@ import Script from 'next/script'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import customTheme from '../styles/theme'
+import { RecoilRoot} from 'recoil'
+
 
 
 
@@ -33,12 +35,13 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
         `}
       </Script>
-    
-    <ChakraProvider theme={customTheme}>
-      <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
-          <Component {...pageProps} />
-      </MoralisProvider>
-    </ChakraProvider>
+    <RecoilRoot>
+      <ChakraProvider theme={customTheme}>
+        <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
+            <Component {...pageProps} />
+        </MoralisProvider>
+      </ChakraProvider>
+    </RecoilRoot>
     </>
   )
 }
