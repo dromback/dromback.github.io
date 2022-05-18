@@ -27,6 +27,7 @@ const Login = () => {
                 <Box flex="1" bg={pageBg} mx="auto" py="11em" >
                     <Stack maxW="425px" spacing="3" >
                         <Input color={color} borderColor={color} placeholder="Email" _placeholder={{color: color}} _focus={{border: "1px"}} 
+                        // @ts-expect-error
                             value={email} onChange={event => setEmail(event.currentTarget.value)} w="25em"
                         />
                         <Input color={color} borderColor={color} placeholder="Password" type="password" _placeholder={{color: color}} _focus={{border: "1px"}}
@@ -46,7 +47,7 @@ const Login = () => {
         <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
                 <Header />
           <Box flex="1"  px="0" py="11em" >
-                    <Container bg={bg} rounded="lg" fontSize="1.5em" align="center">
+                    <Container bg={bg} rounded="lg" fontSize="1.5em" >
                         <Box>
                             <meta httpEquiv="refresh" content="1; url='/'"/>
                             <Text color={color} py="5" >Error: You are already logged in.</Text>

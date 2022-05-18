@@ -31,9 +31,11 @@ const Signup = () => {
                     <Header />
                     <Box flex="1" py="11em" mx="auto" >
                         <Stack maxW="425px" spacing="3" >
+                        {/* @ts-expect-error */}
                             <Input minLength="3" maxLength="30" color={color} borderColor={color} placeholder="Email" _placeholder={{color: color}} _focus={{border: "1px"}} 
                                 value={email} onChange={event => setEmail(event.currentTarget.value)} w="25em"
                             />
+                            {/* @ts-expect-error */}
                             <Input minLength="8" maxLength="30" color={color} borderColor={color} placeholder="Password" type="password" _placeholder={{color: color}} 
                             _focus={{border: "1px"}} value={password} onChange={event => setPassword(event.currentTarget.value)} w="25em"
                             />
@@ -52,7 +54,7 @@ const Signup = () => {
             <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
                 <Header />
                 <Box flex="1"  px="0" py="11em" >
-                    <Container bg={bg} rounded="lg" fontSize="1.5em" align="center" >
+                    <Container bg={bg} rounded="lg" fontSize="1.5em" >
                         <Box >
                             <meta httpEquiv="refresh" content="1; url='/'"/>
                             <Text color={color} py="5" >Redirecting back home</Text>
@@ -67,7 +69,7 @@ const Signup = () => {
             <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
                 <Header />
                 <Box flex="1"  px="0" py="11em" >
-                    <Container bg={bg} rounded="lg" fontSize="1.5em" align="center" >
+                    <Container bg={bg} rounded="lg" fontSize="1.5em" >
                         <Box >
                             <meta httpEquiv="refresh" content="1; url='/'"/>
                         </Box>
