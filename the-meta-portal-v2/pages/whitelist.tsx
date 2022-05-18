@@ -25,9 +25,9 @@ const Whitelist = () => {
                         
                         <Text fontSize="2em" mb="5" >Want to be among the first to get access to The Meta Portal?</Text>
                         <Text fontSize="2.5em" fontWeight="bold" mb="10">Sign up now!</Text>
-                        <MailchimpSubscribe
+                        {/* <MailchimpSubscribe
                             url={MAILCHIMP_URL}
-                            render={(props) => {
+                            render={(props: {}) => {
                                 const {subscribe, status, message} = props || {};
                                 return (
                                     <Flex rounded="lg" px="5" py="5" align="center" justifyContent="center" >
@@ -40,12 +40,12 @@ const Whitelist = () => {
                                         <Button display="flex" type="submit" colorScheme="orange"
                                             status={status}
                                             message={message}
-                                            onValidated={formData => subscribe(formData)}
+                                            onValidated={(formData: any) => subscribe(formData)}
                                         >Get Whitelisted</Button>
                                     </Flex> 
                                 )
                             }}
-                      />
+                      /> */}
                       </Text>
                       
                     </Box>
