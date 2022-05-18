@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
+      // @ts-expect-error
       ga.pageview(url)
     }
 

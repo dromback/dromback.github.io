@@ -9,6 +9,7 @@ import Head from "next/head";
 
 
 export const pageview = (url) => {
+  // @ts-expect-error
   window.gtag('config', process.env.NEXT_PUBLIC_MEASUREMENT_ID, {
       path_url: url,
   })
@@ -20,8 +21,8 @@ export default function Home() {
 
     return(
       <>
-      
-        <Head lang='en'>
+        <html lang="en">
+        <Head >
           <title>The Meta Portal - Your portal to the metaverse</title>
           <meta name="description" content="Your one-stop shop for everything metaverse; made for and by the user."></meta>
           <meta name="robots" content="all" />
@@ -49,7 +50,7 @@ export default function Home() {
               </Box>
             
         </Flex>
-       
+        </html>
       </>
     )
 

@@ -61,6 +61,7 @@ export default function Header() {
                                     <MenuItem as="a" href="/signup" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
                                     >Sign Up</MenuItem>
                                     <MenuItem as="button" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
+                                    // @ts-expect-error
                                         isLoading={isAuthenticating} onClick={() => authenticate({
                                             signingMessage: "Sign to login to The Meta Portal"
                                         })} >
@@ -92,20 +93,20 @@ export default function Header() {
                         </Flex>
 
                         <Flex flexDir="column" align="center"  >
-                            <Link href="/" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
+                            <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
                                 Home
                             </Link>
-                            <Link href="/metaverses" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
+                            <Link href="/metaverses" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
                                 Metaverses
                             </Link>
-                            <Link href="/marketplaces" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Marketplaces" my={5} w="100%">
+                            <Link href="/marketplaces" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Marketplaces" my={5} w="100%">
                                 Marketplaces
                             </Link>
-                            <Link href="/about" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
+                            <Link href="/about" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
                                 About
                             </Link>
                             {/* Login / Signup */}
-                            <Menu mt="5">
+                            <Menu >
                                 <MenuButton >
                                     <Text color="orange.400" >
                                         Login / Signup <ChevronDownIcon />
@@ -115,6 +116,7 @@ export default function Header() {
                                     <MenuItem as="a" href="/signup" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
                                     >Sign Up</MenuItem>
                                     <MenuItem as="button" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
+                                    // @ts-expect-error
                                         isLoading={isAuthenticating} onClick={() => authenticate({
                                             signingMessage: "Sign to login to The Meta Portal"
                                         })} >
@@ -198,16 +200,16 @@ export default function Header() {
                     </Flex>
 
                     <Flex flexDir="column" align="center"  >
-                        <Link href="/" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
+                        <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
                             Home
                         </Link>
-                        <Link href="/metaverses" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
+                        <Link href="/metaverses" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
                             Metaverses
                         </Link>
-                        <Link href="/marketplaces" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Marketplaces" my={5} w="100%">
+                        <Link href="/marketplaces" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Marketplaces" my={5} w="100%">
                             Marketplaces
                         </Link>
-                        <Link href="/about" bg={bg} color={color} align="center" _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
+                        <Link href="/about" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
                             About
                         </Link>
                         <Menu >

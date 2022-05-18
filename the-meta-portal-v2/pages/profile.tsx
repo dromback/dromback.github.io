@@ -25,10 +25,10 @@ export default function Profile() {
       <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
         <Header />
         <Box flex="1" px="0" py="11em" >
-          <Container bg={bg} rounded="lg" fontSize="1.5em" align="center" >
-            <Box>
-              <Text color={color} py="5" >Error: You must login to view this page.</Text>
-              <Text color={color} py="5">Please go back... before it&#39;s too late!</Text>
+          <Container bg={bg} rounded="lg" fontSize="1.5em"  >
+            <Box >
+              <Text align="center" color={color} py="5" >Error: You must login to view this page.</Text>
+              <Text align="center" color={color} py="5">Please go back... before it&#39;s too late!</Text>
             </Box>
           </Container>
         </Box>
