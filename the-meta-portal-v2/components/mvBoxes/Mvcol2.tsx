@@ -9,7 +9,7 @@ export default function Mvcol2({children}){
 
     return(
         
-        <Box bg={bg} w="150%" h="26vh" maxh="32vh" display="flex" flexDirection="column" alignItems="left" 
+        <Box bg={bg} w="150%" h="26vh" display="flex" flexDirection="column" alignItems="left" 
             justifyContent="center"  borderWidth="thin" borderColor="gray.700" px="5" py="5"
         > 
             <Box color={color} w="100%" >
