@@ -18,7 +18,9 @@ export default function Balance(){
             chain: "eth",
             address: user.get('ethAddress')
         }).catch(e => console.log(e))
+        // @ts-expect-error
         if(result.balance) {
+            // @ts-expect-error
             setEthBalance(Moralis.Units.FromWei(result.balance))
         }
     }

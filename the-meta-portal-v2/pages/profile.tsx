@@ -59,7 +59,7 @@ export default function Profile() {
                 {/* <Favorites /> */}
               </TabPanel>
               <TabPanel>
-                {/* {user.get('ethAddress') ? <Balance /> : ''} */}
+                {user.get('ethAddress') ? <Balance /> : ''}
               </TabPanel>
               <TabPanel>
                 {/* {user.get('ethAddress') ? <Transactions user={user}/> : ''} */}
