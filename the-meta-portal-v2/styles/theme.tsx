@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "../components/Button";
+import '@fontsource/open-sans';
 
 
 
@@ -15,6 +16,9 @@ const overrides = {
     },
     components: {
         Button,
+    },
+    fonts: {
+        body: "Open Sans, sans-serif",
     }
 
 }
