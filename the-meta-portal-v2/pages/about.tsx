@@ -13,7 +13,7 @@ const About = () => {
         <><>
             <title>The Meta Portal | About</title>
             <Flex direction="column" bg={bg} maxW="100vw" minH="100vh" >
-              <Header />
+              
               <Box flex="1"  px="0" py="11em" >
                   <Container h="60vh" w="100%" bg={boxBg} maxW="80vw" maxH="120vh" rounded="lg">
                     <Box position="relative" top="80px" >

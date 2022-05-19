@@ -23,7 +23,7 @@ export default function Profile() {
   if (!isAuthenticated) {
     return (
       <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
-        <Header />
+        
         <Box flex="1" px="0" py="11em" >
           <Container bg={bg} rounded="lg" fontSize="1.5em"  >
             <Box >
@@ -41,7 +41,7 @@ export default function Profile() {
     <>
       <title>The Meta Portal | Profile</title>
       <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
-        <Header />
+        
         <Box flex="1" px="0" py="11em" >
           <Tabs size="lg" mx="auto" colorScheme="orange" color={color} w="50vw" >
             <TabList>

@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import customTheme from '../styles/theme'
 import { RecoilRoot} from 'recoil'
+import Layout from '../components/Layout/Layout'
 
 
 
@@ -39,7 +40,9 @@ function MyApp({ Component, pageProps }) {
     <RecoilRoot>
       <ChakraProvider theme={customTheme}>
         <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
+          <Layout>
             <Component {...pageProps} />
+          </Layout>
         </MoralisProvider>
       </ChakraProvider>
     </RecoilRoot>

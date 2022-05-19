@@ -28,7 +28,7 @@ const Signup = () => {
             <><>
                 <title>The Meta Portal | Signup</title>
                 <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
-                    <Header />
+                    
                     <Box flex="1" py="11em" mx="auto" >
                         <Stack maxW="425px" spacing="3" >
                         {/* @ts-expect-error */}
@@ -52,7 +52,7 @@ const Signup = () => {
     if(user && isAuthenticated){
         return(
             <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
-                <Header />
+                
                 <Box flex="1"  px="0" py="11em" >
                     <Container bg={bg} rounded="lg" fontSize="1.5em" >
                         <Box >
@@ -67,7 +67,7 @@ const Signup = () => {
         }
         return(
             <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
-                <Header />
+                
                 <Box flex="1"  px="0" py="11em" >
                     <Container bg={bg} rounded="lg" fontSize="1.5em" >
                         <Box >

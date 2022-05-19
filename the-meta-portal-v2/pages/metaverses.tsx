@@ -1,5 +1,4 @@
 import { Box, Flex, Image, SimpleGrid, Text, useColorModeValue } from "@chakra-ui/react";
-import Header from "../components/Header";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
 
@@ -44,7 +43,7 @@ const Metaverses = () => {
         <><>
             <title>The Meta Portal | Metaverses</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
-                <Header />
+                
                 <Box flex="1" bg={bg} px="7vw" py="11em">
                     <Text fontSize="2.5em" color={color} mb="10">Popular Metaverses</Text>
                 

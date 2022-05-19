@@ -16,7 +16,7 @@ const Marketplaces = () => {
         <><>
             <title>The Meta Portal | Marketplaces</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
-                <Header />
+                
                 <Box flex="1" bg={bg} px="7vw" py="11em">
                     <Text fontSize="2.5em" color={color} mb="10">Popular Marketplaces</Text>
                 

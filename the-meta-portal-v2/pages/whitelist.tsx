@@ -17,7 +17,7 @@ const Whitelist = () => {
         <><>
             <title>The Meta Portal | Whitelist</title>
             <Flex direction="column" bgGradient={gradient} maxW="100vw" minH="100vh" >
-              <Header />
+              
               <Box flex="1"  px="0" py="11em" >
                   <Container h="60vh" w="100%"  maxW="80vw" maxH="120vh" rounded="lg">
                     <Box  >
