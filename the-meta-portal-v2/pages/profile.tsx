@@ -4,7 +4,6 @@ import { useMoralis } from "react-moralis";
 import Account from "../components/account";
 import Balance from "../components/Balance";
 import Favorites from "../components/favorites";
-import Header from "../components/Header";
 import FavoriteData from "../components/FavoriteData";
 
 

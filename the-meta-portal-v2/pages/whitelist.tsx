@@ -1,5 +1,5 @@
 import { Box, Button, Container, Flex, FormControl, Input, Text, useColorModeValue  } from "@chakra-ui/react";
-import Header from "../components/Header";
+
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
 

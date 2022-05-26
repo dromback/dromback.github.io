@@ -1,6 +1,13 @@
+import { useColorModeValue } from "@chakra-ui/react";
+import type { ComponentStyleConfig } from "@chakra-ui/theme";
 
 
-export const Button = {
+
+
+export const Button: ComponentStyleConfig = {
+
+  
+
   baseStyle: {
     borderRadius: "60px",
     fontSize: "10pt",
@@ -15,12 +22,11 @@ export const Button = {
     },
     md: {
       fontSize: "10pt",
-      // height: "28px",
     },
   },
   variants: {
     solid: {
-      color: "white",
+      color: 'white',
       bg: "orange.500",
       _hover: {
         bg: "orange.400",
@@ -28,6 +34,7 @@ export const Button = {
     },
     outline: {
       color: "orange.500",
+      bg: "orange.200",
       border: "1px solid",
       borderColor: "orange.500",
     },
@@ -37,6 +44,30 @@ export const Button = {
       borderColor: "gray.300",
       _hover: {
         bg: "gray.50",
+      },
+    },
+    favorite: {
+      height: "26px",
+      width: "90px",
+      color: "white",
+      bg: "orange.500",
+      border: "1px solid",
+      borderColor: "orange.500",
+      _hover: {
+        bg: "orange.200",
+        color: "orange.500"
+      },
+    },
+    addFavorite: {
+      height: "26px",
+      width: "90px",
+      color: "orange.500",
+      bg: "orange.200",
+      border: "1px solid",
+      borderColor: "orange.500",
+      _hover: {
+        bg: "orange.500",
+        color: "white"
       },
     },
   },

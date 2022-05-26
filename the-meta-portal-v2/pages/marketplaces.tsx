@@ -1,5 +1,4 @@
-import { Box, Flex, Image, SimpleGrid, Text, useColorModeValue } from "@chakra-ui/react";
-import Header from "../components/Header";
+import { Box, Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
 

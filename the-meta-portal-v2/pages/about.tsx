@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Text, useColorModeValue } from "@chakra-ui/react";
-import Header from "../components/Header";
 
 
 

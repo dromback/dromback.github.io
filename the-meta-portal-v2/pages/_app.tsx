@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import customTheme from '../styles/theme'
 import { RecoilRoot} from 'recoil'
 import Layout from '../components/Layout/Layout'
+import * as ga from '../lib/google-analytics'
 
 
 
@@ -15,7 +16,6 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      // @ts-expect-error
       ga.pageview(url)
     }
 

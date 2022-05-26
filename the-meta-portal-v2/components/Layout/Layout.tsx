@@ -1,12 +1,13 @@
+import { Flex } from '@chakra-ui/react';
 import React from 'react';
-import Header from '../Header';
+import Navbar from '../Navbar/Navbar'
 
 const Layout:React.FC = ({children}) => {
     
     return (
         <>
-            <Header />
-            <main>{children}</main>
+            <Navbar />
+                <main>{children}</main>
         </>
     )
 }
