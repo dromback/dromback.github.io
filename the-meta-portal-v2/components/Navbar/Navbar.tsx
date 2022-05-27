@@ -7,6 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useSetRecoilState } from "recoil";
 import { authModalState } from "../../atoms/authModalAtom";
 import { auth } from "../../firebase/clientApp";
+import useDirectory from "../../hooks/useDirectory";
 import DarkModeSwitch from "../DarkModeSwitch";
 import Directory from "./Directory/Directory";
 import RightContent from "./RightContent/RightContent";
@@ -15,7 +16,8 @@ import RightContent from "./RightContent/RightContent";
 
 export default function Header() {
 
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
+    const { onSelectMenuItem } = useDirectory();
 
     const [display, changeDisplay] = useState('none')
 
@@ -42,9 +44,9 @@ export default function Header() {
                         <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Metaverses</Link>
                         <Link href="/marketplaces" color={color} aria-label="marketplaces" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Marketplaces</Link>
                         <Link href="/about" color={color} aria-label="about" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>About</Link>
-                        <Directory />
+                        {user && <Directory />}
                         <DarkModeSwitch />
-                        <RightContent user={user}/>
+                        <RightContent user={user} />
 
                     </Flex>
 

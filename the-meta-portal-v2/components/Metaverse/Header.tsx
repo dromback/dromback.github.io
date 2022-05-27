@@ -17,7 +17,8 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
     const color = useColorModeValue('black', 'white')
     const boxBg = useColorModeValue('#FFFFFF', '#121212')
     
-    const {metaverseStateValue, loading, error, onFavoriteOrUnfavoriteMetaverse} = useMetaverseData(!!metaverseData);
+    // @ts-ignore
+    const {metaverseStateValue, loading, onFavoriteOrUnfavoriteMetaverse} = useMetaverseData(!!metaverseData);
     const isFavorite = !!metaverseStateValue.mySnippets.find((item) => item.metaverseId === metaverseData.id);
 
     return (
@@ -30,14 +31,15 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
                     >
                         {metaverseStateValue.currentMetaverse.imageURL ? (
                             <Image 
-                            borderRadius="full"
-                            boxSize="66px"
-                            src={metaverseStateValue.currentMetaverse.imageURL}
-                            alt={metaverseData.name}
-                            position="relative"
-                            top={-3}
-                            color="blue.500"
-                            border="4px solid white"/>
+                                borderRadius="full"
+                                boxSize="66px"
+                                src={metaverseStateValue.currentMetaverse.imageURL}
+                                alt={metaverseData.name}
+                                position="relative"
+                                top={-3}
+                                color="blue.500"
+                                border="4px solid white"
+                            />
                         ) : (
                             <Icon as={IoAperture} fontSize={128} />
                         )}

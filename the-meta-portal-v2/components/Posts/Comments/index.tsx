@@ -30,13 +30,13 @@ import CommentInput from "./Input";
 type CommentsProps = {
   user?: User | null;
   selectedPost: Post;
-  metaverse: string;
+  metaverseID: string;
 };
 
 const Comments: React.FC<CommentsProps> = ({
   user,
   selectedPost,
-  metaverse,
+  metaverseID,
 }) => {
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState<Comment[]>([]);
@@ -63,7 +63,7 @@ const Comments: React.FC<CommentsProps> = ({
         creatorId: user.uid,
         creatorDisplayText: user.email!.split("@")[0],
         creatorPhotoURL: user.photoURL,
-        metaverseId: metaverse,
+        metaverseId: metaverseID,
         text: comment,
         postTitle: selectedPost.title,
         createdAt: serverTimestamp(),
@@ -83,7 +83,7 @@ const Comments: React.FC<CommentsProps> = ({
           creatorId: user.uid,
           creatorDisplayText: user.email!.split("@")[0],
           creatorPhotoURL: user.photoURL,
-          metaverseId: metaverse,
+          metaverseId: metaverseID,
           postId,
           postTitle: title,
           text: comment,

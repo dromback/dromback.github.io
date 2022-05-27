@@ -31,7 +31,7 @@ export type PostItemContentProps = {
     event: React.MouseEvent<SVGElement, MouseEvent>,
     post: Post,
     vote: number,
-    communityId: string,
+    metaverseId: string,
     postIdx?: number
   ) => void;
   onDeletePost: (post: Post) => Promise<boolean>;

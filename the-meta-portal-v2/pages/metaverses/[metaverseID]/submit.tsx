@@ -14,7 +14,7 @@ import PageContent from "../../../components/Layout/PageContent";
 const CreateMetaversePostPage: NextPage = () => {
   const [user, loadingUser, error] = useAuthState(auth);
   const router = useRouter();
-  const { metaverse } = router.query;
+  const { metaverseID } = router.query;
   
   const metaverseStateValue = useRecoilValue(metaverseState);
   const { loading } = useMetaverseData();
@@ -32,7 +32,7 @@ const CreateMetaversePostPage: NextPage = () => {
   console.log("HERE IS USER", user, loadingUser);
 
   return (
-    <PageContent maxW="1060px" >
+    <PageContent >
       <>
         <Box p="14px 0px" borderBottom="1px solid" borderColor="white" >
           <Text fontWeight={600}>Create a post</Text>

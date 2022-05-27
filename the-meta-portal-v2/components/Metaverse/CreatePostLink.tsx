@@ -19,9 +19,9 @@ const CreatePostLink: React.FC<CreatePostProps> = () => {
     const { toggleMenuOpen } = useDirectory();
     const onClick = () => {
     // Could check for user to open auth modal before redirecting to submit
-    const { metaverse } = router.query;
-    if (metaverse) {
-      router.push('/metaverses/${router.query.metaverse}/submit');
+    const { metaverseID } = router.query;
+    if (metaverseID) {
+      router.push('/metaverses/${router.query.metaverseID}/submit');
       return;
     }
     // Open directory menu to select metaverse to post to

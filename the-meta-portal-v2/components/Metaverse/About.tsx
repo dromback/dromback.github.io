@@ -24,6 +24,7 @@ import { useRecoilValue, useSetRecoilState } from "recoil";
 import { IoAperture } from 'react-icons/io5'
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { doc, updateDoc } from "firebase/firestore";
+import { useRouter } from "next/router";
 
 type AboutProps = {
     metaverseData: Metaverse;
@@ -39,6 +40,7 @@ const About: React.FC<AboutProps> = ({
     loading,
 }) => {
     const [user] = useAuthState(auth); // will revisit how 'auth' state is passed
+    const router = useRouter();
     const selectFileRef = useRef<HTMLInputElement>(null);
     const setMetaverseStateValue = useSetRecoilState(metaverseState);
 
@@ -170,7 +172,7 @@ const About: React.FC<AboutProps> = ({
                                 )}
                             </Flex>
                             {!onCreatePage && (
-                                <Link href={`/metaverses/${metaverseData.id}/submit`}>
+                                <Link href={`/metaverses/${router.query.metaverseID}/submit`} passHref>
                                     <Button mt={3} height="30px" color={color}>
                                         Create Post
                                     </Button>

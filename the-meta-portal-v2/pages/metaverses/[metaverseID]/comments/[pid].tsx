@@ -18,7 +18,7 @@ import usePosts from '../../../../hooks/usePosts';
 const PostPage: React.FC = () => {
     const [user] = useAuthState(auth);
     const router = useRouter();
-    const { metaverse, pid } = router.query;
+    const { metaverseID, pid } = router.query;
     const { metaverseStateValue } = useMetaverseData();
     const { postStateValue, setPostStateValue, onDeletePost, loading, setLoading, onVote } = usePosts(metaverseStateValue.currentMetaverse);
 
@@ -78,7 +78,7 @@ const PostPage: React.FC = () => {
                                 />
                                 <Comments
                                     user={user}
-                                    metaverse={metaverse as string}
+                                    metaverseID={metaverseID as string}
                                     selectedPost={postStateValue.selectedPost}
                                 />
                             </>
@@ -90,7 +90,7 @@ const PostPage: React.FC = () => {
                 <About
                     metaverseData={
                         metaverseStateValue.currentMetaverse
-                        // communityStateValue.visitedCommunities[community as string]
+                        
                     }
                     loading={loading}
                 />

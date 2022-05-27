@@ -36,7 +36,7 @@ const useDirectory = () => {
   };
 
   useEffect(() => {
-    const { metaverse } = router.query;
+    const { metaverseID } = router.query;
 
     // const existingCommunity =
     //   communityStateValue.visitedCommunities[community as string];
