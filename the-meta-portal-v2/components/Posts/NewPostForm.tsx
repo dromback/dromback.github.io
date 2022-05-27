@@ -152,6 +152,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({ metaverseId, metaverseImageUR
                         selectedFile={selectedFile}
                         setSelectedFile={setSelectedFile}
                         setSelectedTab={setSelectedTab}
+                        // @ts-ignore
                         selectFileRef={selectFileRef}
                         onSelectImage={onSelectImage}
                         />)}
