@@ -35,7 +35,7 @@ const CreatePostLink: React.FC<CreatePostProps> = () => {
       height="56px"
       borderRadius={4}
       border="1px solid"
-      borderColor="gray.300"
+      borderColor="orange.500"
       p={2}
       mb={4}
       
@@ -48,16 +48,16 @@ const CreatePostLink: React.FC<CreatePostProps> = () => {
         _hover={{
           bg: bg,
           border: "1px solid",
-          borderColor: "blue.500",
+          borderColor: "gray.500",
         }}
         _focus={{
           outline: "none",
           bg: bg,
           border: "1px solid",
-          borderColor: "blue.500",
+          borderColor: "gray.300",
         }}
         bg={bg}
-        borderColor="gray.200"
+        borderColor={bg}
         height="36px"
         borderRadius={4}
         mr={4}
@@ -70,7 +70,7 @@ const CreatePostLink: React.FC<CreatePostProps> = () => {
         color={color}
         cursor="pointer"
       />
-      <Icon as={BsLink45Deg} fontSize={24} color="gray.400" cursor="pointer" />
+      <Icon as={BsLink45Deg} fontSize={24} color={color} cursor="pointer" />
     </Flex>
   );
 };

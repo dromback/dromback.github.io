@@ -29,6 +29,7 @@
     const wilder = "https://i.ibb.co/tqYJFpv/wilderworld.png"
     const illuvium = "https://i.ibb.co/kGhMG1s/illuvium.png"
     const godsunchained = "https://i.ibb.co/fMDT1Yn/Gods-Unchained.png"
+    const otherside = "https://i.ibb.co/6Rb0NrM/otherside.png"
 
 
 const data = {
@@ -264,7 +265,15 @@ const data = {
             title: 'Gods Unchained',
             desc: 'Led by former Game Director of Magic: The Gathering Arena, Gods Unchained is a free-to-play, play to earn trading card game that gives the ownership to the players. $GODS is its native ERC-20 token.',
             tags: 'game Ethereum'
-        }
+        },
+        {
+            id:30,
+            img: otherside,
+            link: '/metaverses/otherside',
+            title: 'Otherside',
+            desc: 'From the creators of Bored Ape Yacht Club, Otherside is one of the newest trending metaverses. The Otherside is a virtual world with 5 land types that are purchasable as Otherdeeds. These lands have powerful artifacts and even rare creatures called Kodas. $APE is its native token.',
+            tags: 'game Ethereum BAYC Yuga Labs'
+        },
     ]
 }
 export default data;

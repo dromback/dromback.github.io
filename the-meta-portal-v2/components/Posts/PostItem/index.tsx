@@ -69,7 +69,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
 
       console.log("Post successfully deleted");
 
-      // Could proably move this logic to onDeletePost function
+      // Could probably move this logic to onDeletePost function
       if (router) router.back();
     } catch (error: any) {
       console.log("Error deleting post", error.message);
@@ -108,7 +108,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
           as={
             userVoteValue === 1 ? IoArrowUpCircleSharp : IoArrowUpCircleOutline
           }
-          color={userVoteValue === 1 ? 'green.500' : "gray.300"}
+          color={userVoteValue === 1 ? color : "gray.300"}
           fontSize={22}
           cursor="pointer"
           onClick={(event) => onVote(event, post, 1, post.metaverseId)}
@@ -122,7 +122,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
               ? IoArrowDownCircleSharp
               : IoArrowDownCircleOutline
           }
-          color={userVoteValue === -1 ? 'red.500' : "gray.300"}
+          color={userVoteValue === -1 ? color : "gray.300"}
           fontSize={22}
           cursor="pointer"
           

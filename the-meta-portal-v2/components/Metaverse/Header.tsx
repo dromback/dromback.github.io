@@ -25,36 +25,40 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
         <>
             <title>The Meta Portal | Metaverses | {metaverseData.name}</title>
             <Box flex='1' h='300px' bg={bg} py="7.5em"  >
-                <Flex justifyContent='left' ml='5' >
-                    <Box bg={boxBg} display="flex" flexDirection="column" alignItems="center" justifyContent="center"
-                        rounded="lg" width='375px' height='150px' borderWidth="thin" borderColor="gray.700" mr='5' 
+                <Flex justifyContent='left' bg={boxBg} borderBottom='1px solid' borderTop='1px solid' borderColor='orange.500'>
+                    <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center"
+                        rounded="lg" width='375px' height='120px'  
                     >
                         {metaverseStateValue.currentMetaverse.imageURL ? (
                             <Image 
-                                borderRadius="full"
-                                boxSize="66px"
+                                borderRadius="lg"
+                                
+                                maxH='100px'
                                 src={metaverseStateValue.currentMetaverse.imageURL}
                                 alt={metaverseData.name}
                                 position="relative"
-                                top={-3}
                                 color="blue.500"
-                                border="4px solid white"
+                                boxShadow="2px 2px 2px black"
+                                
                             />
                         ) : (
                             <Icon as={IoAperture} fontSize={128} />
                         )}
-                        {/* <Image maxW="75%"  borderRadius="lg" boxShadow="2px 2px 2px black" src={decentraland} alt="Decentraland"/> */}
+                        
                             
                     </Box>
                     <Box display='flex' flexDirection='row'  alignItems='center' maxWidth='860px' >
-                                <Text fontSize='18' mr='2'>{metaverseData.name}</Text>
+                                <Text fontSize='18' mr='4'>{metaverseData.name}</Text>
                                 <Button variant={isFavorite ? 'favorite' : 'addFavorite'} isLoading={loading} 
                                 onClick={() => onFavoriteOrUnfavoriteMetaverse(metaverseData, isFavorite)}
                                 >
                                     {isFavorite ? 'Favorite' : '+ Favorite'} 
                                 </Button>
                     </Box>
+                    
+                    
                 </Flex>
+                
             </Box>
         </>
     );
