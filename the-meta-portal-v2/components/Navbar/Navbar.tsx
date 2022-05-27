@@ -44,7 +44,7 @@ export default function Header() {
                         <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Metaverses</Link>
                         <Link href="/marketplaces" color={color} aria-label="marketplaces" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Marketplaces</Link>
                         <Link href="/about" color={color} aria-label="about" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>About</Link>
-                        {user && <Directory />}
+                        {/* {user && <Directory />} */}
                         <DarkModeSwitch />
                         <RightContent user={user} />
 
