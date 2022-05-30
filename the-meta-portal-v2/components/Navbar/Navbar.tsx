@@ -17,6 +17,7 @@ import RightContent from "./RightContent/RightContent";
 export default function Header() {
 
     const [user] = useAuthState(auth);
+    console.log(user)
     const { onSelectMenuItem } = useDirectory();
 
     const [display, changeDisplay] = useState('none')
@@ -41,12 +42,13 @@ export default function Header() {
                     {/* Desktop */}
                     <Flex display={['none', 'none', 'flex', 'flex']} >
                         <Link href="/" color={color} aria-label="Home" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Home</Link>
+                        <Link href="/feed" color={color} aria-label="feed" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Feed</Link>
                         <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Metaverses</Link>
-                        <Link href="/marketplaces" color={color} aria-label="marketplaces" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Marketplaces</Link>
                         <Link href="/about" color={color} aria-label="about" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>About</Link>
                         {/* {user && <Directory />} */}
                         <DarkModeSwitch />
                         <RightContent user={user} />
+                        
 
                     </Flex>
 
@@ -71,11 +73,11 @@ export default function Header() {
                         <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
                             Home
                         </Link>
+                        <Link href="/feed" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Feed" my={5} w="100%">
+                            Feed
+                        </Link>
                         <Link href="/metaverses" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
                             Metaverses
-                        </Link>
-                        <Link href="/marketplaces" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Marketplaces" my={5} w="100%">
-                            Marketplaces
                         </Link>
                         <Link href="/about" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
                             About

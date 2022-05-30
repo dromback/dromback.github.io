@@ -2,6 +2,8 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, CloseButton, Flex,
 import React, { useEffect, useState } from 'react';
 import { useMoralis } from 'react-moralis';
 import { MdOutlineLogin } from 'react-icons/md'
+import { CgProfile } from 'react-icons/cg'
+import ProfileMenuItem from '../../ProfileMenuItem';
 
 
 const WalletLogin:React.FC = () => {
@@ -20,8 +22,11 @@ const WalletLogin:React.FC = () => {
         setEmail(user.getEmail())
     }, [user])
     
+    
+    if (!isAuthenticated) {
     return (
         <>
+            
             <MenuItem as="button" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
                 // @ts-expect-error
                 isLoading={isAuthenticating} onClick={() => authenticate({
@@ -29,10 +34,11 @@ const WalletLogin:React.FC = () => {
                 })} >
                      <Flex align='center'>
                         <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
-                        Login with wallet
+                        Connect Wallet
                     </Flex>
                 
             </MenuItem>
+
 
             {authError && <Alert status='error' w="300px" position="relative" top="100px" left="830px">
                         <AlertIcon />
@@ -45,6 +51,21 @@ const WalletLogin:React.FC = () => {
                         <CloseButton position='absolute' right='8px' top='8px' />
                     </Alert>}
         </>
+    )}
+
+    return(
+        <>
+            <ProfileMenuItem />
+            <MenuItem color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
+                onClick={logout} disabled={isLoggingOut}>
+                <Flex align='center'>
+                    <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
+                    Disconnect Wallet
+                </Flex>
+            </MenuItem>
+        </>    
     )
+
+
 }
 export default WalletLogin;

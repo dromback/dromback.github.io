@@ -65,7 +65,8 @@ import {
         borderColor="gray.300"
       >
         <Flex
-          align="flex-end"
+          align="center"
+          justifyContent='center'
           color={color}
           p="6px 10px"
           bg="orange.500"

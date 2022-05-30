@@ -9,6 +9,8 @@ import {GiAutomaticSas, GiTwoCoins } from 'react-icons/gi'
 import { useResetRecoilState, useSetRecoilState } from 'recoil';
 import { authModalState } from '../../../atoms/authModalAtom';
 import { metaverseState } from '../../../atoms/metaversesAtom';
+import WalletLogin from './WalletLogin';
+import ProfileMenuItem from '../../ProfileMenuItem';
 
 type UserMenuProps = {
     user?: User | null;
@@ -43,12 +45,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                 </AvatarGroup>
             </MenuButton>
             <MenuList bg={bg} >
-                <MenuItem as="a" href="/profile" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}>
-                    <Flex align='center'>
-                        <Icon fontSize='20' mr='2' as={CgProfile} />
-                        Profile
-                    </Flex>
-                </MenuItem>
                 <MenuDivider />
                 <MenuItem color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }} onClick={logout}>
                     <Flex align='center'>
@@ -56,6 +52,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                         Log Out
                     </Flex>
                 </MenuItem>
+                <WalletLogin />
             </MenuList>
         </Menu>
     )
