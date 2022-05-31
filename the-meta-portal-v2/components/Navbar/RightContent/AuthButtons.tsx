@@ -4,7 +4,6 @@ import {
     Icon,
     Menu, MenuButton, MenuItem, MenuList, Text, useColorModeValue
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import { useSetRecoilState } from "recoil";
 import { authModalState } from "../../../atoms/authModalAtom";
 import AuthModal from '../../Modal/Auth/AuthModal'

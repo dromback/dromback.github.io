@@ -7,7 +7,10 @@ const Layout:React.FC = ({children}) => {
     return (
         <>
             <Navbar />
-                <main>{children}</main>
+            <Flex direction='column' w={{base: '100%', md: '100%'}} >
+                {children && children as keyof typeof children}
+            </Flex>
+                
         </>
     )
 }

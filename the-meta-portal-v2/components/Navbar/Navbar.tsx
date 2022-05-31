@@ -28,7 +28,7 @@ export default function Header() {
     const buttonBg = useColorModeValue('orange.400', 'orange.400')
 
 
-    const setAuthModalState = useSetRecoilState(authModalState)
+    const setAuthModalState = useSetRecoilState(authModalState);
 
 
     return (
