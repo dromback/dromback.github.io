@@ -1,6 +1,6 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import {
-    Box, Flex, IconButton, Image, Link, useColorModeValue
+    Box, Flex, IconButton, Image, Link, Text, useColorModeValue
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -69,7 +69,7 @@ export default function Header() {
                         />
                     </Flex>
 
-                    <Flex flexDir="column" align="center"  >
+                    <Flex flexDir="column" align="center" mx='auto' justify='center' >
                         <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
                             Home
                         </Link>
@@ -83,7 +83,9 @@ export default function Header() {
                             About
                         </Link>
                         {/* Login / Signup */}
-                        <DarkModeSwitch />
+                        <Flex align='center'>
+                            <DarkModeSwitch /> <Text>Light/Dark Mode Toggle</Text>
+                        </Flex>
                         <RightContent user={user}/>
                     </Flex>
                 </Flex>

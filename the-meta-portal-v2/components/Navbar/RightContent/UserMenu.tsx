@@ -5,7 +5,7 @@ import React from 'react';
 import { CgProfile } from 'react-icons/cg'
 import { MdOutlineLogin } from 'react-icons/md'
 import { auth } from '../../../firebase/clientApp';
-import {GiAutomaticSas, GiTwoCoins } from 'react-icons/gi'
+import { GiAutomaticSas, GiTwoCoins } from 'react-icons/gi'
 import { useResetRecoilState, useSetRecoilState } from 'recoil';
 import { authModalState } from '../../../atoms/authModalAtom';
 import { metaverseState } from '../../../atoms/metaversesAtom';
@@ -45,13 +45,14 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                 </AvatarGroup>
             </MenuButton>
             <MenuList bg={bg} >
-                <MenuDivider />
+
                 <MenuItem color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }} onClick={logout}>
                     <Flex align='center'>
                         <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
                         Log Out
                     </Flex>
                 </MenuItem>
+                <MenuDivider />
                 <WalletLogin />
             </MenuList>
         </Menu>
