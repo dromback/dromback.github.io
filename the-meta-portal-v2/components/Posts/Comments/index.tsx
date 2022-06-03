@@ -174,8 +174,8 @@ const Comments: React.FC<CommentsProps> = ({
     const boxBg = useColorModeValue('#FFFFFF', '#121212')
 
   return (
-
-    
+    <>
+    <title>The Meta Portal | Metaverses | {metaverseID}</title>
     <Box bg={boxBg} p={2} borderRadius="0px 0px 4px 4px">
       <Flex
         direction="column"
@@ -237,6 +237,7 @@ const Comments: React.FC<CommentsProps> = ({
         )}
       </Stack>
     </Box>
+    </>
   );
 };
 export default Comments;
