@@ -5,12 +5,12 @@ import React from 'react';
 import { CgProfile } from 'react-icons/cg'
 import { MdOutlineLogin } from 'react-icons/md'
 import { auth } from '../../../firebase/clientApp';
-import { GiAutomaticSas, GiTwoCoins } from 'react-icons/gi'
+import {  GiTwoCoins } from 'react-icons/gi'
 import { useResetRecoilState, useSetRecoilState } from 'recoil';
 import { authModalState } from '../../../atoms/authModalAtom';
 import { metaverseState } from '../../../atoms/metaversesAtom';
 import WalletLogin from './WalletLogin';
-import ProfileMenuItem from '../../ProfileMenuItem';
+
 
 type UserMenuProps = {
     user?: User | null;

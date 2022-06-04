@@ -33,7 +33,7 @@ const Posts: React.FC<PostsProps> = ({
 }) => {
   
   const [loading, setLoading] = useState(false);
-  // const setAuthModalState = useSetRecoilState(authModalState);
+  
   const router = useRouter();
 
   const { postStateValue, setPostStateValue, onVote, onDeletePost } = usePosts(

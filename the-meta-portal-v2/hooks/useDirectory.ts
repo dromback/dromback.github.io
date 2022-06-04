@@ -38,9 +38,6 @@ const useDirectory = () => {
   useEffect(() => {
     const { metaverseID } = router.query;
 
-    // const existingCommunity =
-    //   communityStateValue.visitedCommunities[community as string];
-
     const existingMetaverse = metaverseStateValue.currentMetaverse;
 
     if (existingMetaverse.id) {
@@ -61,7 +58,7 @@ const useDirectory = () => {
       selectedMenuItem: defaultMenuItem,
     }));
   }, [metaverseStateValue.currentMetaverse]);
-  //                              ^ used to be communityStateValue.vistedCommunities
+  //                              
 
   return { directoryState, onSelectMenuItem, toggleMenuOpen };
 };

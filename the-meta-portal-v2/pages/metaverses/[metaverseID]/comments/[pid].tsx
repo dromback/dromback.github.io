@@ -33,10 +33,7 @@ const PostPage: React.FC = () => {
                 ...prev,
                 selectedPost: { id: postDoc.id, ...postDoc.data() } as Post,
             }));
-            // setPostStateValue((prev) => ({
-            //   ...prev,
-            //   selectedPost: {} as Post,
-            // }));
+            
         } catch (error: any) {
             console.log("fetchPost error", error.message);
         }

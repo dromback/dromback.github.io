@@ -165,11 +165,7 @@ const Home: NextPage = () => {
   };
 
   useEffect(() => {
-    /**
-     * initSnippetsFetched ensures that user snippets have been retrieved;
-     * the value is set to true when snippets are first retrieved inside
-     * of getSnippets in useCommunityData
-     */
+    
     if (!metaverseStateValue.initSnippetsFetched) return;
 
     if (user) {

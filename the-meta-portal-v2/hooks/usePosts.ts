@@ -221,15 +221,7 @@ const usePosts = (metaverseData?: Metaverse) => {
       postVotes: postVotes as PostVote[],
     }));
 
-    // const unsubscribe = onSnapshot(postVotesQuery, (querySnapshot) => {
-    //   const postVotes = querySnapshot.docs.map((postVote) => ({
-    //     id: postVote.id,
-    //     ...postVote.data(),
-    //   }));
-
-    // });
-
-    // return () => unsubscribe();
+    
   };
 
   useEffect(() => {
@@ -237,29 +229,7 @@ const usePosts = (metaverseData?: Metaverse) => {
     getMetaversePostVotes(metaverseStateValue.currentMetaverse.id);
   }, [user, metaverseStateValue.currentMetaverse]);
 
-  /**
-   * DO THIS INITIALLY FOR POST VOTES
-   */
-  // useEffect(() => {
-  //   if (!user?.uid || !communityData) return;
-  //   const postVotesQuery = query(
-  //     collection(firestore, `users/${user?.uid}/postVotes`),
-  //     where("communityId", "==", communityData?.id)
-  //   );
-  //   const unsubscribe = onSnapshot(postVotesQuery, (querySnapshot) => {
-  //     const postVotes = querySnapshot.docs.map((postVote) => ({
-  //       id: postVote.id,
-  //       ...postVote.data(),
-  //     }));
-
-  //     setPostStateValue((prev) => ({
-  //       ...prev,
-  //       postVotes: postVotes as PostVote[],
-  //     }));
-  //   });
-
-  //   return () => unsubscribe();
-  // }, [user, communityData]);
+  
 
   useEffect(() => {
     // Logout or no authenticated user

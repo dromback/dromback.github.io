@@ -39,15 +39,15 @@ const About: React.FC<AboutProps> = ({
     onCreatePage,
     loading,
 }) => {
-    const [user] = useAuthState(auth); // will revisit how 'auth' state is passed
+    const [user] = useAuthState(auth); 
     const router = useRouter();
     const selectFileRef = useRef<HTMLInputElement>(null);
     const setMetaverseStateValue = useSetRecoilState(metaverseState);
 
-    // April 24 - moved this logic to custom hook in tutorial build (useSelectFile)
+    
     const [selectedFile, setSelectedFile] = useState<string>();
 
-    // Added last!
+    
     const [imageLoading, setImageLoading] = useState(false);
 
     const onSelectImage = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -78,7 +78,7 @@ const About: React.FC<AboutProps> = ({
             });
             console.log("HERE IS DOWNLOAD URL", downloadURL);
 
-            // April 24 - added state update
+            
             setMetaverseStateValue((prev) => ({
                 ...prev,
                 currentMetaverse: {
@@ -89,8 +89,7 @@ const About: React.FC<AboutProps> = ({
         } catch (error: any) {
             console.log("updateImage error", error.message);
         }
-        // April 24 - removed reload
-        // window.location.reload();
+        
 
         setImageLoading(false);
     };
