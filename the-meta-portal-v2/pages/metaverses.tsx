@@ -5,6 +5,7 @@ import Mvcol2 from "../components/mvBoxes/Mvcol2";
 
 const Metaverses = () => {
 
+    const tmp = "https://i.ibb.co/3CrVjjP/Original.png"
     const decentraland = "https://i.ibb.co/mzy4srq/Decentraland.png"
     const sandbox = "https://i.ibb.co/mB2PwYS/The-Sandbox.png"
     const otherside = "https://i.ibb.co/6Rb0NrM/otherside.png"
@@ -47,6 +48,20 @@ const Metaverses = () => {
                 <Box flex="1" bg={bg} px="7vw" py="11em">
                     <Text fontSize="2.5em" color={color} mb="10">Popular Metaverses</Text>
                 
+                    {/* The Meta Portal */}
+                    <Flex mb="5">
+                        <Mvcol1>
+                            <Box as="a" href='/metaverses/the-meta-portal'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px 1px white" src={tmp} alt="The Meta Portal"/>
+                            </Box>
+                        </Mvcol1>
+                        <Mvcol2>
+                            <Text fontSize="1em">Our flagship metaverse. The Meta Portal is the entrance to the metaverse. Find metaverses that meet your preferences and interests.
+                            Users are rewarded with portal tokens for posting and sharing useful content. The Meta Portal operates under its native token $PT.
+                            </Text>
+                        </Mvcol2>
+                    </Flex>
+                    
                     {/* Decentraland */}
                     <Flex mb="5">
                         <Mvcol1>

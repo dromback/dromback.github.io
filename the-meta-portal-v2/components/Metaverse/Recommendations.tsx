@@ -119,12 +119,18 @@ import {
                         </Flex>
                         <Flex align="center" width="80%">
                           {item.imageURL ? (
-                            <Image
-                              borderRadius="full"
-                              boxSize="28px"
-                              src={item.imageURL}
+                            // <Image
+                            //   borderRadius="full"
+                            //   boxSize="28px"
+                            //   src={item.imageURL}
+                            //   mr={2}
+                            //   alt='metaverse'
+                            // />
+                            <Icon
+                              as={IoAperture}
+                              fontSize={30}
+                              color="brand.100"
                               mr={2}
-                              alt='metaverse'
                             />
                           ) : (
                             <Icon
