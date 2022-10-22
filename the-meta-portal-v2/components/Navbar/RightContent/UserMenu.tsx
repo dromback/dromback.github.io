@@ -26,7 +26,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
 
     const bg = useColorModeValue('#FFFFFF', '#121212')
     const color = useColorModeValue('black', 'white')
-    const buttonBg = useColorModeValue('orange.400', 'orange.400')
+    const buttonBg = useColorModeValue('blue.400', 'blue.400')
 
     return (
         <Menu >
@@ -38,7 +38,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                             {user?.displayName || user.email?.split("@")[0]} <ChevronDownIcon />
                         </Text>
                         <Flex>
-                            <Icon as={GiTwoCoins} color='orange.500' mr='1' />
+                            <Icon as={GiTwoCoins} color='blue.400' mr='1' />
                             <Text color={color} fontSize='8pt'>1 PT</Text>
                         </Flex>
                     </Flex>
@@ -46,7 +46,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
             </MenuButton>
             <MenuList bg={bg} >
 
-                <MenuItem color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }} onClick={logout}>
+                <MenuItem color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }} onClick={logout}>
                     <Flex align='center'>
                         <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
                         Log Out

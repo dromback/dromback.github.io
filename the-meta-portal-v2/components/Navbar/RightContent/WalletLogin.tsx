@@ -27,7 +27,7 @@ const WalletLogin:React.FC = () => {
     return (
         <>
             
-            <MenuItem as="button" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
+            <MenuItem as="button" color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}
                 // @ts-expect-error
                 isLoading={isAuthenticating} onClick={() => authenticate({
                     signingMessage: "Sign to login to The Meta Portal"
@@ -56,7 +56,7 @@ const WalletLogin:React.FC = () => {
     return(
         <>
             <ProfileMenuItem />
-            <MenuItem color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}
+            <MenuItem color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}
                 onClick={logout} disabled={isLoggingOut}>
                 <Flex align='center'>
                     <Icon fontSize='20' mr='2' as={MdOutlineLogin} />

@@ -7,6 +7,7 @@ import useMetaverseData from '../../hooks/useMetaverseData';
 
 
 
+
 type HeaderProps = {
     metaverseData: Metaverse;
 };
@@ -23,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
 
     return (
         <>
-            <title>The Meta Portal | Metaverses | {metaverseData.name}</title>
+            <title>Intervrs | Metaverses | {metaverseData.name}</title>
             <Box flex='1' h='300px' bg={bg} py="7.5em"  >
                 <Flex justifyContent='left' bg={boxBg} borderBottom='1px solid' borderTop='1px solid' borderColor='orange.500'>
                     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center"

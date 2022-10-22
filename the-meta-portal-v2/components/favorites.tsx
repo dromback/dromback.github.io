@@ -8,7 +8,7 @@ import FavoriteData from "./FavoriteData";
 
 export default function Favorites(){
 
-    const buttonBg = useColorModeValue('orange.400', 'orange.400')
+    const buttonBg = useColorModeValue('blue.400', 'blue.400')
     const {user, isAuthenticated, Moralis, account} = useMoralis();
     const [myFavorites, setMyFavorites] = useState();
 

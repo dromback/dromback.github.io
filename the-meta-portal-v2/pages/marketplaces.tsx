@@ -13,7 +13,7 @@ const Marketplaces = () => {
 
     return (
         <><>
-            <title>The Meta Portal | Marketplaces</title>
+            <title>Intervrs | Marketplaces</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
                 
                 <Box flex="1" bg={bg} px="7vw" py="11em">
@@ -62,20 +62,11 @@ const Marketplaces = () => {
                             </Text>
                         </Mvcol2>
                     </Flex>
-                    
-
-
-                
-                </Box>
-                
+                </Box>  
             </Flex>
         </>
-        
         </>
     );
-
-  
 }
-
 export default Marketplaces;
 

@@ -11,11 +11,11 @@ const Whitelist = () => {
   const bg = useColorModeValue('gray.200', '#242323')
   const color = useColorModeValue('black', 'black')
   const boxBg = useColorModeValue('#FFFFFF', '#121212')
-  const gradient = 'linear(to-b, orange.500, orange.400, orange.300)';
+  const gradient = 'linear(to-b, blue.500, blue.400, blue.300)';
 
     return (
         <><>
-            <title>The Meta Portal | Whitelist</title>
+            <title>Intervrs | Whitelist</title>
             <Flex direction="column" bgGradient={gradient} maxW="100vw" minH="100vh" >
               
               <Box flex="1"  px="0" py="11em" >
@@ -23,7 +23,7 @@ const Whitelist = () => {
                     <Box  >
                       <Text align="center" color={color}> 
                         
-                        <Text fontSize="2em" mb="5" >Want to be among the first to get access to The Meta Portal?</Text>
+                        <Text fontSize="2em" mb="5" >Want to be among the first to get access to Intervrs?</Text>
                         <Text fontSize="2.5em" fontWeight="bold" mb="10">Sign up now!</Text>
                         {/* <MailchimpSubscribe
                             url={MAILCHIMP_URL}

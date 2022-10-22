@@ -16,7 +16,7 @@ const Premium: React.FC = () => {
       <Flex mb={2}>
         <Icon as={GiCheckedShield} fontSize={26} color="brand.100" mt={2} />
         <Stack spacing={1} fontSize="9pt" pl={2}>
-          <Text fontWeight={600}>The Meta Portal Premium</Text>
+          <Text fontWeight={600}>Intervrs Premium</Text>
           <Text>For the best experience we offer.</Text>
         </Stack>
       </Flex>

@@ -14,6 +14,7 @@ import RightContent from "./RightContent/RightContent";
 
 
 
+
 export default function Header() {
 
     const [user] = useAuthState(auth);
@@ -24,8 +25,8 @@ export default function Header() {
 
     const bg = useColorModeValue('#FFFFFF', '#121212')
     const color = useColorModeValue('black', 'white')
-    const Logo = useColorModeValue('https://i.ibb.co/QMTqHLy/Logo-header-white.png', 'https://i.ibb.co/8jdLh71/Logo-header.png')
-    const buttonBg = useColorModeValue('orange.400', 'orange.400')
+    const Logo = useColorModeValue('https://i.ibb.co/Qc8ZwmV/Intervrs-Logo-White.png', 'https://i.ibb.co/QfGFcyX/Intervrs-Logo.png')
+    const buttonBg = useColorModeValue('blue.400', 'blue.400')
 
 
     const setAuthModalState = useSetRecoilState(authModalState);
@@ -35,16 +36,16 @@ export default function Header() {
 
         <header>
             <Flex position="fixed" bg={bg} w="100%" zIndex={2} >
-                <Box as="a" href="/" ml="10" >
-                    <Image src={Logo} alt="logo" />
+                <Box as="a" href="/"  >
+                    <Image src={Logo} alt="logo" h='93px'  />
                 </Box>
                 <Flex position="fixed" top="1rem" right="1rem" align="center"   >
                     {/* Desktop */}
                     <Flex display={['none', 'none', 'flex', 'flex']} >
-                        <Link href="/" color={color} aria-label="Home" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Home</Link>
-                        <Link href="/feed" color={color} aria-label="feed" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Feed</Link>
-                        <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>Metaverses</Link>
-                        <Link href="/about" color={color} aria-label="about" my="5" mx="3" _focus={{}} _hover={{ color: "orange.400" }}>About</Link>
+                        <Link href="/" color={color} aria-label="Home" my="5" mx="3" _focus={{}} _hover={{ color: "blue.400" }}>Home</Link>
+                        <Link href="/feed" color={color} aria-label="feed" my="5" mx="3" _focus={{}} _hover={{ color: "blue.400" }}>Feed</Link>
+                        <Link href="/metaverses" color={color} aria-label="metaverses" my="5" mx="3" _focus={{}} _hover={{ color: "blue.400" }}>Metaverses</Link>
+                        <Link href="/about" color={color} aria-label="about" my="5" mx="3" _focus={{}} _hover={{ color: "blue.400" }}>About</Link>
                         {/* {user && <Directory />} */}
                         <DarkModeSwitch />
                         <RightContent user={user} />
@@ -70,16 +71,16 @@ export default function Header() {
                     </Flex>
 
                     <Flex flexDir="column" align="center" mx='auto' justify='center' >
-                        <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Home" my={5} w="100%">
+                        <Link href="/" bg={bg} color={color} _focus={{}} _hover={{ color: "blue.400", bg: bg }} aria-label="Home" my={5} w="100%">
                             Home
                         </Link>
-                        <Link href="/feed" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Feed" my={5} w="100%">
+                        <Link href="/feed" bg={bg} color={color} _focus={{}} _hover={{ color: "blue.400", bg: bg }} aria-label="Feed" my={5} w="100%">
                             Feed
                         </Link>
-                        <Link href="/metaverses" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
+                        <Link href="/metaverses" bg={bg} color={color} _focus={{}} _hover={{ color: "blue.400", bg: bg }} aria-label="Metaverses" my={5} w="100%">
                             Metaverses
                         </Link>
-                        <Link href="/about" bg={bg} color={color} _focus={{}} _hover={{ color: "orange.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
+                        <Link href="/about" bg={bg} color={color} _focus={{}} _hover={{ color: "blue.400", bg: bg }} aria-label="About" my={5} mb={10} w="100%">
                             About
                         </Link>
                         {/* Login / Signup */}

@@ -38,11 +38,11 @@ export default function Profile() {
 
   return (
     <>
-      <title>The Meta Portal | Profile</title>
+      <title>Intervrs | Profile</title>
       <Flex direction="column" maxW="100vw" minH="100vh" bg={pageBg} >
         
         <Box flex="1" px="0" py="11em" >
-          <Tabs size="lg" mx="auto" colorScheme="orange" color={color} w="50vw" >
+          <Tabs size="lg" mx="auto" colorScheme="blue" color={color} w="50vw" >
             <TabList>
               <Tab fontWeight="bold">Account</Tab>
               <Tab fontWeight="bold">Favorites</Tab>

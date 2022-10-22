@@ -10,7 +10,7 @@ const About = () => {
 
     return (
         <><>
-            <title>The Meta Portal | About</title>
+            <title>Intervrs | About</title>
             <Flex direction="column" bg={bg} maxW="100vw" minH="100vh" >
               
               <Box flex="1"  px="0" py="11em" >
@@ -20,7 +20,7 @@ const About = () => {
                         <Text as="u" fontSize="2.5em" fontWeight="bold" mb="10">Our Mission</Text>
                         <Text mt="5" fontSize="1.1em" letterSpacing="wide" >We believe in an equal access metaverse that belongs to you, the user.</Text>
                         <Text mt="5" fontSize="1.1em" letterSpacing="wide">It should be done your way, in your style, and on your schedule.</Text>
-                        <Text mt="5" fontSize="1.1em" letterSpacing="wide"> That is why we created The Meta Portal.</Text>
+                        <Text mt="5" fontSize="1.1em" letterSpacing="wide"> That is why we created Intervrs.</Text>
                         <Text mt="5" fontSize="1.1em" letterSpacing="wide">Choose the metaverses that mean something to you.</Text>
                         <Text mt="5" fontSize="1.1em" letterSpacing="wide">Customize it as you like.</Text>
                         <Text mt="5" fontSize="1.1em" letterSpacing="wide">Go explore.</Text>

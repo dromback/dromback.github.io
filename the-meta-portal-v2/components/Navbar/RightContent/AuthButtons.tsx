@@ -33,14 +33,14 @@ const AuthButtons: React.FC<AuthButtonsProps> = () => {
                 </MenuButton>
                 <MenuList bg={bg}>
                     <MenuItem as="button" onClick={() => setAuthModalState({ open: true, view: 'signup' })}
-                        color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}>
+                        color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}>
                         <Flex align='center'>
                             <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
                             Sign Up
                         </Flex>
                     </MenuItem>
                     <MenuItem as="button" onClick={() => setAuthModalState({ open: true, view: 'login' })}
-                        color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}>
+                        color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}>
                         <Flex align='center'>
                             <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
                             Login with credentials

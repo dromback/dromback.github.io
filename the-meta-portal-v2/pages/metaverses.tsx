@@ -42,22 +42,22 @@ const Metaverses = () => {
 
     return (
         <><>
-            <title>The Meta Portal | Metaverses</title>
+            <title>Intervrs | Metaverses</title>
             <Flex direction="column" maxW="100vw" minH="100vh">
                 
                 <Box flex="1" bg={bg} px="7vw" py="11em">
                     <Text fontSize="2.5em" color={color} mb="10">Popular Metaverses</Text>
                 
-                    {/* The Meta Portal */}
+                    {/* Intervrs */}
                     <Flex mb="5">
                         <Mvcol1>
-                            <Box as="a" href='/metaverses/the-meta-portal'>
-                                <Image borderRadius="lg" boxShadow="2px 2px 2px 1px white" src={tmp} alt="The Meta Portal"/>
+                            <Box as="a" href='/metaverses/intervrs'>
+                                <Image borderRadius="lg" boxShadow="2px 2px 2px 1px white" src={tmp} alt="Intervrs"/>
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
-                            <Text fontSize="1em">Our flagship metaverse. The Meta Portal is the entrance to the metaverse. Find metaverses that meet your preferences and interests.
-                            Users are rewarded with portal tokens for posting and sharing useful content. The Meta Portal operates under its native token $PT.
+                            <Text fontSize="1em">Our flagship metaverse. Intervrs is the entrance to the metaverse. Find metaverses that meet your preferences and interests.
+                            Users are rewarded with Intervrs tokens for posting and sharing useful content. Intervrs operates under its native token $IVRS.
                             </Text>
                         </Mvcol2>
                     </Flex>

@@ -22,12 +22,12 @@ export default function Trending(){
                     <SimpleGrid columns={2} spacingX='2' spacingY='2' >
                         {/* Column 1 */}
                         <Box w="10em"  py="3" _hover={{bg: bg}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                            <Box as="a" href="/metaverses/the-meta-portal" maxW="90%" >
+                            <Box as="a" href="/metaverses/intervrs" maxW="90%" >
                                 <Box  h="20" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={tmp} alt="The Meta Portal"/>
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={tmp} alt="Intervrs"/>
                                 </Box>
                                 <Box mt="2" >
-                                    <Text textAlign="center" >The Meta Portal</Text>
+                                    <Text textAlign="center" >Intervrs</Text>
                                 </Box>
                             </Box>
                         </Box>

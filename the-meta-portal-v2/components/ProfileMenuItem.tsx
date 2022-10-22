@@ -9,7 +9,7 @@ const ProfileMenuItem:React.FC = () => {
     
     return(
         <>
-            <MenuItem as="a" href="/profile" color={color} _hover={{ bg: 'orange.400' }} _focus={{ bg: 'orange.400' }}>
+            <MenuItem as="a" href="/profile" color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}>
                 <Flex align='center'>
                     <Icon fontSize='20' mr='2' as={CgProfile} />
                     Profile
