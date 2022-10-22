@@ -24,7 +24,7 @@ const PersonalHome: React.FC = () => {
         align="flex-end"
         color="white"
         p="6px 10px"
-        bg="orange.500"
+        bg="blue.500"
         height="34px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}

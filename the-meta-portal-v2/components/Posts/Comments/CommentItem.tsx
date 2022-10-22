@@ -80,12 +80,12 @@ const CommentItem: React.FC<CommentItemProps> = ({
           <Icon as={IoArrowDownCircleOutline} />
           {userId === comment.creatorId && (
             <>
-              <Text fontSize="9pt" _hover={{ color: "orange.500" }}>
+              <Text fontSize="9pt" _hover={{ color: "blue.500" }}>
                 Edit
               </Text>
               <Text
                 fontSize="9pt"
-                _hover={{ color: "orange.500" }}
+                _hover={{ color: "blue.500" }}
                 onClick={() => onDeleteComment(comment)}
               >
                 Delete
