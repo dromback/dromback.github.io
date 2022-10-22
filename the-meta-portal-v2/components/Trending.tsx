@@ -4,12 +4,13 @@ export default function Trending(){
     
     const bg = useColorModeValue('#FFFFFF', '#121212')
 
+    const intervrs = "https://i.ibb.co/QfGFcyX/Intervrs-Logo.png"
     const decentraland = "https://i.ibb.co/VQh7h3V/Decentraland-thumb.png"
     const sandbox = "https://i.ibb.co/Thtqp22/The-Sandbox-thumb.png"
     const otherside = "https://i.ibb.co/5Mhvwgf/otherside-thumb.png"
     const fortnite = "https://i.ibb.co/ZNhqXF4/Fortnite-Logo-thumb.png"
     const minecraft = "https://i.ibb.co/9gjYx15/minecraft-thumb.png"
-    const tmp = 'https://i.ibb.co/8jdLh71/Logo-header.png'
+    
 
     return(
 
@@ -24,7 +25,7 @@ export default function Trending(){
                         <Box w="10em"  py="3" _hover={{bg: bg}}  display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                             <Box as="a" href="/metaverses/intervrs" maxW="90%" >
                                 <Box  h="20" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={tmp} alt="Intervrs"/>
+                                    <Image borderRadius="lg" boxShadow="2px 2px 2px black" src={intervrs} alt="Intervrs"/>
                                 </Box>
                                 <Box mt="2" >
                                     <Text textAlign="center" >Intervrs</Text>
