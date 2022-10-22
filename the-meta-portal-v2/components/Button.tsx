@@ -27,16 +27,16 @@ export const Button: ComponentStyleConfig = {
   variants: {
     solid: {
       color: 'white',
-      bg: "orange.500",
+      bg: "blue.500",
       _hover: {
-        bg: "orange.400",
+        bg: "blue.400",
       },
     },
     outline: {
-      color: "orange.500",
-      bg: "orange.200",
+      color: "blue.500",
+      bg: "blue.200",
       border: "1px solid",
-      borderColor: "orange.500",
+      borderColor: "blue.500",
     },
     oauth: {
       height: "34px",
@@ -50,23 +50,23 @@ export const Button: ComponentStyleConfig = {
       height: "26px",
       width: "90px",
       color: "white",
-      bg: "orange.500",
+      bg: "blue.500",
       border: "1px solid",
-      borderColor: "orange.500",
+      borderColor: "blue.500",
       _hover: {
-        bg: "orange.200",
-        color: "orange.500"
+        bg: "blue.200",
+        color: "blue.500"
       },
     },
     addFavorite: {
       height: "26px",
       width: "90px",
-      color: "orange.500",
-      bg: "orange.200",
+      color: "blue.500",
+      bg: "blue.200",
       border: "1px solid",
-      borderColor: "orange.500",
+      borderColor: "blue.500",
       _hover: {
-        bg: "orange.500",
+        bg: "blue.500",
         color: "white"
       },
     },

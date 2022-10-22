@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
         <>
             <title>Intervrs | Metaverses | {metaverseData.name}</title>
             <Box flex='1' h='300px' bg={bg} py="7.5em"  >
-                <Flex justifyContent='left' bg={boxBg} borderBottom='1px solid' borderTop='1px solid' borderColor='orange.500'>
+                <Flex justifyContent='left' bg={boxBg} borderBottom='1px solid' borderTop='1px solid' borderColor='blue.500'>
                     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center"
                         rounded="lg" width='375px' height='120px'  
                     >
@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ metaverseData }) => {
                                 src={metaverseStateValue.currentMetaverse.imageURL}
                                 alt={metaverseData.name}
                                 position="relative"
-                                color="blue.500"
+                                color="blue.400"
                                 boxShadow="2px 2px 2px black"
                                 
                             />

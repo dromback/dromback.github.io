@@ -63,7 +63,7 @@ const Login: React.FC<LoginProps> = ({ toggleView }) => {
                 </Text>
                 <Text
                     fontSize="9pt"
-                    color='orange.500'
+                    color='blue.500'
                     fontWeight='700'
                     cursor="pointer"
                     onClick={() => toggleView("resetPassword")}
@@ -75,7 +75,7 @@ const Login: React.FC<LoginProps> = ({ toggleView }) => {
             <Flex fontSize='9pt' justifyContent='center'>
 
                 <Text mr='2'>New here?</Text>
-                <Text color='orange.500' fontWeight='700' cursor='pointer' onClick={() => setAuthModalState((prev) => ({
+                <Text color='blue.500' fontWeight='700' cursor='pointer' onClick={() => setAuthModalState((prev) => ({
                     ...prev,
                     view: 'signup',
                 }))}>

@@ -66,7 +66,7 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
             <Flex fontSize='9pt' justifyContent='center'>
 
                 <Text mr='2'>Already a member?</Text>
-                <Text color='orange.500' fontWeight='700' cursor='pointer' onClick={() => setAuthModalState((prev) => ({
+                <Text color='blue.500' fontWeight='700' cursor='pointer' onClick={() => setAuthModalState((prev) => ({
                     ...prev,
                     view: 'login',
                 }))}>

@@ -52,13 +52,13 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ toggleView }) => {
                             _hover={{
                                 bg: bg,
                                 border: "1px solid",
-                                borderColor: "orange.500",
+                                borderColor: "blue.500",
                             }}
                             _focus={{
                                 outline: "none",
                                 bg: bg,
                                 border: "1px solid",
-                                borderColor: "orange.500",
+                                borderColor: "blue.500",
                             }}
                             bg={bg}
                         />
@@ -82,7 +82,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ toggleView }) => {
             <Flex
                 alignItems="center"
                 fontSize="9pt"
-                color="orange.500"
+                color="blue.500"
                 fontWeight={700}
                 cursor="pointer"
             >

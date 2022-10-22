@@ -54,7 +54,7 @@ export default function Account(){
                               value={password} onChange={(event) => setPassword(event.currentTarget.value)} borderColor={color}/>
                         </FormControl>
                         
-                        <Button type="submit" colorScheme="orange" disabled={isUserUpdating} mt="3" >Save Settings</Button>
+                        <Button type="submit" colorScheme="blue" disabled={isUserUpdating} mt="3" >Save Settings</Button>
                     </form>
                 </CustomContainer>
         </Box>
