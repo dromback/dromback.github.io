@@ -1,11 +1,12 @@
 import { Box, Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import { BiBorderRadius } from "react-icons/bi";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
 
 
 const Metaverses = () => {
 
-    const tmp = "https://i.ibb.co/3CrVjjP/Original.png"
+    const intervrs = "https://i.ibb.co/QfGFcyX/Intervrs-Logo.png"
     const decentraland = "https://i.ibb.co/mzy4srq/Decentraland.png"
     const sandbox = "https://i.ibb.co/mB2PwYS/The-Sandbox.png"
     const otherside = "https://i.ibb.co/6Rb0NrM/otherside.png"
@@ -52,7 +53,7 @@ const Metaverses = () => {
                     <Flex mb="5">
                         <Mvcol1>
                             <Box as="a" href='/metaverses/intervrs'>
-                                <Image borderRadius="lg" boxShadow="2px 2px 2px 1px white" src={tmp} alt="Intervrs"/>
+                                <Image  src={intervrs} alt="Intervrs"/>
                             </Box>
                         </Mvcol1>
                         <Mvcol2>
