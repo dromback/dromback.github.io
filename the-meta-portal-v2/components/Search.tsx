@@ -78,7 +78,7 @@ const Search = () => {
                                 <Flex mx="0"  mb="1" px="1" w="100%" minH="40vh"  >
                                     <Box p="0" display="flex" flexDirection="column" overflow="hidden"  h="400" bg={bg} color={color} rounded="lg" >
                                         <Box as="a" href={item.link} h="200" display="flex" flexDirection="column" alignItems="center" justifyContent="center"  >
-                                            <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" />
+                                            <Image src={item.img}  shadow="2px 2px 2px black" alt={item.title} rounded="lg" mt="5" maxW="70%"/>
                                         </Box>    
                                         <Box display="flex" h="25" flexDirection="column" justifyContent="center" >
                                             <Text fontSize="1em" align="center">{item.title} </Text>
