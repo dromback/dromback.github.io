@@ -36,6 +36,14 @@
 const data = {
     cardData:[
         {
+            id:0,
+            img: intervrs,
+            link: '/metaverses/intervrs',
+            title: 'Intervrs',
+            desc: 'Our flagship metaverse. Intervrs is the entrance to the metaverse. Find metaverses that meet your preferences and interests. Users are rewarded with Intervrs tokens for posting and sharing useful content. Intervrs operates under its native token $IVRS.',
+            tags: 'metaverse Ethereum game matic solana'
+        },
+        {
             id:1,
             img: decentraland,
             link: '/metaverses/decentraland',
@@ -275,14 +283,7 @@ const data = {
             desc: 'From the creators of Bored Ape Yacht Club, Otherside is one of the newest trending metaverses. The Otherside is a virtual world with 5 land types that are purchasable as Otherdeeds. These lands have powerful artifacts and even rare creatures called Kodas. $APE is its native token.',
             tags: 'game Ethereum BAYC Yuga Labs'
         },
-        {
-            id:31,
-            img: intervrs,
-            link: '/metaverses/intervrs',
-            title: 'Intervrs',
-            desc: 'Our flagship metaverse. Intervrs is the entrance to the metaverse. Find metaverses that meet your preferences and interests. Users are rewarded with Intervrs tokens for posting and sharing useful content. Intervrs operates under its native token $IVRS.',
-            tags: 'metaverse Ethereum game matic solana'
-        },
+        
     ]
 }
 export default data;
