@@ -30,6 +30,7 @@
     const illuvium = "https://i.ibb.co/kGhMG1s/illuvium.png"
     const godsunchained = "https://i.ibb.co/fMDT1Yn/Gods-Unchained.png"
     const otherside = "https://i.ibb.co/6Rb0NrM/otherside.png"
+    const intervrs = "https://i.ibb.co/QfGFcyX/Intervrs-Logo.png"
 
 
 const data = {
@@ -273,6 +274,14 @@ const data = {
             title: 'Otherside',
             desc: 'From the creators of Bored Ape Yacht Club, Otherside is one of the newest trending metaverses. The Otherside is a virtual world with 5 land types that are purchasable as Otherdeeds. These lands have powerful artifacts and even rare creatures called Kodas. $APE is its native token.',
             tags: 'game Ethereum BAYC Yuga Labs'
+        },
+        {
+            id:31,
+            img: intervrs,
+            link: '/metaverses/intervrs',
+            title: 'Intervrs',
+            desc: 'Our flagship metaverse. Intervrs is the entrance to the metaverse. Find metaverses that meet your preferences and interests. Users are rewarded with Intervrs tokens for posting and sharing useful content. Intervrs operates under its native token $IVRS.',
+            tags: 'metaverse Ethereum game matic solana'
         },
     ]
 }
