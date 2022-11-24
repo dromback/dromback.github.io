@@ -1,7 +1,6 @@
 import { Box, Button, Flex, Icon, Image, Text, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import { Metaverse, metaverseState } from '../../atoms/metaversesAtom';
-import Data from '../Data'
 import { IoAperture } from 'react-icons/io5'
 import useMetaverseData from '../../hooks/useMetaverseData';
 

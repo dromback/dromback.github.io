@@ -4,12 +4,14 @@ export default function Trending(){
     
     const bg = useColorModeValue('#FFFFFF', '#121212')
 
-    const intervrs = "https://i.ibb.co/QfGFcyX/Intervrs-Logo.png"
-    const decentraland = "https://i.ibb.co/VQh7h3V/Decentraland-thumb.png"
-    const sandbox = "https://i.ibb.co/Thtqp22/The-Sandbox-thumb.png"
-    const otherside = "https://i.ibb.co/5Mhvwgf/otherside-thumb.png"
-    const fortnite = "https://i.ibb.co/ZNhqXF4/Fortnite-Logo-thumb.png"
-    const minecraft = "https://i.ibb.co/9gjYx15/minecraft-thumb.png"
+    
+    
+    const intervrs = "/images/Intervrs Logo.png"
+    const decentraland = "/images/thumbs/Decentraland_thumb.png"
+    const sandbox = "/images/thumbs/The Sandbox_thumb.png"
+    const otherside = "/images/thumbs/otherside_thumb.png"
+    const fortnite = "/images/thumbs/Fortnite-Logo_thumb.png"
+    const minecraft = "/images/thumbs/minecraft_thumb.png"
     
 
     return(

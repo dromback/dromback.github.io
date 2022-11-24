@@ -1,5 +1,13 @@
 {
   "projects": {
     "default": "the-meta-portal"
+  },
+  "targets": {},
+  "etags": {
+    "the-meta-portal": {
+      "extensionInstances": {
+        "moralis-auth": "4e13b5068c72a93b1c6cb8313acef9b60f3408cb88659fe69e2d6259f5430410"
+      }
+    }
   }
 }
