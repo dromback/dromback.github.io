@@ -30,7 +30,7 @@ const WalletLogin:React.FC = () => {
             <MenuItem as="button" color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}
                 // @ts-expect-error
                 isLoading={isAuthenticating} onClick={() => authenticate({
-                    signingMessage: "Sign to login to The Meta Portal"
+                    signingMessage: "Sign to login to Intervrs"
                 })} >
                      <Flex align='center'>
                         <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
