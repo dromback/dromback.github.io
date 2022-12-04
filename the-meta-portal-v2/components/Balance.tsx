@@ -44,7 +44,7 @@ export default function Balance(){
             <Divider />
             {data && data.map(token => (
                 <div key={token.symbol}>
-                    <Text>{Moralis.Units.FromWei(token.balance)} <b>{token.symbol}</b></Text>
+                    {/* <Text>{Moralis.Units.FromWei(token.balance)} <b>{token.symbol}</b></Text> */}
                     <Divider />
                 </div>
             ))}
