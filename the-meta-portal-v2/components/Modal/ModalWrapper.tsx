@@ -4,9 +4,10 @@ import {
     ModalOverlay,
     ModalContent,
   } from "@chakra-ui/react";
-  import React from "react";
+  import React, { ReactNode } from "react";
   
   type ModalWrapperProps = {
+    children: ReactNode;
     isOpen: boolean;
     onClose: () => void;
   };
