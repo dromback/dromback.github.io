@@ -1,11 +1,11 @@
 import { Flex, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type PageContentProps = {
     
 };
 
-const PageContent:React.FC<PageContentProps> = ({ children }) => {
+const PageContent:React.FC<PageContentProps> = ({ children }: { children: ReactNode }) => {
 
     const bg = useColorModeValue('gray.200', '#242323')
     const color = useColorModeValue('black', 'white')
