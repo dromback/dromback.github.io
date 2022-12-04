@@ -3,7 +3,6 @@ import {
     Button,
     Flex,
     Icon,
-    Image,
     Skeleton,
     SkeletonCircle,
     Stack,
@@ -17,6 +16,7 @@ import {
   import { Metaverse } from "../../atoms/metaversesAtom";
   import { firestore } from "../../firebase/clientApp";
   import useMetaverseData from "../../hooks/useMetaverseData";
+ 
   
   type RecommendationsProps = {};
   

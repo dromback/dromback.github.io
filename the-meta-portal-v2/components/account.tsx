@@ -23,7 +23,9 @@ export default function Account(){
     return(
         <Box >
             <CustomContainer>
-                    <Text><b>Username: </b> {Moralis.User.current().attributes.username}
+                  
+                    <Text><b>Username: </b> {user.getUsername()}
+                    
                       </Text>
                     <Text><b>Email: </b> {user.getEmail()} </Text>
                     <Text><b>Wallet Address: </b> {user.get('ethAddress')} </Text>

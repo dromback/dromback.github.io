@@ -44,16 +44,16 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                     </Flex>
                 </AvatarGroup>
             </MenuButton>
-            <MenuList bg={bg} >
-
+            <MenuList >
+                
+                <WalletLogin />
+                
                 <MenuItem color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }} onClick={logout}>
                     <Flex align='center'>
                         <Icon fontSize='20' mr='2' as={MdOutlineLogin} />
                         Log Out
                     </Flex>
                 </MenuItem>
-                <MenuDivider />
-                <WalletLogin />
             </MenuList>
         </Menu>
     )

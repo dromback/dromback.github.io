@@ -71,7 +71,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ toggleView }) => {
                             mb={2}
                             mt={2}
                             type="submit"
-                            isLoading={sending}
+                            // isLoading={sending}
                             color={color}
                         >
                             Reset Password

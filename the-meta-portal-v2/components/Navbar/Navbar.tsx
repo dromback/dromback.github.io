@@ -1,6 +1,6 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import {
-    Box, Flex, IconButton, Image, Link, Text, useColorModeValue
+    Box, Flex, IconButton, Link, Text, useColorModeValue, Image
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";

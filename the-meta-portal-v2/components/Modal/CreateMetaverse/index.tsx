@@ -222,7 +222,7 @@ const CreateMetaverseModal: React.FC<CreateMetaverseModalProps> = ({
           variant="solid"
           height="30px"
           onClick={handleCreateMetaverse}
-          isLoading={loading}
+          // isLoading={loading}
         >
           Create Metaverse
         </Button>

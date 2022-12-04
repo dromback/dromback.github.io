@@ -7,8 +7,8 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  Text,
   Image,
+  Text,
 } from "@chakra-ui/react";
 import useDirectory from "../../../hooks/useDirectory";
 import Metaverses from "./Metaverses";

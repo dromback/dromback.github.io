@@ -185,7 +185,6 @@ const Comments: React.FC<CommentsProps> = ({
         mt='2'
         fontSize="10pt"
         width="100%"
-        
       >
         <CommentInput
           comment={comment}

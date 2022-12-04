@@ -60,7 +60,9 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
             
             <Text textAlign='center' color='red' fontSize='10pt'>{error || FIREBASE_ERRORS[userError?.message as keyof typeof FIREBASE_ERRORS]}</Text>
             
-            <Button w='100%' h='36px' color={color} mt='2' mb='2' type="submit" isLoading={loading}>
+            <Button w='100%' h='36px' color={color} mt='2' mb='2' type="submit" 
+            // isLoading={loading}
+            >
                 Sign Up
             </Button>
             <Flex fontSize='9pt' justifyContent='center'>

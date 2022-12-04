@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import {
   Flex,
   Icon,
-  Image,
   Skeleton,
   Spinner,
   Stack,
   Text,
+  Image,
   useColorModeValue,
 } from "@chakra-ui/react";
 import moment from "moment";
@@ -24,6 +24,7 @@ import {
 } from "react-icons/io5";
 import { Post } from "../../../atoms/postsAtom";
 import Link from "next/link";
+
 
 export type PostItemContentProps = {
   post: Post;

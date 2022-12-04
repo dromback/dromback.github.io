@@ -1,4 +1,5 @@
-import { Box, Image, SimpleGrid, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, Image, useColorModeValue } from "@chakra-ui/react";
+
 
 export default function Trending(){
     

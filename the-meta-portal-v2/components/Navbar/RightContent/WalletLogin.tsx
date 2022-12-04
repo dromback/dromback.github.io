@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, CloseButton, Flex, Icon, MenuItem, useColorModeValue } from '@chakra-ui/react';
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, CloseButton, Flex, Icon, MenuDivider, MenuItem, useColorModeValue } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useMoralis } from 'react-moralis';
 import { MdOutlineLogin } from 'react-icons/md'
@@ -16,11 +16,11 @@ const WalletLogin:React.FC = () => {
     const [email, setEmail] = useState(user && user.attributes.email);
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        if (!user) return null;
-        setUsername(user.getUsername())
-        setEmail(user.getEmail())
-    }, [user])
+    // useEffect(() => {
+    //     if (!user) return null;
+    //     setUsername(user.getUsername())
+    //     setEmail(user.getEmail())
+    // }, [user])
     
     
     if (!isAuthenticated) {
@@ -29,7 +29,8 @@ const WalletLogin:React.FC = () => {
             
             <MenuItem as="button" color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}
                 // @ts-expect-error
-                isLoading={isAuthenticating} onClick={() => authenticate({
+                isLoading={isAuthenticating} 
+                onClick={() => authenticate({
                     signingMessage: "Sign to login to Intervrs"
                 })} >
                      <Flex align='center'>
@@ -56,6 +57,7 @@ const WalletLogin:React.FC = () => {
     return(
         <>
             <ProfileMenuItem />
+            <MenuDivider color={color}/>
             <MenuItem color={color} _hover={{ bg: 'blue.400' }} _focus={{ bg: 'blue.400' }}
                 onClick={logout} disabled={isLoggingOut}>
                 <Flex align='center'>

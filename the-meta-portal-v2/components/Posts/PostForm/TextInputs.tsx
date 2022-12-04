@@ -41,7 +41,8 @@ const TextInputs:React.FC<TextInputsProps> = ({ textInputs, onChange, handleCrea
                 _focus={{ outline: 'none', bg: bg, border: '1px solid', borderColor: 'black', }}
             />
             <Flex justify='flex-end'>
-                <Button h='34px' p='0px 30px' disabled={!textInputs.title} isLoading={loading} 
+                <Button h='34px' p='0px 30px' disabled={!textInputs.title} 
+                    isLoading={loading} 
                     onClick={handleCreatePost}
                 >
                     Post

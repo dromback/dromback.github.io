@@ -26,6 +26,7 @@ import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { doc, updateDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
 
+
 type AboutProps = {
     metaverseData: Metaverse;
     pt?: number;
