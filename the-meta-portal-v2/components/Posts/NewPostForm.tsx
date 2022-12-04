@@ -135,6 +135,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({ metaverseId, metaverseImageUR
             <Flex direction='column' bg={boxBg} color={color} borderRadius='4' mt='2' >
                 <Flex w='100%'>
                     {formTabs.map((item, index) => (
+                      // @ts-ignore
                         <TabItem key={index} item={item} selected={item.title === selectedTab} setSelectedTab={setSelectedTab} />
                     ))}
                 </Flex>
