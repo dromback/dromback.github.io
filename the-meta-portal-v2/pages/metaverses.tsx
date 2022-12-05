@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, useColorModeValue } from "@chakra-ui/react";
 import { BiBorderRadius } from "react-icons/bi";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";

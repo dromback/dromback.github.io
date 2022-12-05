@@ -20,8 +20,8 @@ export default function Home() {
 
     return(
       <>
-        <html lang="en">
-        <Head >
+        
+        <Head>
           <title>Intervrs - Jump into the metaverse</title>
           <meta name="description" content="Your one-stop shop for everything metaverse; made for and by the user."></meta>
           <meta name="robots" content="all" />
@@ -48,7 +48,7 @@ export default function Home() {
               </Box>
             
         </Flex>
-        </html>
+       
       </>
     )
 

@@ -1,16 +1,19 @@
 import { Flex } from '@chakra-ui/react';
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 import Navbar from '../Navbar/Navbar'
 
-const Layout:React.FC = ({ children }: { children: ReactNode }) => {
-    
-    return (
-        <>
-            <Navbar />
-            <Flex direction='column' w={{base: '100%', md: '100%'}} >
-                {children}
-            </Flex>
-        </>
-    )
+interface LayoutProps {
+  children: ReactNode;
 }
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <>
+      <Navbar />
+        <Flex direction='column' w={{base: '100%', md: '100%'}} >
+          <main>{children}</main>
+        </Flex>
+      </>
+    );
+  }
 export default Layout;

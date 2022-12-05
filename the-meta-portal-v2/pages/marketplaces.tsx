@@ -1,6 +1,7 @@
-import { Box, Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, useColorModeValue } from "@chakra-ui/react";
 import Mvcol1 from "../components/mvBoxes/Mvcol1";
 import Mvcol2 from "../components/mvBoxes/Mvcol2";
+
 
 const Marketplaces = () => {
 

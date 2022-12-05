@@ -4,15 +4,16 @@ import Script from 'next/script'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import customTheme from '../styles/theme'
-import { RecoilRoot} from 'recoil'
+import { RecoilRoot } from 'recoil'
 import Layout from '../components/Layout/Layout'
 import * as ga from '../lib/google-analytics'
+import * as React from 'react'
+import type { AppProps } from "next/app"
 
 
 
 
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
@@ -39,7 +40,7 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
     <RecoilRoot>
-      <ChakraProvider theme={customTheme}>
+      <ChakraProvider theme={customTheme} cssVarsRoot={undefined}>
         <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
           <Layout>
             <Component {...pageProps} />

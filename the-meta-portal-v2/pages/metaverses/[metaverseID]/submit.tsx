@@ -32,7 +32,7 @@ const CreateMetaversePostPage: NextPage = () => {
   console.log("HERE IS USER", user, loadingUser);
 
   return (
-    <PageContent >
+    <PageContent>
       <>
         <Box p="14px 0px" borderBottom="1px solid" borderColor="white" >
           <Text fontWeight={600}>Create a post</Text>

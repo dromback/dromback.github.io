@@ -9,12 +9,11 @@ const About = () => {
   const boxBg = useColorModeValue('#FFFFFF', '#121212')
 
     return (
-        <><>
+        <>
             <title>Intervrs | About</title>
             <Flex direction="column" bg={bg} maxW="100vw" minH="100vh" >
-              
               <Box flex="1"  px="0" py="11em" >
-                  <Container h="60vh" w="100%" bg={boxBg} maxW="80vw" maxH="120vh" rounded="lg">
+                  <Container h="60vh" w="100%" bg={boxBg} maxW="60vw" maxH="120vh" rounded="lg">
                     <Box position="relative" top="80px" >
                       <Text align="center" color={color}>
                         <Text as="u" fontSize="2.5em" fontWeight="bold" mb="10">Our Mission</Text>
@@ -28,10 +27,7 @@ const About = () => {
                     </Box>
                   </Container>
                 </Box>
-                
             </Flex>
-        </>
-        
         </>
     );
 
