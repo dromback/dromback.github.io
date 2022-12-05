@@ -41,7 +41,8 @@ const formTabs = [
 
 ];
 
-export type TabItem = {
+// Renamed TabItem to FormTabItem
+export type FormTabItem = {
     title: string;
     icon: typeof Icon.arguments;
 }
